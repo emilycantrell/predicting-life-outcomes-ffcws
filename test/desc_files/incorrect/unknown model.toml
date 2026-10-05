@@ -1,0 +1,62 @@
+[summary]
+  name = "year15_outcomes_and_scales"
+  description = "Goal of this experiment is to measure the predictive accuracy of ML models for all year 15 outcomes"
+
+[execution]
+  [execution.infrastructure]
+  parallel = true
+  distribute = true
+  [execution.database]
+  results_database = "y15outcomesandscales"
+  database_type_to_use = "mongo" # possible options are mongo (production) and inmemory (testing)
+
+[data]
+  participant_id_column = "idnum"
+  training_participant_ids = [ "./dataset/fragile-families/FFC_idnum.csv", "391756b700f22154f0e25a72111bbf7f",]
+  remove_participants_collected_in_nonresponse_followup_Columbia = true # cp6source == 2
+
+[data.files]
+  features = [ "./dataset/fragile-families/FF_allwaves_2020v2.dta", "7177a706865d6668fa2d9cc9adb38c4a",]
+  outcomes = [ "./dataset/fragile-families/FF_wave6_2020v2.dta", "00c846022041f5bb55ae182a5c2c11fe",]
+  metadata = [ "./dataset/fragile-families/FFMetadata_v05.csv", "ba512f5463e127cec1a8506a14b80b91",]
+
+[data.outcomes]
+  regression_outcomes = { topics = ["all"] , outcome_names = ["p6b1"]}
+  classification_outcomes = { topics = [] , outcome_names = []}
+
+[pipeline]
+
+  [pipeline.models]
+    methods = ["regression"]
+
+  [pipeline.feature_selection]
+    method_type = "all"
+
+  [pipeline.cv]
+    nfolds = 10
+    min_valid_outcomes = 50
+
+  [pipeline.predictors]
+    vartype_to_use = ["Continuous", "Binary", "Ordered Categorical"] # use variables of these types
+    waves_to_use = ["Baseline", "Year 1", "Year 3", "Year 5", "Year 9"]
+    min_cities = 18 # question must be asked in atleast these number of cities
+    always_include = ["idnum"]
+    remove_predictors_with_metadata_warning = true # Some variables have warning flags in metadata file. Remove these predictors.
+
+  [pipeline.predictors.preprocessing]
+    convert_standard_FF_missing_values_to_na = true # Standard FF missing values are [-9, -1]
+    use_one_hot_encoding = true
+    variance_threshold = 0.0 # if 0 remove constant columns
+    scaler_method = "all" # Either all or a list of method names (empty list to skip)
+
+  [pipeline.predictors.imputation]
+    "Binary" = "mean"
+    "Ordered Categorical" = "mean"
+    "Continuous" = "mean"
+
+  [pipeline.outcomes.preprocessing]
+    recode2to0 = true # If set, recodes to binary values
+    remove_outcomes_with_metadata_warning = true # Some variables have warning flags in metadata file. Remove these predictors.
+
+  [pipeline.predictions.postprocessing]
+    truncate_predictions = true

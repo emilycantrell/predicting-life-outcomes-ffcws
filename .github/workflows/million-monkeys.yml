@@ -1,0 +1,50 @@
+name: Million monkeys
+
+on:
+  push:
+    branches:
+      - '*'
+
+  pull_request:
+    branches:
+      - '*'
+
+jobs:
+  test:
+    strategy:
+      fail-fast: false
+
+      matrix:
+        include:
+          - os: ubuntu-latest
+            environment_file: environment_pinned_linux.yml
+
+    defaults:
+      run:
+        # Required when using an activated conda environment in steps
+        # See https://github.com/conda-incubator/setup-miniconda#IMPORTANT
+        shell: bash -l {0}
+
+    name: ${{ matrix.os }} - ${{ matrix.environment_file }}
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Setup conda
+        uses: conda-incubator/setup-miniconda@v2
+        with:
+            auto-update-conda: true
+            activate-environment: million-monkeys
+            environment-file: ${{ matrix.environment_file }}
+            auto-activate-base: false
+            python-version: 3.8
+
+      - name: List dependencies
+        run: conda env export --no-builds
+
+      - name: Run tests
+        shell: bash -l {0}
+        run: |
+          python -m pytest -v -p no:warnings --regression ./test/desc_files/regression --incorrect ./test/desc_files/incorrect --regression ./test/desc_files/regression_missing --imperfect_regression ./test/desc_files/imperfect_regression --reproducibility ./test/desc_files/reproducibility --metadata_warning ./test/desc_files/metadata_warning --metadata_concepts ./test/desc_files/mm_concepts --metalearning ./test/desc_files/metalearning
+          python -m pytest models/
+          python -m pytest data/test_preprocessing.py

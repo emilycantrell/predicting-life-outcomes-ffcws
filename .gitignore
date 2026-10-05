@@ -1,0 +1,173 @@
+# -------------------------------------------------------------------
+# Project-specific infrastructure and execution files
+# -------------------------------------------------------------------
+
+azure/pubkey.txt
+scripts/servers.toml
+scripts/hosts.ansi
+scripts/id_config
+
+scripts/experiments/
+scripts/executions/
+
+
+# -------------------------------------------------------------------
+# Data
+# -------------------------------------------------------------------
+
+data/dataset/fragile-families/FF_allwaves_2020v2.dta
+data/dataset/fragile-families/FF_wave6_2020v2.dta
+
+
+# -------------------------------------------------------------------
+# Generated analysis outputs and archived files
+# -------------------------------------------------------------------
+
+html/
+analysis/figures_and_analyses_for_paper/figures_and_tables/*
+!analysis/figures_and_analyses_for_paper/figures_and_tables/README.md
+
+
+# -------------------------------------------------------------------
+# R session files
+# -------------------------------------------------------------------
+
+.Rhistory
+.RData
+.Rapp.history
+
+compare_scales/.Rhistory
+metadata_warnings/.Rhistory
+analysis/r_code/.Rhistory
+data/dataset/fragile-families/.Rapp.history
+
+
+# -------------------------------------------------------------------
+# Editor and operating-system files
+# -------------------------------------------------------------------
+
+.vscode/
+.DS_Store
+
+
+# -------------------------------------------------------------------
+# Python bytecode and compiled files
+# -------------------------------------------------------------------
+
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+
+# -------------------------------------------------------------------
+# Python build and packaging files
+# -------------------------------------------------------------------
+
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+*.manifest
+*.spec
+
+pip-log.txt
+pip-delete-this-directory.txt
+
+
+# -------------------------------------------------------------------
+# Python testing and coverage
+# -------------------------------------------------------------------
+
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache/
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+
+
+# -------------------------------------------------------------------
+# Python environments and tooling
+# -------------------------------------------------------------------
+
+.env
+.venv/
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+.python-version
+__pypackages__/
+
+.mypy_cache/
+.dmypy.json
+dmypy.json
+.pyre/
+
+.spyderproject
+.spyproject
+.ropeproject
+
+
+# -------------------------------------------------------------------
+# Jupyter / IPython
+# -------------------------------------------------------------------
+
+.ipynb_checkpoints/
+profile_default/
+ipython_config.py
+
+
+# -------------------------------------------------------------------
+# Documentation and framework-generated files
+# -------------------------------------------------------------------
+
+docs/_build/
+/site
+
+*.mo
+*.pot
+
+*.log
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+
+instance/
+.webassets-cache/
+
+.scrapy/
+
+target/
+
+celerybeat-schedule
+celerybeat.pid
+
+*.sage.py
+
+rayout/

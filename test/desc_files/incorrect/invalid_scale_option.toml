@@ -1,0 +1,69 @@
+[summary]
+  name = "year15_outcomes"
+  description = "Goal of this experiment is to measure the predictive accuracy of ML models for all year 15 outcomes. In this experiment, participants from Columbia followup are removed. This job file is expected to be run on cluster in September run."
+
+[execution]
+  [execution.infrastructure]
+  parallel = true
+  distribute = true
+  [execution.database]
+  results_database = "y15outcomes"
+  database_type_to_use = "mongo" # possible options are mongo (production) and inmemory (testing)
+
+[data]
+  participant_id_column = "idnum"
+  training_participant_ids = [ "./dataset/fragile-families/FFC_idnum.csv", "3c85a671e186808e7b6eae4c6e5de900",]
+  remove_participants_collected_in_nonresponse_followup_Columbia = true # cp6source == 2
+  remove_weights_from_predictors_and_outcomes = true # removes predictors and outcomes for which source == weight
+  remove_paradata_from_predictors_and_outcomes = true # removes predictors and outcomes for which topic includes "Paradata and weights" & subtopic includes "paradata"
+  add_scales_to_outcomes = true # if enabled then uses data.files.scales to append set of outcomes with constructed scales
+
+[data.files]
+  features = [ "./dataset/fragile-families/FF_allwaves_2020v2.dta", "fb392c60630ac5f132baf1cde2da90db",]
+  outcomes = [ "./dataset/fragile-families/FF_wave6_2020v2.dta", "648fed6d663c3cd9b411931cb3d8cae6",]
+  metadata = [ "./dataset/fragile-families/FFMetadata_v06.csv", "b3e440b1164eb1c50dfa4a4dff2348de",]
+
+#[data.files.scales]
+  #instructions = [ "./dataset/fragile-families/Scales_instructions.csv", "a08a3e63f2463998ea8c7f82b722bec9",]
+  #raw_instructions = [ "./dataset/fragile-families/Scales_raw_instructions.csv", "2af16647e9ced0dc72642efff90c4740",] # this is used to generate metadata for the computed scales
+
+[data.outcomes]
+  regression_outcomes = { topics = ["all"] , outcome_names = ["p6b4"]}
+  classification_outcomes = { topics = [] , outcome_names = []}
+
+[pipeline]
+
+  [pipeline.models]
+    methods = "all" # Either "all" or a list of method names
+
+  [pipeline.feature_selection]
+    method_type = "all"
+
+  [pipeline.cv]
+    nfolds = 10
+    min_valid_outcomes = 50
+
+  [pipeline.predictors]
+    vartype_to_use = ["Continuous", "Binary", "Ordered Categorical"] # use variables of these types
+    waves_to_use = ["Baseline", "Year 1", "Year 3", "Year 5", "Year 9"]
+    min_cities = 18 # question must be asked in atleast these number of cities
+    always_include = ["idnum"]
+    remove_predictors_with_metadata_warning = true # Some variables have warning flags in metadata file. Remove these predictors.
+
+  [pipeline.predictors.preprocessing]
+    convert_standard_FF_missing_values_to_na = true # Standard FF missing values are [-9, -1]
+    use_one_hot_encoding = true
+    variance_threshold = 0.0 # if 0 remove constant columns
+    scaler_method = "all" # Either all or a list of method names (empty list to skip)
+
+  [pipeline.predictors.imputation]
+    "Binary" = "mean"
+    "Ordered Categorical" = "mode"
+    "Continuous" = "mean"
+
+  [pipeline.outcomes.preprocessing]
+    recode2to0 = true # If set, recodes to binary values
+    remove_outcomes_with_metadata_warning = true # Some variables have warning flags in metadata file. Remove these predictors.
+
+  [pipeline.predictions.postprocessing]
+    truncate_predictions = true

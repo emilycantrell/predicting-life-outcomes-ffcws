@@ -1,0 +1,4 @@
+"/home/pranay/work/million-monkeys/test/data/regression/coeff.csv" = "7713c43fdaae7dc4d25260f7fa6c21c3"
+"/home/pranay/work/million-monkeys/test/data/regression/features.csv" = "89cf7dfd8d2d721b246ca1c9408bbd11"
+"/home/pranay/work/million-monkeys/test/data/regression/metadata.csv" = "555fe2c221bdf6b3a50d6cc32a584c3b"
+"/home/pranay/work/million-monkeys/test/data/regression/outcomes.csv" = "338a007b7b50922198da09824bad4291"

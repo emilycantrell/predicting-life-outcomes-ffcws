@@ -1,0 +1,40 @@
+List of metalearning features
+
+General
+---------
+X Ratio between number of data samples and attributes
+X Distribution of feature types (Binary, continuous etc)
+X Is the model tuned
+
+Statistical
+---------
+X standard deviation of each/max/min attributes
+X Variance of each/max/min of attributes
+X Number of attributes with at least on outlier (<= LQR - 1.5*IQR or >= UQR + 1.5 IQR)
+X Max correlation
+X Mean correlation
+X Coefficient of variation (std dev/mean) of outcome
+
+Complexity
+---------
+X PCA dimensions (number of features to cover 95% variance)
+X Entropy of outcome
+
+Landmarking features
+---------
+X Performance of 1NN regressor
+X Performance of simple decision tree regressors.
+
+Million-monkeys specific features
+---------
+X Fraction of missing outcome values (negative values between -9 and -1)
+-- Use fractions for special codes -9. -6. -2 ? Refer to paper
+Frequency of each type of standard missing value codes
+X Min, Mean, Max number of imputations per type
+X - Masked variables
+X - Unmasked variables
+X Wave distribution
+X Focal person distribution
+X Topic distribution
+Scales or not -- Scales before Wave 6 are not yet included in features
+X Constructed

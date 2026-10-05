@@ -1,0 +1,10 @@
+---
+- hosts: compute
+  tasks:
+    - name: update source repository on remote machines
+      shell: |
+        cd million-monkeys
+        git checkout {{ branchname }}
+        git pull
+      tags:
+        - update

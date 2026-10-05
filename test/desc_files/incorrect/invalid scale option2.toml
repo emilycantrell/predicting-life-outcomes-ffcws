@@ -1,0 +1,65 @@
+[summary]
+  name = "E2E test"
+  description = "This is an incorrect jobdesc file. The data scaling method should either be 'all' or a list of valid names"
+[execution]
+  [execution.infrastructure]
+  parallel = true
+  distribute = true
+  [execution.database]
+  results_database = "e2etest"
+  database_type_to_use = "inmemory" # possible options are mongo (production) and inmemory (testing)
+
+[data]
+  participant_id_column = "ChallengeID"
+  training_participant_ids = "all"
+  remove_participants_collected_in_nonresponse_followup_Columbia = false
+
+[data.files]
+  features = ["./datasets/testdata/regression/features.csv", "89cf7dfd8d2d721b246ca1c9408bbd11"]
+  outcomes = ["./datasets/testdata/regression/outcomes.csv", "338a007b7b50922198da09824bad4291"]
+  metadata = ["./datasets/testdata/regression/metadata.csv", "c7fff95525545df0f519a0078bea3cff"]
+
+[data.outcomes]
+    classification_outcomes = {topics = [], outcome_names = []}
+    regression_outcomes = { topics = [] , outcome_names = ["dep_a", "dep_b"]}
+
+[pipeline]
+
+  [pipeline.models]
+    "Continuous" = {methods = ["linear regressor"]}
+
+  [pipeline.features]
+    [pipeline.features.filtering]
+      mode = ["all"]
+    [pipeline.features.selection]
+    mode = ["kbest"]
+    param = { "kbest" = {"arg" = [5], "metric" = ["f_regression", "spearmanr"] }}
+
+  [pipeline.cv]
+    nfolds = 10
+    min_valid_outcomes = 25
+
+  [pipeline.predictors]
+    vartype_to_use = ["Continuous", "Binary", "Ordered Categorical"] # use variables of these types
+    waves_to_use = ["Baseline"]
+    min_cities = 18 # question must be asked in atleast these number of cities
+    always_include = ["ChallengeID"]
+    remove_predictors_with_metadata_warning = true # Some variables have warning flags in metadata file. Remove these predictors.
+
+  [pipeline.predictors.preprocessing]
+    convert_standard_FF_missing_values_to_na = false # Standard FF missing values are [-9, -1]
+    use_one_hot_encoding = false
+    variance_threshold = 0.0 # if 0 remove constant columns
+    scaler_method = []
+
+  [pipeline.predictors.imputation]
+    "Binary" = "mean"
+    "Ordered Categorical" = "mode"
+    "Continuous" = "mean"
+
+  [pipeline.outcomes.preprocessing]
+    recode2to0 = false # If set, recodes to binary values
+    remove_outcomes_with_metadata_warning = true # Some variables have warning flags in metadata file. Remove these predictors.
+
+  [pipeline.predictions.postprocessing]
+    truncate_predictions = false

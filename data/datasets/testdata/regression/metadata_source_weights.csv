@@ -1,0 +1,9 @@
+new_name,old_name,type,topics,subtopics,factors,wave,n_cities_asked,in_FFC_file,source,warning
+ind_a,ind_a,Continuous,foo,bar,1,Baseline,20,Yes,baz,
+ind_b,ind_b,Continuous,foo,bar,1,Baseline,20,Yes,baz,
+ind_c,ind_c,Continuous,foo,bar,1,Baseline,20,Yes,baz,
+ind_d,ind_d,Continuous,foo,bar,1,Baseline,20,Yes,baz,
+ind_e,ind_e,Continuous,foo,survey weights,1,Baseline,20,Yes,weight,
+dep_a,dep_a,Continuous,foo,bar,1,Baseline,20,Yes,baz,
+dep_b,dep_b,Continuous,foo,bar,1,Baseline,20,Yes,baz,
+ChallengeID,ChallengeID,Continuous,foo,bar,1,Baseline,20,Yes,

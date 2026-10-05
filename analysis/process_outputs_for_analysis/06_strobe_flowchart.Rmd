@@ -1,0 +1,391 @@
+---
+title: "STROBE variable flowchart"
+date: "Last compiled on `r format(Sys.time(), '%d %B, %Y')`"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+library(groundhog)
+pkgs <- c("jsonlite", "tidyverse", "knitr", "here")
+groundhog.day <- "2023-06-01"
+groundhog.library(pkgs, groundhog.day)
+
+knitr::opts_chunk$set(echo = TRUE)
+rm(list = ls())
+```
+
+```{r}
+# Directory containing the job directory or directories you generated
+# (e.g., if you ran multiple jobs and stored their outputs in the same parent directory).
+# This should be the parent directory of the directory named by `slug`.
+rootdir <- "/path/to/parent/directory/"
+
+# Name of the specific job directory to process.
+slug <- "my_job_name"
+
+# Number of virtual machines
+n_machines <- 12
+
+# Matrix shapes files from each VM
+shapes_files <- file.path(
+  rootdir,
+  slug,
+  paste0("mm-worker-", seq_len(n_machines)),
+  "matrix_shapes.json"
+)
+
+# Outcomes below resolution limit
+outcomes_below_resolution_limit_file <- file.path(
+  rootdir,
+  slug,
+  "parsed",
+  paste0(slug, "_outcomes_below_resolution_limit.csv")
+)
+```
+
+# Read and prep files
+
+```{r}
+read_prep_json <- function(shapes_filename) {
+  js <- fromJSON(shapes_filename)
+
+  id_oid <- js[['_id']]
+  js[['_id']] <- NULL
+
+  df <- as.data.frame(matrix(unlist(js, recursive = T), ncol = 8, byrow = F))
+  colnames(df) <- names(js)
+
+  df <- df %>%
+     as_tibble %>%
+     mutate(global_stepid = as.numeric(global_stepid), 
+         group_stepid = as.numeric(group_stepid),
+         ncols = as.numeric(ncols),
+         nrows = as.numeric(nrows))
+  return(df)
+}
+
+machines_steps <- map(shapes_files, read_prep_json)
+
+
+outcomes_below_resolution_limit <- read_csv(outcomes_below_resolution_limit_file, 
+col_types = cols(
+  row_id = col_integer(),
+  outcome = col_character()
+))
+
+```
+
+# Read and prep predictors
+
+```{r}
+get_predictors_steps <- function(df) {
+  
+  result <- df %>% 
+    filter(module %in% c("Preprocessing","Preprocessing_encoding")) %>%
+    filter(matrix == "Predictors") %>%
+    arrange(global_stepid) %>%
+    select(step, nrows, ncols) %>%
+    mutate(diff_cols = ncols - lag(ncols),
+           diff_rows = nrows - lag(nrows))
+  return(result)
+}
+
+predictors_steps_list <- map(machines_steps, get_predictors_steps)
+
+if (all(map_lgl(predictors_steps_list, identical, y = predictors_steps_list[[1]]))) {
+  print("As expected: predictors steps from all machines are identical.")  
+} else {
+  stop("ERROR: predictors steps from all machines are not identical.") 
+}
+
+# if we are here all predictors_steps are the same so we focus on just one
+predictors_steps <- predictors_steps_list[[1]]
+```
+
+
+# Read and prep outcomes 
+
+```{r}
+get_outcome_steps <- function(df) {
+  result <- df %>% 
+    filter(module == "Preprocessing") %>%
+    filter(matrix == "Outcomes") %>%
+    arrange(global_stepid) %>%
+    select(step, global_stepid, nrows, ncols) %>%
+    mutate(diff_cols = ncols - lag(ncols), 
+           diff_rows = nrows - lag(nrows))
+  return(result)
+}
+
+outcome_steps <- map(machines_steps, get_outcome_steps)
+
+# this combines all the tibbles from the list into 1
+outcome_steps_all_machines <- map_dfr(outcome_steps, bind_rows, .id = "machine")
+
+# convert step to factor to help preserve order in group_by statements later
+outcome_steps_all_machines$step <- as_factor(outcome_steps_all_machines$step)
+
+###
+# begin checks
+# except for a few steps, diff_cols should be <= 0
+subset_steps <- outcome_steps_all_machines %>%
+  filter(!step %in% c("Loading OUTCOMES", "Computing scales, variables with units standardized, variables with units combined predictors and OUTCOMES")) 
+
+if ((all(subset_steps$diff_cols <= 0))) {
+  print("As expected: except for known exceptions, diff_cols <= 0")
+} else {
+  stop("ERROR: something unexpected happened in outcome checks.")
+}
+rm(subset_steps)
+
+# end checks
+###
+
+# This prints out the full list of steps across machines
+# for manual skim
+kable(outcome_steps_all_machines)
+```
+
+# Numbers for outcome flowchart
+
+```{r}
+
+# This chunk creates and combines the numbers for the final STROBE flowchart
+
+# Number of variables in FFCWS year 15 public data
+if (outcome_steps_all_machines %>% 
+  filter(step == "Loading OUTCOMES") %>% 
+  select(ncols) %>% 
+  n_distinct() != 1) {
+  stop("ERROR: the number of initial outcomes is different across machines")
+} else {  
+  print("As expected: the number of initial outcomes is same across machines")
+}
+
+n_outcomes_initial <- outcome_steps_all_machines %>% 
+  filter(step == "Loading OUTCOMES") %>%
+  filter(machine == 1) %>% # 1 is arbitrary but OK because they are all the same
+  pull(ncols) 
+
+# Check that Recode2to0 does not change number of cols or rows
+if (all(outcome_steps_all_machines %>% filter(step == "Recode2to0") %>% select(diff_cols, diff_rows) == 0)) {
+  print("As expected: Recode2to0 does not change the number of rows or columns on any machine")
+} else {
+  stop("ERROR: Recode2to0 changes the number of rows or columns on 1 or more machine")
+}
+
+# Aggregate the number of variables dropped at several steps across machines
+steps_to_aggregate <- c(
+  "Removing outcomes NOT of vartype ", 
+  "Removing outcomes with min cities < ",
+  "Removing skipped outcomes",
+  "Removing month outcomes", 
+  "Removing weights from outcomes", 
+  "Removing paradata from outcomes", 
+  "Removing outcomes with warning codes ",
+  "Removing outcomes of concept Standardized_Units",
+  "Removing outcomes of concept Unstandardized_Units",
+  "Removing outcomes of concept Combined_Units",
+  "Removing outcomes of concept Uncombined_Units",
+  "Removing outcomes of concept Scales_Inputs_That_Should_Not_Be_Used_Raw",
+  "Removing outcomes of concept Duplicate_Outcomes",
+  "Removing outcomes of concept Outcomes_Dropped_For_Ethical_Reasons",
+  "Removing outcomes where the non-missing values are all same ",
+  "Removing outcomes where the number of non") # this last one needs to avoid "-" for some reason
+
+num_steps_to_aggregate <- length(steps_to_aggregate)
+
+aggregated_steps <- outcome_steps_all_machines %>%
+  filter(str_detect(step, paste(steps_to_aggregate, collapse = "|"))) %>% 
+  group_by(step) %>%
+  summarize(total = sum(diff_cols))
+
+if (nrow(aggregated_steps) != num_steps_to_aggregate) stop("ERROR: problem with aggregated_steps")
+  
+# get total number of outcomes included
+final_step <- "Removing outcomes where the number of non" # this has to be set manually for now
+
+n_outcomes_included <- outcome_steps_all_machines %>%
+  filter(str_detect(step, final_step)) %>%
+  summarize(count = sum(ncols)) %>%
+  pull()
+  
+print(paste("Variables in FFCWS public data year 15:", n_outcomes_initial))
+kable(aggregated_steps)
+
+
+# calculate number of outcomes removed in post-processing
+if (any(is.na(outcomes_below_resolution_limit$row_id))) {
+  n_outcomes_below_resolution_limit <- 0 
+  # if we are here we expect that this file will have only 1 row
+  if (nrow(outcomes_below_resolution_limit) >  1) stop("ERROR: unexpected outcomes_below_resolution_limit")
+} else {
+  n_outcomes_below_resolution_limit <- nrow(outcomes_below_resolution_limit)
+}
+
+print(paste("Final number of outcomes after pre-processing:", n_outcomes_included))
+print(paste("Number of outcomes removed in post-processing because of resolution limit (zero variance in one or more folds):", n_outcomes_below_resolution_limit))
+# There are 3 outcomes we remove in analysis code because they have imputation with data from earlier waves.
+outcomes_with_imputation_from_earlier_waves <- 3 
+print(paste("Number of outcomes removed due to imputation from earlier waves:", outcomes_with_imputation_from_earlier_waves))
+print(paste("Final number of outcomes in analysis:", n_outcomes_included 
+            - n_outcomes_below_resolution_limit
+            - outcomes_with_imputation_from_earlier_waves))
+
+# Note: We decided not to standardize or combine any outcomes due to concerns about doing so accurately with a high-throughput approach.
+# Therefore, the rows for "Standardized_Units" and "Combined_Units" are not applicable for outcomes. 
+# The rows for "Unstandardized_Units" and "Uncombined_Units" are still applicable for outcomes, 
+# because we dropped outcomes where unit standardization or unit combination would have been necessary.
+# For features (see below), standardized, combined, unstandardized, and uncombined are all still applicable, 
+# because we did conduct unit standardization and unit combination for features.
+
+# Note: "Removing month outcomes" is no longer relevant because unit standardization/combination code superseded our process for handling month outcomes.
+# However, "Removing predictors of concept Calendar_Features" is still applicable (see the output for the features chart below).
+```
+
+# Numbers and notes for predictors flowchart
+
+Notes: 
+
+- "Removing predictors that are not of vartype [‘Continuous’, ‘Binary’, ‘Ordered Categorical’, ‘Unordered Categorical’]" is listed as "Strings" on flowchart
+
+```{r}
+# print predictors matrix 
+kable(predictors_steps)
+```
+
+
+# Cross-file information
+
+Sometimes information for the predictors flowchart comes in part from the outcomes flowchart and vice-versa.
+
+This is correct, but some of this is inelegant and not robust. If steps in pre-processing get re-ordered, our process for determining the numbers in the flowcharts may need to be refactored.  
+
+```{r}
+# How many birth - year 9 variables are in FFCWS data?
+# predictors reads complete FFCWS file (birth - year 15)
+# outcomes reads FFCWS just year 15
+# to figure out number of variables in birth - year 9 we need to compare
+
+variables_b_15 <- predictors_steps %>%
+  filter(step == "Loading PREDICTORS") %>%
+  pull(ncols)
+
+variables_15 <- outcome_steps_all_machines %>% 
+  filter(step == "Loading OUTCOMES") %>%
+  filter(machine == 1) %>% # 1 is arbitrary but OK because they are all the same
+  pull(ncols) 
+
+variables_b_9 <- variables_b_15 - variables_15
+
+print("THE NEXT INFO GOES IN OUTCOMES FLOWCHART")
+print(paste("Number of variables in year 15 main data file (before preprocessing):", variables_15))
+
+print("THE NEXT INFO GOES IN PREDICTORS FLOWCHART")
+print(paste("Number of variables in years birth - 9 main data file (before preprocessing):", variables_b_9))
+###
+```
+
+
+```{r}
+# How many of the scales, unit standardized variables and unit combined variables are age 15 and how many are birth - age 9?
+results <- outcome_steps_all_machines %>%
+  filter(machine == 1) %>%
+  filter(step %in% c("Computing scales, variables with units standardized, variables with units combined predictors and OUTCOMES", "Removing outcomes that are not in ['Year 15']"))  
+
+created_scales_standardized_vars_total <- results %>%
+  filter(step == "Computing scales, variables with units standardized, variables with units combined predictors and OUTCOMES") %>%
+  pull(diff_cols)
+
+created_scales_standardized_vars_b_9 <- results %>%
+  filter(step == "Removing outcomes that are not in ['Year 15']") %>%
+  pull(diff_cols) %>%
+  abs()
+
+created_scales_standardized_vars_15 <- created_scales_standardized_vars_total - created_scales_standardized_vars_b_9 
+
+print(paste("Created scales, unit standardized variables, unit combined variables, and FFC outcomes (TOTAL):", created_scales_standardized_vars_total))
+
+print("THE NEXT INFO GOES IN OUTCOMES FLOWCHART")
+# Note: We created 2 FFC outcomes that were not part of the official scales: k6_scale_GPA and p6_scale_eviction.
+number_of_FFC_outcomes_created_that_are_not_official_scales <- 2
+print(paste("Created scale outcomes from official FFCWS documentation:", created_scales_standardized_vars_15 - number_of_FFC_outcomes_created_that_are_not_official_scales))
+print(paste("Created FFC outcomes that are not scales (hard-coded value):", number_of_FFC_outcomes_created_that_are_not_official_scales))
+
+rm(results)  
+
+### For the features flowchart, create a more detailed breakdown of scales vs. unit standardization vs. unit combination ###
+
+# Read parsable scales instructions
+parsable_scales_instructions <- read_csv(
+  here::here(
+    "data",
+    "dataset",
+    "fragile-families",
+    "parsable_scales_instructions.csv"
+  ),
+  show_col_types = FALSE
+)
+
+# Filter to birth-9 and exclude intermediate variables used in calculations
+features_created_from_parsable_instructions <- parsable_scales_instructions %>%
+  filter(metadata_wave != "Year 15") %>%
+  filter(!str_detect(metadata_new_name, "intermediate"))
+
+# Count number of scales, unit standardized variables, and unit combined variables
+feature_creation_counts <- features_created_from_parsable_instructions %>%
+  mutate(
+    type_of_variable_creation = case_when(
+      str_detect(metadata_new_name, "scale") ~ "scale",
+      str_detect(metadata_new_name, "unst") ~ "unit standardization",
+      str_detect(metadata_new_name, "uncomb") ~ "unit combination",
+      TRUE ~ "other"
+    ),
+    type_of_variable_creation = factor(
+      type_of_variable_creation,
+      levels = c(
+        "scale",
+        "unit standardization",
+        "unit combination",
+        "other"
+      )
+    )
+  ) %>%
+  group_by(type_of_variable_creation) %>%
+  summarise(count = n())
+
+print("THE FOLLOWING TABLE CONTAINS FEATURE CREATION COUNTS FOR THE FEATURES FLOWCHART:")
+feature_creation_counts
+
+# Quality control check
+n_created_features <- feature_creation_counts %>%
+  filter(type_of_variable_creation %in% c(
+    "scale",
+    "unit standardization",
+    "unit combination"
+  )) %>%
+  summarise(total = sum(count)) %>%
+  pull(total)
+
+if (n_created_features != created_scales_standardized_vars_b_9) {
+  stop("ERROR: feature creation counts do not match matrix-shape tracking")
+}
+###
+```
+
+```{r}
+# Quality control check for year-15 predictor removal
+# Number of predictors dropped because they are in year 15 should be the number of year 15 variables + the number of created scales and standardized vars for age 15.
+ 
+ removed_predictors_15 <- predictors_steps %>%
+   filter(str_detect(step, "Removing predictors that are not in")) %>%
+   pull(diff_cols) %>%
+   abs()
+ 
+ if (removed_predictors_15 != (created_scales_standardized_vars_15 + variables_15)) {
+   print(paste("removed_predictors_15:", removed_predictors_15))
+   print(paste("created_scales_standardized_vars_15:", created_scales_standardized_vars_15))
+   print(paste("variables_15:", variables_15))
+   stop("ERROR: things don't add up")
+ }
+```

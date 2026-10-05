@@ -1,0 +1,10 @@
+new_name,old_name,type,topics,factors,wave,n_cities_asked,in_FFC_file,warning
+ind_a,ind_a,Continuous,foo,1,Baseline,20,Yes,
+ind_b,ind_b,Continuous,foo,1,Baseline,20,Yes,
+ind_c,ind_c,Continuous,foo,1,Baseline,20,Yes,
+ind_d,ind_d,Continuous,foo,1,Baseline,20,Yes,
+ind_e,ind_e,Continuous,foo,1,Baseline,20,Yes,
+dep_a,dep_a,Binary,foo,1,Baseline,20,Yes,
+dep_b,dep_b,Ordered Continuous,foo,1,Baseline,20,Yes,
+dep_c,dep_c,Binary,foo,1,Baseline,20,Yes,"A yes/no variable that has “no” coded to 0 instead of 2"
+ChallengeID,ChallengeID,Continuous,foo,1,Baseline,20,Yes,

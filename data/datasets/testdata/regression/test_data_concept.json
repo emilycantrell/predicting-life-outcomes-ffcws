@@ -1,0 +1,7 @@
+[
+    {
+        "concept": "test_data_concept",
+        "varnames": ["dep_a", "dep_c"],
+        "notes":  "This concept file is used in e2e testing"
+    }
+]

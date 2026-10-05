@@ -1,0 +1,133 @@
+## This jobfile is for monkeys pipelines. It has five sections : summary, data, pipeline, execution, and results
+## summary : Allows researchers to provide a name and textual description for the job
+## data: Allows researchers to specify dataset files, participants, data preprocessing, and outcomes
+## pipeline: Allows researcher to specify pipeline related options
+## execution : Infra related options
+## results : Options to specify where and how the results are stored
+[summary]
+    # key(s) : name, description | value_type : str | required = yes
+    name = "year15_outcomes_scales_monkeys"
+    description = "Goal of this experiment is to measure the predictive accuracy of a variety of models on all year 15 outcomes and scales using v0.2.8 of the codebase. This job includes our k-best-1 baseline."
+[data]
+    [data.files]
+        # key(s) : predictors, outcomes, metadata, million_monkeys_concepts_metadata, metadata_edit_instructions, scales_instructions, training_participants_ids | value_type : [filepath as str, hash as str] | required = yes (except for scales_instructions, million_monkeys_concepts_metadata)
+        predictors = [ "./dataset/fragile-families/FF_allwaves_2020v2.dta", "fb392c60630ac5f132baf1cde2da90db"]
+        outcomes = [ "./dataset/fragile-families/FF_wave6_2020v2.dta", "648fed6d663c3cd9b411931cb3d8cae6"]
+        training_participant_ids = [ "./dataset/fragile-families/FFCWS_idnums_cases_from_FFC_training.csv", "3c85a671e186808e7b6eae4c6e5de900"]
+        metadata = [ "./dataset/fragile-families/FFMetadata_v09.csv", "0befb660894038eb96723a2988ccf305"]
+        metadata_edit_instructions = ["./dataset/fragile-families/Metadata_Edit_Tracker.csv", "de026114ae6e06f89fdf6c0e0bb329c5"]
+        million_monkeys_concepts_metadata = [ "./dataset/fragile-families/VariablesToRemove.json", "bfece128351e3d249160fc398de3c350"]
+        scales_instructions = [ "./dataset/fragile-families/parsable_scales_instructions.csv", "ae35a78b335030554e61eb570a273263"] # default = [] will be skipped
+    [data.participants]
+        # key(s) : participant_id_column | value_type : str | required = yes
+        participant_id_column = "idnum"
+        # key(s) : remove_participants_collected_in_nonresponse_followup_Columbia | value_type : boolean | required = yes
+        remove_participants_collected_in_nonresponse_followup_Columbia = true # cp6source == 2
+    [data.preprocessing]
+        [data.preprocessing.common]
+            # key(s) : convert_standard_ff_missing_values_to_na  | value_type : boolean | required = yes | standard missing codes are integers in [-9, -1]
+            convert_standard_ff_missing_values_to_na = true
+        [data.preprocessing.predictors]
+            # key(s) : vartype_to_use | value_type : list of enums | required = yes | Acceptable values are "Continuous", "Binary", "Ordered Categorical", "Unordered Categorical"
+            vartypes_to_use = ["Continuous", "Binary", "Ordered Categorical", "Unordered Categorical"]
+            # key(s) : waves_to_use | value_type : list of enums | required = yes | Acceptable values are "Baseline", "Year 1", "Year 3", "Year 5", "Year 9"
+            waves_to_use = ["Baseline", "Year 1", "Year 3", "Year 5", "Year 9"]
+            # key(s) : min_cities_predictors | value_type : int | required = yes | question must be asked in >= these number of cities
+            min_cities_predictors = 18
+            # key(s) : remove_predictors_with_these_warnings | value_type : list of ints | required = yes | see Kindel et al 2019 Table B1, possible values [1, 2, 4, 5, 6]
+            remove_predictors_with_these_warnings  =  [1, 2, 4, 5]
+            # key(s) : remove_weights_from_predictors | value_type : boolean | required = yes | removes predictors for which source == weight
+            remove_weights_from_predictors = true
+            # key(s) : remove_paradata_from_predictors | value_type : boolean | required = yes | removes predictors for which topic includes "Paradata and weights" & subtopic includes "paradata"
+            remove_paradata_from_predictors = true
+            # key(s) : remove_predictors_of_concept | value_type : list of strs | required = yes
+            remove_predictors_of_concept = ["Standardized_Units", "Unstandardized_Units", "Combined_Units", "Uncombined_Units", "Calendar_Features"]
+            # key(s) : remove_predictors_below_variance_threshold | value_type : float | required = yes | 0 removes predictors with 0 variance among non-missing values
+            remove_predictors_below_variance_threshold = 0.0
+            # key(s) : add_scales_to_predictors | value_type : boolean | required = yes
+            add_scales_to_predictors = true
+            # key(s) : encoding_method_unordered_categorical | value_type : str | required = no, default = dummy_largest | one of one-hot or dummy_largest
+            encoding_method_unordered_categorical = "one-hot"
+            # key(s) : impute_mode_before_encoding_unordered_categorical | value_type : boolean | required = no, default = no | if yes then impute mode before encoding
+            impute_mode_before_encoding_unordered_categorical = false
+        [data.preprocessing.outcomes]
+            # key(s) : min_valid_outcomes | value_type : int | required = yes
+            min_valid_outcomes = 200
+            # key(s) : min_cities_outcomes | value_type : int | required = yes | question must be asked in >= these number of cities
+            min_cities_outcomes = 18
+            # key(s) : recode2to0 | value_type : boolean | required = yes | If set, recodes to binary values
+            recode2to0 = true
+            # key(s) : remove_outcomes_with_these_warnings | value_type : list of ints | required = yes | see Kindel et al 2019 Table B1, possible values [1, 2, 4, 5, 6]
+            remove_outcomes_with_these_warnings  =  [1, 2, 4, 5]
+            # key(s) : remove_months_from_outcomes | value_type : boolean | required = yes | removes outcomes that are months
+            remove_months_from_outcomes = true
+            # key(s) : remove_weights_from_outcomes | value_type : boolean | required = yes | removes outcomes for which source == weight
+            remove_weights_from_outcomes = true
+            # key(s) : remove_paradata_from_outcomes | value_type : boolean | required = yes | removes outcomes for which topic includes "Paradata and weights" & subtopic includes "paradata"
+            remove_paradata_from_outcomes = true
+            # key(s) : remove_outcomes_of_concept | value_type : list of strs | required = yes
+            remove_outcomes_of_concept = ["Standardized_Units", "Unstandardized_Units", "Combined_Units", "Uncombined_Units", "Scales_Inputs_That_Should_Not_Be_Used_Raw", "Duplicate_Outcomes", "Outcomes_Dropped_For_Ethical_Reasons"]
+            # vartypes_to_use | value_type : list of enums | required = yes | Acceptable values are "Continuous", "Binary", "Ordered Categorical", "Unordered Categorical"
+            vartypes_to_use = ["Continuous", "Binary", "Ordered Categorical"]
+            # key(s) : remove_skipped_outcomes | value_type : boolean | required = yes | Remove any outcomes that were skipped by at least one respondent (-6 response)
+            remove_skipped_outcomes = true
+            # key(s) : add_scales_to_outcomes | value_type : boolean | required = yes
+            add_scales_to_outcomes = true
+            # key(s) : waves_to_use | value_type : list of enums | required = yes | Acceptable values are "Continuous", "Binary", "Ordered Categorical", "Unordered Categorical"
+            waves_to_use = ["Year 15"]
+    [data.outcomes]
+            # key(s) : regression_outcomes  | value_type : dict of type {topics = list of strs or all, outcome_names = list of strs or all} | required = yes
+            regression_outcomes = { topics = ["all"] , outcome_names = ["all"]}
+            # key(s) : sample_fraction | value_type : float | required = yes
+            sample_fraction = 1.0
+[pipeline]
+    [pipeline.cv]
+        [pipeline.cv.pipeline_performance_estimate]
+            # key(s) : nfolds | value_type : int | required = yes
+            nfolds = 5
+            # key(s) : continuous_to_categorical_bin_method | value_type : enum | required = yes | Acceptable values are quantile, sturges, freedman-diaconis
+            continuous_to_categorical_bin_method = "quantile" # quantile, sturges, freedman-diaconis
+        [pipeline.cv.model_hyperparameter_tuning]
+            # key(s): mode | value_type : enum | required = yes | Acceptable values are "randomized_grid_search". To turn on tuning, include the line "mode = "randomized_grid_search"" search here, and set mode to "hyperparameter_tuning" in [pipeline.evaluation]. To turn off tuning, delete the lines `mode = "randomized_grid_search"` and `param = {"randomized_grid_search"…}` here, and set mode to "accuracy" in [pipeline.evaluation].
+            mode = "randomized_grid_search"
+            # key(s): param | value_type : dict of type {@mode : {"iterations": int, "nfolds": int, "continuous_to_categorical_bin_method" = @continuous_to_categorical_bin_method}} | required = yes
+            param = {"randomized_grid_search" = {"iterations"= 64, "nfolds" = 5, "continuous_to_categorical_bin_method" = "quantile"} }
+    [pipeline.imputation]
+            # key(s): Binary, Ordered Categorical, Continuous, Unordered Categorical | value_type : enum | required = yes | Acceptable values are mean, median, and mode
+            "Binary" = "mean"
+            "Ordered Categorical" = "mean"
+            "Continuous" = "mean"
+            "Unordered Categorical" = "mode"
+    [pipeline.scaling]
+            # key(s): scaler_method | value_type : all or list of scaling methods | required = yes | Acceptable values are all or a subset of ["maxabs scaler", "minmax scaler", "power transformer", "quantile transformer normal", "quantile transformer uniform", "robust scaler", "standard scaler"]
+            scaler_method = ["standard scaler", "quantile transformer uniform"]
+    [pipeline.feature_selection]
+            # key(s): mode | value_type : list of enums | required = yes | Acceptable values are ["pca", "manual", "kbest", "percentile"]
+            mode = ["kbest"]
+            param = { "kbest" = {"arg" = [1, 5, 10, 25, 50], "metric"  = ["f_regression", "spearmanr"]}}
+    [pipeline.imbalancelearn]
+            # key(s): mode | value_type : enums | required = no, default skip | Acceptable values are ["smote", "skip", "random"] | If not skip then it requires param.k_neighbors
+            mode = "skip"
+    [pipeline.models]
+            # key(s): Binary, Ordered Categorical, Continuous | value_type : {methods = "all", ignore = list of strs} | required = yes
+            "Binary" = {"methods" = "all", ignore = ["huber regressor", "lassocv", "ridgecv", "theil regressor"]}
+            "Continuous" = {"methods" = "all", "ignore" = ["logistic regressor", "huber regressor", "lassocv", "ridgecv", "theil regressor"]}
+            "Ordered Categorical" = {"methods" = "all", "ignore" = ["logistic regressor", "huber regressor", "lassocv", "ridgecv", "theil regressor"]}
+    [pipeline.evaluation]
+            # key(s): mode | value_type : enums | required = no, default accuracy | Acceptable values are ["accuracy", "hyperparameter_tuning"]
+            mode = "hyperparameter_tuning"
+    [pipeline.postprocessing]
+            # key(s) : truncate_predictions | value_type : boolean | required = yes
+            truncate_predictions = true
+[execution]
+    # key(s) : parallel | value_type : boolean | required = yes
+    parallel = true
+    # key(s) : batch_size_multiplier | value_type : int | required = no (default = 8)
+    batch_size_multiplier = 8
+[results]
+    # key(s) : database_name | value_type : str | required = yes
+    database_name = "y15outcomes_and_scales_monkeys_v028"
+    # key(s) : database_type | value_type : str | required = yes |  possible options are mongo (production) and inmemory (testing)
+    database_type = "mongo"
+    # key(s) : database_delete_before_run | value_type : boolean | required = yes
+    database_delete_before_run = true

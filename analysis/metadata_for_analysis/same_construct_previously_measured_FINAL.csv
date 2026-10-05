@@ -1,0 +1,1570 @@
+﻿outcome_name,varlab,qtext,varlabs_for_q_group,Was the same construct measured at an earlier wave (prior to dropping features based on non-modal value threshold)?,Notes
+cp6adult,Constructed - PCG household number of adults (>=18),NA,"cf1adult: Constructed - # of adults 18 or older in the HH
+cm4adult: Constructed - Number of adults 18 or over in household
+cf4adult: Constructed - Number of adults 18 or over in household
+cm3adult: Constructed - Number of adults 18 or over in household
+cf5adult: Number of adults (18+) in father's household. Includes father.
+cf3adult: Constructed - Number of adults 18 or over in household
+cm1adult: Constructed - # of adults 18 or older in the HH
+cm5adult: Number of adults (18+) in mother's hh -Includes mother
+cf2adult: Constructed - # of adults in HH
+cm2adult: Constructed - # of adults in HH",Yes,
+cp6kids,Constructed - PCG household number of children (<18),NA,"cf5kids: Number of children (<18) in father's household. Includes focal child (if focal l
+cf2kids: Constructed - # of children in HH
+cm2kids: Constructed - # of children in HH
+cm3kids: Constructed - Number of children under 18 in household
+cf4kids: Constructed - Number of children under 18 in household
+cm1kids: Constructed - # of children under 18 in HH
+cf3kids: Constructed - Number of children under 18 in household
+cm5kids: Number of children (<18) in mother's hh -Includes focal (if lives with mother)
+cf1kids: Constructed - # of children under 18 in HH
+cm4kids: Constructed - Number of children under 18 in household",Yes,
+cp6pmarb,Constructed - Biological PCG married to biological parent,NA,"cm3marf: Constructed - Is mother married to child's father at year three?
+cm1marf: Constructed - Is mother married to child's father?
+cf2marm: Constructed - Is father married to child's mother at one-year?
+cm4marf: Constructed - Is mother married to child's father at year five?
+cf3marm: Constructed - Is father married to child's mother at year three?
+cf1marm: Constructed - Is father married to child's mother?
+cm5marf: Constructed - Is mother married to child's father at year nine?
+cf4marm: Constructed - Is father married to child's mother at year five?
+cf5marm: Constructed - Is father married to child's mother at year nine?
+cm2marf: Constructed - Is mother married to child's father at one-year?",Yes,
+cp6pcohb,Constructed - Biological PCG cohabiting with biological parent (unmarried),NA,"cf2cohm: Constructed - Is father cohabiting with baby's mother?
+cf3cohm: Constructed - Father living with child's mother at year three
+cm2cohf: Constructed - Is mother cohabiting with baby's father - not including marrieds?
+cm5cohf: Constructed - Mother living with child's father at nine-year
+cf4cohm: Constructed - Father living with child's mother at five-year
+cf5cohm: Constructed - Father living with child's mother at nine-year
+cm4cohf: Constructed - Mother living with (not married) child's father at year five
+cm1cohf: Constructed - Is mother cohabiting with baby's father - not including marrieds?
+cf1cohm: Constructed - Is father cohabiting with baby's mother - not including marrieds?
+cm3cohf: Constructed - Mother living with (not married) child's father at year three",Yes,
+cp6pmarp,Constructed - Biological PCG married to new partner,NA,"cm5marp: Constructed - Mother married to partner other than father at year nine
+cf3marp: Constructed - Father married to partner other than mother at year three
+cf4marp: Constructed - Father married to partner other than mother at year five
+cm3marp: Constructed - Mother married to partner other than father at year three
+cf2marp: Constructed - Father married to partner other than mother at one-year
+cm4marp: Constructed - Mother married to partner other than father at year five
+cf5marp: Constructed - Father married to partner other than mother at year nine
+cm2marp: Constructed - Mother married to partner other than father at one-year",Yes,"At first I thought ""new partner"" meant ""different than last wave"" rather than just ""different than bio father""; I didn't find any previous variables about a ""new partner."" However, after reading the codebook and original survey, I think this wave 6 variable actually means ""different than bio father"", not necessarily ""new since past wave."" Looking at the responses for this and related variables likewise suggests this means ""different than bio father."""
+cp6pcohp,Constructed - Biological PCG cohabiting with new partner (unmarried),NA,"cm2cohp: Constructed - Mother cohabiting with partner other than father at one-year
+cm3cohp: Constructed - Mother cohabiting with partner other than father at year three
+cm4cohp: Constructed - Mother cohabiting with partner other than father at year five
+cf2cohp: Constructed - Father cohabiting with partner other than mother at one-year
+cf4cohp: Constructed - Father cohabiting with partner other than mother at year five
+cf5cohp: Constructed - Father cohabiting with partner other than mother at year nine
+cm5cohp: Constructed - Mother cohabiting with partner other than father at year nine
+cf3cohp: Constructed - Father cohabiting with partner other than mother at year three",Yes,"At first I thought ""new partner"" meant ""different than last wave"" rather than just ""different than bio father""; I didn't find any previous variables about a ""new partner."" However, after reading the codebook and original survey, I think this wave 6 variable actually means ""different than bio father"", not necessarily ""new since past wave."" "
+cp6hhsize,Num. of people in household - Includes PCG and Focal Child,NA,"cf5hhsize: Number of people in father's household. Includes father and focal child (if foca
+cm5hhsize: Num. of people in mother's hh -Includes mother & foc. child (if lives with mothe
+r3f11: f11 including yourself, how many people currently live in your house
+n5d3: D3. Number of people who currently live with you
+n5d2a: D2A. Number of people currently living with you",Yes,
+cp6conf2,CONF2. How much time youth lives with PCG,NA,,Yes,"See m5a2, ""Confirm how much time child lives with respondent"" (cp6conf2 has similar options, ""all or most of time,"" etc.) "
+p6b1,B1. PCG's description of youth's health,"B1.¬† In general, would you say {YOUTH}'s health is ‚Ç¨¬¶","m3b2: How is your child's health?
+m3b27: In general, how is child's health?
+m2b2: How is the child's health?
+p4a1: A1. In general, how would you describe child's health?
+f3b26: In general, how is child's health?
+m4b21: In general, how would you rate child's health?
+f4b21: In general, how is child's health?
+k5h1: H1. Condition of health in general
+m4b2: In general, how would you describe child's health?
+f2b2: How is the child's health?
+p3a1: A1. In general, how would you describe child's health?
+f4b2: In general, how is child's health?
+f3b2: How is child's health in general?
+m2b37: In general, how is your child's health?
+f2b32: In general, how is your child's health?
+p5h1: H1. Description of child's health",Yes,
+p6b2,B2. Doctor diagnosed youth with asthma,Asthma,"p3a17: A17. Doctor told that child has Asthma?
+m4b2a: Has a doctor or other health professional ever told you that child has asthma?
+f2b11: Has a health care professional ever told you child has asthma?
+m2b11: Has a health care professional ever told you child has asthma?
+p4a2_h: A2_h. Doctor told that child has Asthma?
+f4b2a: Has a doctor/health professional ever told you child has asthma?
+p5h1b: H1B. Child diagnosed with asthma by doctor or health professional",Yes,
+p6b3,B3. Doctor diagnosed youth with anemia,Anemia,"p4a2_a: A2_a. Doctor told that child has Attention Deficit Disorder ADD/ADHD?
+p4a3_e: A3_e. In past year, has child had Anemia?",Yes,"Technically ""has child had anemia"" is different than ""doctor diagnosed youth with anemia"", but the only way someone would know for certain they have anemia is via doctor diagnosis, so I am consider the questions to be the same. 
+
+See also: p5h3e, Child had anemia in last 12 months  "
+p6b4,B4. Doctor diagnosed youth with heart disease/condition,Congenital Heart Disease or other heart condition,"p4a2_g: A2_g. Doctor told that child has Congenital Heart Disease/Heart Condition?
+p5h2g: H2G. Doctor has diagnosed congenital heart disease or heart condition",Yes,
+p6b5,B5. Doctor diagnosed youth with depression/anxiety,Depression or anxiety,,No,"The closest lagged variables I see are: 
+p5h3b1_7: Child takes medication for depression/anxiety
+p5q3cv: Q3CV. Child is unhappy, sad, or depressed
+These are closely related but I don't think they are the same as a depression diagnosis. "
+p6b6,B6. Doctor diagnosed youth with diabetes,Diabetes,"m5g2a_1: G2A_1. Diabetes
+f4j2a_1: What health problem: diabetes
+p5h3j: H3J. Child had diabetes in last 12 months
+n5f2a_1: F2A_1. NPCG has diabetes
+f5g2a_1: G2A_1. Diabetes
+m4j2a_1: What is this health problem: diabetes?",Yes,
+p6b7,B7. Doctor diagnosed youth with limb problems,Problems with limbs,"p5h2m: H2M. Doctor has diagnosed problems with limbs
+m2b4g: What type of physical disability?-Problems with limbs
+p4a2_n: A2_n. Doctor told that child has Problems with limbs?
+p3a3_7: A3_7. Does child have problem with limbs?
+f2b4g: What type of physical disability?-Problems with limbs",Yes,
+p6b8,B8. Doctor diagnosed youth with seizures,Seizures,"f4j2a_5: What health problem: seizures/epilepsy
+m5g2a_5: G2A_5. Seizures/epilepsy
+f5g2a_5: G2A_5. Seizures/epilepsy
+m4j2a_5: What is this health problem: seizures/epilepsy?
+n5f2a_5: F2A_5. NPCG has seizures/epilepsy",Yes,"See p5h3h, ""Child had seizures in last 12 months"""
+p6b9,B9. Doctor diagnosed youth with other condition,Any other health condition,"n5f2a_91: F2A_91. NPCG has other health issue
+m4j2a_8: What is this health problem: other?
+f4j2a_8: What health problem: other
+m5g2a_91: G2A_91. Other (specify)
+f5g2a_91: G2A_91. Other (specify)",No,"m4j2a_8 and m5g2a_91 refer to mother's health, not youth's.
+
+The H3 section of the PCG wave 5 survey, which asks about youth's health, does not have an ""other health condition"" option. "
+p6b10,B10. Doctor diagnosed youth with ADD/ADHD,"Attention Deficit Disorder, ADD, or Attention Deficit Hyperactivity Disorder, ADHD","p5h3e: H3E. Child had anemia in last 12 months
+p5h2a: H2A. Doctor has diagnosed ADD/ADHD",Yes,
+p6b11,B11. Doctor diagnosed youth with Autism,Autism or Asperger's Syndrome,"p4a2_f: A2_f. Doctor told that child has Autism?
+p5h2f: H2F. Doctor has diagnosed autism",Yes,
+p6b12,B12. Doctor diagnosed youth with other learning disability,Any other learning disability not listed,,Yes,"Wave 6 asks only about ADD/ADHD and autism, then asked ""any other learning disability not listed"", whereas wave 5 specifically lists out other learning disabilities (in the p5h2* section), so the determination for this outcome is a gray area."
+p6b13,B13. Youth had food/digestive allergy in past year,Food or digestive allergy,"p5h3b: H3B. Child had any food or digestive allergy in last 12 months
+p4a3_b: A3_b. In past year, has child had Food or digestive allergy?",Yes,
+p6b14,B14. Youth had eczema/skin allergy in past year,Eczema or skin allergy,"p5h3c: H3C. Child had eczema or skin allergy in last 12 months
+p4a3_c: A3_c. In past year, has child had Eczema or skin allergy?",Yes,
+p6b15,B15. Youth had frequent diarrhea/colitis in past year,Frequent diarrhea or colitis,"p5h3d: H3D. Child had frequent diarrhea or colitis in last 12 months
+p4a3_d: A3_d. In past year, has child had Frequent diarrhea or colitis?",Yes,
+p6b16,B16. Youth had frequent headaches/migraines in past year,Frequent headaches or migraines,"p4a3_f: A3_f. In past year, has child had Frequent headaches or migraines?
+p5h3f: H3F. Child had frequent headaches or migraines in last 12 months",Yes,
+p6b17,B17. Youth had ear infection in past year,One or more ear infections,,Yes,See p5h3g: Child had three or more ear infections in last 12 months
+p6b18,B18. Youth had stuttering or stammering problem in past year,Stuttering or stammering,"p5h3i: H3I. Child had stuttering or stammering in past 12 months
+p4a3_i: A3_i. In past year, has child had Stuttering or stammering?",Yes,
+p6b19,B19. Youth had trouble breathing/chest problem in past year,"Trouble breathing, wheezing, or whistling in {his/her} chest",p5h1a: H1A. Wheezing or whistling in child's chest,Yes,
+p6b20,B20. Health problems limit youth's usual activities?,"B20. Do any of these health problems limit {YOUTH}'s usual activities at school, home, or work?","f4c38: Does mother have any phys/mental health conditions limits work can do?
+f3c43: Does mother have physical/mental condition limits work he can do?
+m3c43: Does father have physical/mental condition limits work he can do?
+f4e9: Does current partner have any phys/mental health condition limits work can do?
+m5b31: B31. Father has physical or mental health conditions that limit work
+m1i8: Does bio dad have physical/health condition that limits work he can do?
+m3e9: Does current partner have physical/mental health problems that limits work?
+m4e9: Does partner have phys/mental health conditions limit kind/amt work can do?
+m4c38: Father have phys/mental health condit limit the kind/amt work can do?
+f5b31x: B31X. Mother has physical/mental health conditions that limit work she can do
+m5d9: D9. Current partner has physical or mental conditions that limit work
+m2c34: Does father have physical/mental health conditions that limit work he can do?
+f5d9: D9. Current partner has physical/mental health conditions that limit work he/she
+f3e9: Does current partner have physical/mental health condition that limit work?",No,
+p6b21,B21. Days youth absent from school due to health in past year,"B21. In the last year, how many days has {YOUTH} been absent from school because of health problems?",,Yes,"See p5l11:  During the {current/last} school year, how many times has {CHILD} been absent, followed by p5l12 which asks about reasons for absences, including illness"
+p6b22,B22. Youth saw doctor for accident or injury in past year?,An accident or injury?,,Yes,"See p5h9: Number of times child saw doctor/nurse due to illness, accident, injury
+
+The wave 6 variable is binary, whereas the wave 5 variable is continuous. Also, the wave 5 variable groups injuries and illnesses together. However, I'm inclined to say this is a lagged version of the outcome. "
+p6b23,B23. Youth saw doctor for an illness in past year?,An illness?,"f2b7: Times since birth child has been to health care professional for illness?
+m2b7: Times since birth has child been to health care professional for illness?",Yes,"See p5h9: Number of times child saw doctor/nurse due to illness, accident, injury
+
+The wave 6 variable is binary, whereas the wave 5 variable is continuous. Also, the wave 5 variable groups injuries and illnesses together. I'm inclined to say this is a lagged version of the outcome."
+p6b24,B24. Youth saw doctor for regular check-up in past year?,"A regular check-up or well visit? PROBE: This is a visit to the doctor when {he/she} is not sick, but to get checked out or to get vaccinations","m2b6: Times since birth has child been to health care professional for well visit?
+p4a6: A6. In past 12M, number of times child had regular check-up
+p3a4: A4. In past 12M, number of times child had regular check-up
+p5h6: H6. Number of times child had regular check-up
+f2b6: # of times since birth child been to health care professional for well-visit?",Yes,"p5h6: H6. Number of times child had regular check-up is continous, but the outcome is binary. I would consider this a lagged measure."
+p6b25,B25. Times youth has been injured in past year,"B25. During the past 12 months, how many times has {YOUTH} been injured in any way that limited {his/her} usual activities?",,No,"There isn't a previous question about injuries limiting youth's activities. However, there are other previous questions about injuries, e.g., ""Number of times child saw doctor/nurse due to illness, accident, injury"""
+p6b26,B26. Youth takes doctor prescribed medication?,B26. Does {YOUTH} regularly take or use any medicines for which a doctor's or dentist's prescription is needed? This includes any products which cannot be obtained without a doctor's or dentist's prescription.,"m4j2b: Do you regularly take prescribed medication for health problems?
+n5f2b: F2B. Take prescribed medication for physical or mental health
+f5g2b: G2B. You regularly take prescribed medication for physical/mental health problem
+m5g2b: G2B. You regularly take prescribed medication for physical/mental health problem
+p5h3a1: H3A1. Child takes medicine where a prescription was needed
+m3j2a: Do you regularly take medication for physical or mental problems?
+f3j2a: Do you regularly take medication for physical or mental problems?
+f4j2b: Do you regularly take prescribed medication for phys/mental health problems?",Yes,
+p6b28,B28. Youth has usual place for routine health care?,"B28. Does {YOUTH} have a usual place for routine health care, such as regular check-ups?","p5h7: H7. Child has a usual place for routine health care
+p4a7: A7. Does child have a place for routine health care?
+p3a5: A5. Does child have a place for routine health care?",Yes,
+p6b30,B30. Times youth stayed overnight at hospital past year,"B30.  In the last 12 months, how many times has {YOUTH} been admitted to a hospital and stayed overnight?","p5h12: H12. Number of times child was admitted to hospital and stayed overnight
+p3a12: A12. Last 12M, how many times has child stayed overnight in a hospital?
+m2b10: Since child was born, how many times has he/she stayed overnight in hospital?
+p4a17: A17. Last 12M, how many times has child stayed overnight in a hospital?
+f2b10: Since child was born, how many times have they stayed overnight in hospital?",Yes,
+p6b31,B31. Youth covered by Medicaid/public insurance plan?,"B31. Is {YOUTH} currently covered by Medicaid or by another public, federal or state program which pays for medical care, or do you belong to a Medicaid HMO?","f5g2e: G2E. You are currently covered by any type of health insurance
+n5f2e: F2E. Covered by health insurance now
+f4j3: Are you/child covered by Medicaid/other pub asst prog/Medicaid HMO?
+m2j3: Are you/children covered by Medicaid or other assistance programs or HMO?
+f3j3: Are you/your child(ren) covered by Medicaid or any govt program?
+m4j3: Are you/child covered by Medicaid/other pub asst prog/Medicaid HMO?
+r3f16_b: f16_b do you receive any public support - medicaid/subsidized health care
+f2j3: Are you/children covered by Medicaid or another assistance pgms or HMO?
+m5g2e: G2E. You are currently covered by any type of health insurance
+m3j3: Are you/your child(ren) covered by Medicaid/any government program?
+p5h13: H13. Child covered by Medicaid or a public, federal or state program",Yes,
+p6b35,"B35. Youth is cruel, bullies, or shows meanness to others","Is cruel, bullies, or shows meanness to others","p4l7: L7. Child is cruel, bullies and shows meanness to others
+p5q3o: Q3O. Child is cruel, bullies, or shows meanness to others",Yes,
+p6b36,B36. Youth cries a lot,Cries a lot,"m4b29a4: True/not true: child cries a lot?
+f4b29a4: True/not true: child cries a lot
+p3m3a: M3a. 18 Cities - Child cries a lot
+f4b4b4: True/not true: child cries a lot?
+m4b4b4: True/not true: child cries a lot?
+p5q3m: Q3M. Child cries a lot",Yes,
+p6b37,B37. Youth destroys things belonging to family or others,Destroys things belonging to the family or others,"r3a19_e: a19_e how child behaves - destroys things belonging to family or other children
+p4l10: L10. Child destroys things belonging to family or others
+d3c15_e: c15_e how child behaves - destroys things belonging to his/her family or other c
+p3m6b: M6b. 18 Cities - Child destroys things belonging to his/her family or other
+p5q3t: Q3T. Child destroys things belonging to family or others",Yes,
+p6b38,B38. Youth is disobedient at home,Is disobedient at home,"p5q3u: Q3U. Child is disobedient at home
+p4l13: L13. Child is disobedient at school or in childcare",Yes,
+p6b39,B39. Youth is disobedient at school,Is disobedient at school,"p5q3v: Q3V. Child is disobedient at school
+m4b4b5: True/not true: child is disobedient?
+m4b29a5: True/not true: child is disobedient?
+r3a19_f: a19_f how child behaves - is disobedient
+f4b4b5: True/not true: child is disobedient?
+p4l12: L12. Child is disobedient at home
+d3c15_f: c15_f how child behaves - is disobedient
+f4b29a5: True/not true: child is disobedient
+p3m7: M7. Child is disobedient",Yes,
+p6b40,B40. Youth feels worthless or inferior,Feels worthless or inferior,"p5q3ah: Q3AH. Child feels worthless or inferior
+m4b29a18: True/not true: child feels worthless or inferior?
+f4b29a18: True/not true: child feels worthless/inferior
+f4b4b18: True/not true: child feels worthless or inferior?
+m4b4b18: True/not true: child feels worthless or inferior?",Yes,
+p6b41,B41. Youth gets in many fights,Gets in many fights,"p5q3aj: Q3AJ. Child gets in many fights
+p4l21: L21. Child gets in many fights
+d3c15_l: c15_l how child behaves - gets in many fights
+p3m18: M18. Child gets in many fights
+r3a19_l: a19_l how child behaves - gets in many fights",Yes,
+p6b42,B42. Youth physically attacks people,Physically attacks people,"d3c15_q: c15_q how child behaves - physically attacks people
+p4l33: L33. Child physically attacks people
+r3a19_q: a19_q how child behaves - physically attacks people
+p3m26a: M26A. 18 Cities - Child physically attacks people
+p5q3bc: Q3BC. Child physically attacks people",Yes,
+p6b43,"B43. Youth is stubborn, sullen, or irritable","Is stubborn, sullen, or irritable","f4b29a11: True/not true: child is stubborn, sullen, irritable
+d3c15_v: c15_v how child behaves - is stubborn, sullen, or irritable
+p3m39: M39. Child is stubborn, sullen, or irritable
+f4b4b11: True/not true: child is stubborn, sullen or irritable?
+m4b29a11: True/not true: child is stubborn, sullen, or irritable?
+m4b4b11: True/not true: child is stubborn, sullen or irritable?
+r3a19_v: a19_v how child behaves - is stubborn, sullen, or irritable
+p5q3cf: Q3CF. Child is stubborn, sullen, or irritable",Yes,
+p6b44,B44. Youth has temper tantrums or a hot temper,Has temper tantrums or a hot temper,"m4b4b13: True/not true: child has temper tantrums or a hot temper?
+r3a19_x: a19_x how child behaves - has temper tantrums or a hot temper
+f4b29a13: True/not true: child has temper tantrums/hot temper
+m4b29a13: True/not true: child has temper tantrums or hot temper?
+p3m41: M41. Child has temper tantrums or hot temper
+p5q3co: Q3CO. Child has temper tantrums or a hot temper
+t5b3j: B3J. Child has temper tantrums
+d3c15_x: c15_x how child behaves - has temper tantrums or a hot temper
+f4b4b13: True/not true: child has temper tantrums or a hot temper?",Yes,
+p6b45,B45. Youth threatens people,Threatens people,"p4l59: L59. Child threatens people
+p5q3cq: Q3CQ. Child threatens people
+t5b3c: B3C. Child threatens or bullies others",Yes,
+p6b46,"B46. Youth can't concentrate, can't pay attention for long","Can't concentrate, or can't pay attention for long","f4b4b1: True/not true: child can't concentrate, can't pay attention for long?
+m4b29a1: True/not true: child can't concentrate, can't pay attention for long?
+p5q3g: Q3G. Child can't concentrate, can't pay attention for long
+f4b29a1: True/not true: child can't concentrate/pay attention long
+p3m2a: M2a. 18 Cities - Child can't concentrate, can't pay attention for long
+m4b4b1: True/not true: child can't concentrate, can't pay attention for long?",Yes,
+p6b47,"B47. Youth can't sit still, is restless or hyperactive",Can't sit still; is restless or hyperactive,"f4b29a2: True/not true: child can't sit still/is restless/hyperactive
+m4b4b2: True/not true: child can't sit still child is restless and hyperactive?
+p3m2b: M2b. 18 Cities - Child can't sit still, is restless or hyperactive
+p5q3i: Q3I. Child can't sit still, is restless, or hyperactive
+m4b29a2: True/not true: child can't sit still, he/she is restless or hyperactive?
+f4b4b2: True/not true: child can't sit still child is restless and hyperactive?",Yes,
+p6b48,B48. Youth is impulsive or acts without thinking,Is impulsive or acts without thinking,"p5q3an: Q3AN. Child is impulsive or acts without thinking
+p4l24: L24. Child is impulsive or acts without thinking",Yes,
+p6b49,B49. Youth doesn't seem to feel guilty after misbehaving,Doesn't seem to feel guilty after misbehaving,"m4b29a7: True/not true: child doesn't seem to feel guilty after misbehaving?
+p5q3x: Q3X. Child doesn't seem to feel guilty after misbehaving
+m4b4b7: True/not true: child doesn't seem to feel guilty after misbehaving?
+m4j25b4: True/not true: I don't seem to feel guilty when I misbehave
+f4b29a7: True/not true: child doesn't seem to feel guilty after misbehaving
+f4b4b7: True/not true: child doesn't seem to feel guilty after misbehaving?
+d3c15_i: c15_i how child behaves - doesn't seem to feel guilty after misbehaving
+r3a19_i: a19_i how child behaves - doesn't seem to feel guilty after misbehaving
+f4c41d: True/not true: mother doesn't seem to feel guilty when misbehaves
+m4c41d: True/not true: father doesn't seem to feel guilty when he misbehaves?
+f4j25b4: True/not true: I don't seem to feel guilty when I misbehave
+p3m13: M13. Child doesn't seem to feel guilty after misbehaving",Yes,
+p6b50,B50. Youth hangs around with others who get in trouble,Hangs around with others who get in trouble,"p4l23: L23. Child hangs around with others who get in trouble
+p5q3al: Q3AL. Child hangs around with others who get in trouble",Yes,
+p6b51,B51. Youth lies or cheats,Lies or cheats,"p4l26: L26. Child lies or cheats
+p5q3ap: Q3AP. Child lies or cheats",Yes,
+p6b52,"B52. Youth is nervous, highstrung, or tense","Is nervous, high strung, or tense","p3m25: M25. 18 Cities - Child is nervous, high strung, or tense
+m4b29a9: True/not true: child is nervous, high strung, or tense?
+r3a19_p: a19_p how child behaves - is nervous, high strung, or tense
+p5q3aq: Q3AQ. Child is nervous, highstrung, or tense
+m4b4b9: True/not true: child is nervous, high strung, or tense?
+f4b4b9: True/not true: child is nervous, high strung, or tense?
+f4b29a9: True/not true: child is nervous, high strung, tense
+d3c15_p: c15_p how child behaves - is nervous, high strung, or tense",Yes,
+p6b53,B53. Youth is too fearful or anxious,Is too fearful or anxious,"p3m42: M42. Child is too fearful or anxious
+f4b29a14: True/not true: child is too fearful anxious
+p5q3av: Q3AV. Child is too fearful or anxious
+f4b4b14: True/not true: child is too fearful or anxious?
+m4b29a14: True/not true: child is too fearful or anxious?
+m4b4b14: True/not true: child is too fearful or anxious?",Yes,
+p6b54,B54. Youth feels too guilty,Feels too guilty,"p5q3ax: Q3AX. Child feels too guilty
+p4l29: L29. Child feels too guilty",Yes,
+p6b55,B55. Youth has trouble sleeping,Has trouble sleeping,"f4b4b8: True/not true: child has trouble getting to sleep?
+r3a19_dd: a19_dd how child behaves - has trouble getting to sleep
+f4b29a8: True/not true: child has trouble getting to sleep
+d3c15_dd: c15_dd how child behaves - has trouble getting to sleep
+m4b4b8: True/not true: child has trouble getting to sleep?
+p5q3cs: Q3CS. Child has trouble sleeping
+m4b29a8: True/not true: child has trouble getting to sleep?
+p3m18b: M18b. 18 Cities - Child has trouble getting to sleep",Yes,
+p6b56,B56. Youth clings to adults or too dependent,Clings to adults or is too dependent,"m4b29a3: True/not true: child clings to adults or is too dependent?
+m4b4b3: True/not true: child clings to adults or is too dependent?
+p5q3j: Q3J. Child clings to adults or too dependent
+f4b29a3: True/not true: child clings to adults/is too dependent
+f4b4b3: True/not true: child clings to adults or is too dependent?
+p3m3: M3. Child clings to adults or is too dependent",Yes,
+p6b57,B57. Youth is unusually loud,Unusually loud,"p3m47: M47. Child is unusually loud
+r3a19_z: a19_z how child behaves - is unusually loud
+d3c15_z: c15_z how child behaves - is unusually loud
+p5q3cw: Q3CW. Child is unusually loud
+p4l62: L62. Child is unusually loud",Yes,
+p6b58,B58. Youth talks too much,Talks too much,"p4l56: L56. Child talks too much
+p5q3cm: Q3CM. Child talks too much",Yes,
+p6b59,B59. Youth argues a lot,Argues a lot,"p4l1: L1. Child argues a lot
+p5q3c: Q3C. Child argues a lot
+k5g2b: G2B. I often argue with other kids",Yes,
+p6b60,B60. Youth runs away from home,Runs away from home,"p4l39: L39. Child runs away from home
+p5q3bm: Q3BM. Child runs away from home",Yes,
+p6b61,B61. Youth sets fires,Sets fires,"p5q3br: Q3BR. Child sets fires
+p4l44: L44. Child sets fires",Yes,
+p6b62,B62. Youth steals at home,Steals at home,"p5q3bz: Q3BZ. Child steals at home
+p4l49: L49. Child steals at home",Yes,
+p6b63,B63. Youth steals outside the home,Steals outside the home,"p5q3ca: Q3CA. Child steals outside the home
+p4l50: L50. Child steals outside the home",Yes,
+p6b64,B64. Youth swears or uses obscene language,Swears or uses obscene language,"p4l54: L54. Child swears or uses obscene language
+p5q3cj: Q3CJ. Child swears or uses obscene language",Yes,
+p6b65,"B65. Youth is underactive, slow moving, or lacks energy","Is underactive, slow moving, or lacks energy","p3m45: M45. Child is under active, slow moving, or lacks energy
+p4l61: L61. Child is underactive, slow moving, or lacks energy
+p5q3cu: Q3CU. Child is underactive, slow moving, or lacks energy",Yes,
+p6b66,"B66. Youth is unhappy, sad, or depressed","Is unhappy, sad or depressed","p5q3cv: Q3CV. Child is unhappy, sad, or depressed
+m4b29a15: True/not true: child is unhappy, sad, depressed?
+p3m46: M46. Child is unhappy, sad, depressed
+f4b29a15: True/not true: child is unhappy, sad, depressed
+m4b4b15: True/not true: child is unhappy, sad, depressed?
+f4b4b15: True/not true: child is unhappy, sad, depressed?",Yes,
+p6b67,B67. Youth vandalizes,Vandalizes,"p5q3cy: Q3CY. Child vandalizes
+p4l64: L64. Child vandalizes",Yes,
+p6b68,B68. Youth worries,Worries,"p5q3db: Q3DB. Child worries
+p4l65: L65. Child worries",Yes,
+p6b69,B69. Youth ever been stopped by police?,"B69. Has {YOUTH} ever been stopped by the police while on the street, at school, in a car, or some other place?",,No,"There are earlier questions about parents being stopped, but not about child being stopped"
+p6b70,B70. Youth ever been arrested?,B70.  Has {YOUTH} ever been arrested?,,No,"There are earlier questions about parents being arrested, but not about child being arrested"
+p6c4,C4. Number of schools youth attended since first grade,C4.¬† How many different schools has {YOUTH} attended since beginning first grade?,p5l10: L10. Number of schools child attended since first grade,Yes,
+p6c21,C21. Youth ever been suspended/expelled?,C21. Has {YOUTH} ever been suspended or expelled?,k5f1m: F1M. Been suspended or expelled from school,Yes,See p5l12g:  Child was suspended and or expelled
+p6c23,C23. Youth required to attend summer school since last int?,C23. Since {MONTH AND YEAR COHORT CITY FIELDED IN YR 9} has {YOUTH} been required by the school to attend summer school?,p5l14: L14. Child has been required by the school to attend summer school,Yes,
+p6c25,C25. Youth repeated any grades since last int?,C25. Since {MONTH AND YEAR COHORT CITY FIELDED IN YR 9} has {YOUTH} repeated any grades? *,p5l15: L15. Child has repeated any grades,Yes,
+p6c27,C27. How likely youth will graduate from college?,C27. How likely is it that {YOUTH} will graduate from college?,,No,
+p6d1,D1. Talked about current events with youth in past month,"Talk with {YOUTH} about current events, like things going on in the news?","f5k14g: K14G. In past month, you talked with child about current events
+m5k14g: K14G. In past month, you talked with child about current events
+p5i31g: I31G. Frequency father talked about current events with child in past month
+p5i1g: I1G. Frequency you talked about current events with child in past month
+p5i40g: I40G. Frequency partner talked about current events with child in past month",Yes,
+p6d2,D2. Talked about youth's day with youth in past month,Talk with {YOUTH} about {his/her} day?,"f5k14h: K14H. In past month, you talked with child about his/her day
+p5i1h: I1H. Frequency you talked about child's day with child in past month
+p5i40h: I40H. Frequency partner talked about day with child in past month
+p5i31h: I31H. Frequency father talked about day with child in past month
+m5k14h: K14H. In past month, you talked with child about his/her day",Yes,
+p6d3,D3. Made sure youth completed homework in past month,Check to make sure that {YOUTH} had completed {his/her} homework?,"p5i31i: I31I. Frequency father made sure child's homework was complete in past month
+p5i40i: I40I. Frequency partner made sure child's homework was complete in past month
+f5k14i: K14I. In past month, you checked to make sure child had completed homework
+m5k14i: K14I. In past month, you checked to make sure child had completed homework
+p5i1i: I1I. Frequency you made sure child's homework was complete in past month",Yes,
+p6d4,D4. Helped youth with homework in past month,Help {YOUTH} with homework or school assignments?,"f5k14j: K14J. In past month, you helped child with homework or school assignments
+p5i1j: I1J. Frequency you helped child with homework in past month
+m5k14j: K14J. In past month, you helped child with homework or school assignments
+p5i40j: I40J. Frequency partner helped child with homework in past month
+p5i31j: I31J. Frequency father helped child with homework in past month",Yes,
+p6d5,D5. Did activities with youth in past month,"Do activities together such as play sports or video games, or household chores such as doing dishes or preparing food?",,Yes,"It looks like p5i1a to p5i1f were combined into a single question for wave 6; see p. 53: 
+https://ffcws.princeton.edu/sites/g/files/toruqf4356/files/documents/ff_pcg_q9.pdf "
+p6d6,D6. Number of televisions in home,D6.¬† How many televisions do you have in your home?,p5i13: I13. Number of TVs in home,Yes,
+p6d8,D8. Youth has regular access to internet at home?,D8.¬† Does {YOUTH} have regular access to the internet at home?,,Yes,"See p5i17: Do you have a computer in your home?, followed by p5i18a_4: Does child use the computer to go on the internet? "
+p6d12,D12. Youth has desk or table to do homework?,D12. Does {YOUTH} have a desk or table where {he/she} can do {his/her} homework?,p5i19: I19. Child has desk or table to do homework,Yes,
+p6d13,D13. Can't hear yourself think at home,You can't hear yourself think in your home.,p5i22a: I22A. You can't hear yourself think in home,Yes,
+p6d14,D14. Home is a real zoo,It's a real zoo in your home.,p5i22b: I22B. Home is a real zoo,Yes,
+p6d15,D15. Children have regular bedtime routine,The children have a regular bedtime routine.,p5i22c: I22C. Children have a regular bedtime routine,Yes,
+p6d16,D16. Usually able to stay on top of things,You are usually able to stay on top of things.,p5i22d: I22D. You are usually able to stay on top of things,Yes,
+p6d17,D17. Atmosphere in house is calm,The atmosphere in your house is calm.,p5i22e: I22E. The atmosphere in your house is calm,Yes,
+p6d21a,D21a. Youth has friends,"D21a. ¬† How many of {YOUTH}'s close friends do you know by first and last name? [Note: This is the official qtext in the metadata, but D21a was actually an indicator for whether the youth has friends based on whether PCG provided a number; the number is provided in a different variable.]",,Yes,"The varlab and qtext don't align, so I checked the codebook. This variable is a binary indicator for whether the parent could name at least one friend, interpreted as ""youth has friends"" or ""youth does not have friends."" 
+
+A similar question was asked at wave 5: p5i23:  Number of child's close friends you know by sight, first and last name. There is a response option: ""If volunteered: he/she does not have any friends."""
+p6d24,D24. How often knows what youth does during free time?,D24. How often do you know what {YOUTH} does during {his/her} free time?¬† Would you say‚Ç¨¬¶,"k5a1a: A1A. How often PCG knows what you do during your free time
+p5i26: I26. Frequency you know what child does during free time",Yes,
+p6d25,D25. How often knows what youth spends money on?,D25. How often do you know what {YOUTH} spends {his/her} money on?,"k5a1e: A1E. How often PCG knows what you spend money on
+p5i27: I27. Frequency you know how child spends money",Yes,
+p6d26,D26. Explained why something youth did was wrong in past year,Explained to {YOUTH} why something {he/she} did was wrong?,"k5b2a: B2A. Frequency dad explained why something you did was wrong
+f5k10a: K10A. In past year, you explained to child why something he/she did was wrong
+k5b3a: B3A. Frequency social dad explained why something you did was wrong
+k5b1a: B1A. Frequency mom explained why something you did was wrong",No,"The lagged version reported by the ""same"" respondent is m5k10a, which is not in our feature set because it has the warning ""Misordered Categorical (outcomes do not have a contstant scale)"" [SIC]
+
+Note that it seems like f5k10a should have this same warning, but it doesn't. At this point I don't think we should do further metadata edits, since that would require backtracking on the search for lagged measures in the feature set. Also, I think some nonlinear models would do fine with misordered categorical features, but I think we should maintain our original decision to drop these features since changing it now would require backtracking on the search for lagged measures in the feature set, and could introduce unexpected new issues.
+
+Note that the youth made reports at wave 5 about the mom's use of various types of discipline; however, this does not meet our definition of being a lagged measure, because the respondent is different."
+p6d27,D27. Took away privileges or grounded youth in past year,Took away privileges or grounded {him/her}?,"k5b3b: B3B. Frequency social dad sent you to your room, took away privileges, or ground
+f5k10l: K10L. In past year, you took away privileges from child
+k5b1b: B1B. Frequency mom sent you to your room, took away privileges, or grounded you
+k5b2b: B2B. Frequency dad sent you to your room, took away privileges, or grounded you",No,"The lagged version reported by the ""same"" respondent is m5k10l, which is not in our feature set because it is labelled ""misordered categorical."" "
+p6d28,D28. Shouted or swore at youth in past year,"Shouted, yelled, screamed, swore or cursed at {him/her}?","f5k10h: K10H. In past year, you swore or cursed at child
+p5i33a: I33A. Frequency father shouted/screamed at child in past year
+k5b2c: B2C. Frequency dad shouted, yelled, screamed, swore or cursed at you
+k5b3c: B3C. Frequency social dad shouted, yelled, screamed, swore or cursed at you
+f5k10f: K10F. In past year, you shouted, yelled, or screamed at child
+k5b1c: B1C. Frequency mom shouted, yelled, screamed, swore or cursed at you",No,"The lagged version reported by the ""same"" respondent is m5k10f, which is not in our feature set because it is labelled ""misordered categorical."" "
+p6d29,D29. Hit or slapped youth in past year,Hit or slapped {him/her}?,"f5k10k: K10K. In past year, you slapped child on hand/arm/leg",No,"The lagged version reported by the ""same"" respondent is m5k10k, which is not in our feature set because it is labelled ""misordered categorical."" "
+p6d30,D30. Mornings during school week youth eats breakfast,D30. How many days in a typical school week does {YOUTH} eat breakfast? Do not count the weekend.,p5i28: I28. Number of mornings child eats breakfast in week,Yes,"The question changed from ""during week"" to ""during school week"" but I think it is still close enough to be considered measured at a previous wave. "
+p6d31,D31. Nights during week family eats dinner together,"D31. In a typical week, how many nights, 0 to 7, does your family eat dinner together?",p5i29: I29. Number of nights family eats dinner together,Yes,
+p6d32,D32. Being a parent is harder than I thought it would be,Being a parent or guardian is harder than I thought it would be.,"m4b6a: Agree/disagree: Being a parent is harder than I thought it would be
+m2b44a: How much do you agree/disagree-Being a parent is harder than I thought
+f2b38a: How much do you agree/disagree-Being a parent is harder than I thought
+m3b6a: Agree/disagree: being a parent is harder than I thought it would be
+f3b6a: Agree/disagree: Being a parent is harder than I thought it would be?
+f4b6a: Agree/disagree: being a parent is harder than I expected
+m4b31a: Agree/disagree: Being a parent is harder than I thought it would be
+f3b34a: Agree/disagree: Being a parent is harder than I thought it would be?
+m2b20a: How much do you agree/disagree-Being a parent is harder than I thought
+f5k2a: K2A. Being a parent is harder than I thought it would be
+f2b18a: How much do you agree/disagree-Being a parent is harder than I thought
+f4b31a: Agree/disagree: Being a parent is harder than I expected?
+m5k2a: K2A. Being a parent is harder than I thought it would be
+p5k1a: K1A. Taking care of children is harder than I thought it would be
+m3b34a: Agree/disagree: Being a parent is harder than I thought it would be",Yes,
+p6d33,D33. I feel trapped by my responsibilities as a parent,I feel trapped by my responsibilities as a parent or guardian.,"p5k1b: K1B. I feel trapped by my responsibilities as a parent
+m2b20b: How much do you agree/disagree-Feel trapped by parental responsibilities
+m4b31b: Agree/disagree: I feel trapped by my responsibilities as a parent
+f3b6b: Agree/disagree: I feel trapped by my responsibilities as a parent?
+f5k2b: K2B. I feel trapped by my responsibilities as a parent
+f4b31b: Agree/disagree: I feel trapped by my responsibilities as a parent?
+m3b34b: Agree/disagree: I feel trapped by my responsibilities as a parent
+m2b44b: How much do you agree/disagree-Feel trapped by personal responsibilities
+f2b38b: How much do you agree/disagree-Feel trapped by personal responsibilities
+p4f1c: F1c. You feel trapped by your responsibilities as a parent
+f2b18b: How much do you agree/disagree-Feel trapped by parental responsibilities
+p3g1c: G1c. You feel trapped by your responsibilities as a parent
+m5k2b: K2B. I feel trapped by my responsibilities as a parent
+f3b34b: Agree/disagree: I feel trapped by my responsibilities as a parent?
+m4b6b: Agree/disagree: I feel trapped by my responsibilities as a parent
+f4b6b: Agree/disagree: I feel trapped by my responsibilities as a parent
+m3b6b: Agree/disagree: I feel trapped by my responsibilities as a parent",Yes,
+p6d34,D34. Taking care of children is more work than pleasure,I find that taking care of my child(ren) is much more work than pleasure.,"f2b18c: Taking care of children is more work than pleasure
+f3b34c: Agree/disagree: Taking care of my children is more work than pleasure?
+m2b44c: How much do you agree/disagree-Taking care of children more work than pleasure
+m4b31c: Agree/disagree: Taking care of my children is much more work than pleasure
+m4b6c: Agree/disagree: Taking care of my child(ren) is much more work than pleasure
+f5k2c: K2C. Taking care of my child is much more work than pleasure
+f3b6c: Agree/disagree: Taking care of  child more work than pleasure?
+m3b34c: Agree/disagree: Taking care of my children is more work than pleasure
+m3b6c: Agree/disagree: taking care of my child(ren) is more work than pleasure
+p5k1c: K1C. I find taking care of my child is much more work than pleasure
+m5k2c: K2C. Taking care of my child is much more work than pleasure
+f4b31c: Agree/disagree: I find taking care of my children more work than pleasure?
+m2b20c: How much do you agree/disagree-Taking care of children more work than pleasure
+f2b38c: How much do you agree/disagree-Taking care of children more work than pleasure
+f4b6c: Agree/disagree: I find taking care of my children more work than pleasure",Yes,
+p6d35,D35. I feel tired/worn out/exhausted from raising a family,"I often feel tired, worn out, or exhausted from raising a family.","f4b6d: Agree/disagree: I often feel tired/worn out/exhausted from raising a family
+m5k2d: K2D. I often feel tired, worn out, exhausted from raising a family
+f5k2d: K2D. I often feel tired, worn out, exhausted from raising a family
+m4b6d: Agree/disagree: I often feel tired/worn out/exhausted from raising a family
+m4b31d: Agree/disagree: I often feel tired/worn out/exhausted from raising a family
+m3b6d: Agree/disagree: I often feel tired/worn out from raising a family
+m3b34d: Agree/disagree: I often feel tired/worn out from raising a family
+f3b6d: Agree/disagree: I often feel tired/worn out from raising a family?
+f2b38d: How much do you agree/disagree-Often feel tired and worn out from raising family
+m2b44d: How much do you agree/disagree-Often feel tired and worn out from raising family
+f3b34d: Agree/disagree: I often feel tired, worn out from raising a family?
+f2b18d: How much do you agree/disagree-Often feel tired/worn out from raising family
+m2b20d: How much do you agree/disagree-Often feel tired and worn out from raising family
+f4b31d: Agree/disagree: I often feel tired/exhausted from raising a family?
+p5k1d: K1D. I often feel tired, worn out, or exhausted from raising a family",Yes,
+p6d36,D36. Rating of self as parent/guardian,"D36. First, please think about how you feel about yourself as a parent/guardian to {YOUTH}. Would you say you are‚Ç¨¬¶","f4b1: What kind of father do you think you are?
+f4b20a: What kind of father do you think you are?
+m3b1: How do you feel about yourself as a mother to child?
+f5k1: K1. How you feel about yourself as a father
+f3b25: How do you feel about yourself as a father to child?
+p5k1e: K1E. Rating of self as Caregiver/Parent
+m4b1: As a mother to (child), what kind of mother would you say you are?
+f3b1: How do you feel about yourself as a father to child?
+m5k1: K1. How you feel about yourself as a mother
+m4b20a: What kind of mother would you say you are?
+m3b26: How do you feel about yourself as a mother to child?",Yes,
+p6d37,D37. How close do you feel to youth?,D37. How close do you feel to {YOUTH}? Would you say‚Ç¨¬¶,"p5k1f: K1F. Rating of closeness felt with child
+k5a4e: A4E. How close you feel to social dad
+k5a2e: A2E. How close you feel to your mom
+f5k2: K2. How close you feel to child
+m5k2: K2. How close you feel to child
+k5a3e: A3E. How close you feel to your dad",Yes,
+p6d38,D38. Talked to youth about sex or birth control?,"About sex or birth control? Would you say not at all, somewhat, a moderate amount, or a great deal?",,No,
+p6d39,D39. Talked to youth about drugs or alcohol?,About drugs or alcohol?,,No,
+p6e30,E30. Number of biological children in household (youth excluded),"E30. {Not including {YOUTH}, how/How} many of your biological children under 18 are living with you?",,Yes,"The series of questions m5a5d* ask the relationship of every household member; thus, the number of bio children in household was collected, but it's not in a single variable, so this is a gray area. 
+
+See also: 
+m5a8: Confirm number of biological children.
+M5a8a2: Correct the number of biological children living with you or elsewhere.
+M5a63: A6E. Biological children who do not live with you all live in same place
+Cm5kids: Number of children (<18) in mother's hh -Includes focal (if lives with mother)
+m5a6a: Number of biological children living apart from you"
+p6e31,E31. Number of non-biological children in household (partners' excluded),"E31. {Other than {CURRENT PARTNER}'s children, how/How} many non-biological children under 18 are living with you?",,Yes,"The series of questions m5a5d* ask the relationship of every household member; thus, the number of NON-bio children in household was collected, but it's not in a single variable. 
+
+See also: 
+m5a8: Confirm number of biological children.
+M5a8a2: Correct the number of biological children living with you or elsewhere.
+M5a63: A6E. Biological children who do not live with you all live in same place
+Cm5kids: Number of children (<18) in mother's hh -Includes focal (if lives with mother)"
+p6h1,H1. PCG's description of satisfaction with own life,"H1.¬† My next question is about how satisfied you are with your life overall. In general, would you say you are ‚Ç¨¬¶","m4j0: In general, how satisfied are you with your life overall?
+m5g0: G0. How satisfied you are with your life overall
+f3j0a: Overall, how satisfied are you with your life?
+f4j0: In general, how satisfied are you with your life overall?
+n5f0: F0. Satisfaction with life overall
+m3j0a: Overall, how satisfied are you with your life?
+f5g0: G0. How satisfied you are with your life overall",Yes,
+p6h2,H2. PCG's description of own health in past year,"H2.¬† Now I'd like to ask you some questions about your health and how you've been feeling in the past twelve months. In general, how is your health?¬† Would you say it is . . .","m4j1: In general, how is your health?
+f1g1: How is your health?
+m5g1: G1. Your health status in general
+f5g1: G1. Your health status in general
+f4j1: In general, how is your health?
+f3j1: In general, how is your health?
+m1g1: How is your health?
+m2j1: In general, how is your health?
+f2j1: In general, how is your health?
+m3j1: In general, how is your health?",Yes,
+p6h3,H3. Have serious health problem that limits work?,H3.¬† Do you have a serious health problem that limits the amount or kind of work you can do?,"f2j2: Do you have a serious health problem that limits the work you can do?
+f3j2: Do you have any serious health problem that limits the work you can do?
+f4j2: Do you have serious health problem limits amt/kind work you can do?
+m5g2: G2. You have a serious health problem that limits the work you can do
+m3j2: Do you have any serious health problem that limits the work you can do?
+m4j2: Do you have serious health problem limits amt/kind work you can do?
+m2j2: Do you have a serious health problem that limits the work you can do?
+f5g2: G2. You have a serious health problem that limits the work you can do
+n5f2: F2. Serious health problem limiting amount or kind of work",Yes,
+p6h5,H5. PCG covered by any health insurance?,"H5.¬† Are you currently covered by any type of health insurance, including private insurance, Medicaid, or another public, federal or state assistance program which pays for medical care, or do you belong to a Medicaid HMO?",,Yes,See m5g2e: You are currently covered by any type of health insurance
+p6h37,H37. Felt worried/anxious for one month or longer in past year?,"H37. During the past 12 months, did you have a period lasting one month or longer when most of the time you felt worried, tense, or anxious?","f3j20: In past 12 months, did you feel worried/tense/anxious for a month or more?
+f5g25: G25. Ever had a period of 1 mo. or more when most of time you felt worried/anxio
+m4c44b: In past year, father have period of 1 mo plus when felt worried/tense/anxious?
+m2j16: During past year, was there a month or longer period when you felt tense/anxious
+f4c44b: During past year, did mother have period 1 mo+ when worried/anxious most time
+m4c44a: Since ch's birth, father had period 1 mo plus when felt worried/tense/anxious?
+f2j16: During past year, was there a 1+ mth period when you felt tense/anxious?
+m5g25: G25. Ever had a period of 1 mo. or more when most of time you felt worried/anxio
+f4c44a: Since child's birth, has mother had period 1 mo+ when worried/tense/anxious?
+m3j18: In past year, did you feel worried/tense/anxious for a month or more?",Yes,
+p6h74,H74. Ever regularly smoked cigarettes?,H74. Have you ever smoked cigarettes regularly?,,No,"At waves 2, 3, 4, and 5, mother or PCG was asked if she smoked cigarettes in the past month (m2j5, p3a23a, m4j18, m5g17). However, some mothers might have smoked regularly at earlier points in their lives, and that would not be reflected in the responses from earlier waves, so I don't think these should count as a previous measure of the same question. "
+p6h78,H78. Number of other people in household who smoke,H78. How many {other} people in your household smoke?,"p4a23: A23. Counting yourself, how many people in your household smoke?
+p3a23: A23. Counting yourself, how many people in your household smoke?
+p5h15b: H15B. Number of other people in household who smoke",Yes,
+p6h79a,H79a. Ever drank an alcoholic beverage,H79A. Think about the first time you had a drink of an alcoholic beverage. How old were you the first time you had an alcoholic beverage? Please do not include any time when you only had a sip or two from a drink.,,No,"At past waves, mother is asked about about drinking at various ways and at various times, but is not asked whether she ""ever"" drank. 
+
+The outcome's variable label is misleading. The data recorded for this variable is binary, 1 = Drank an alcoholic beverage; 2 = Never drank. ""How old were you"" is recorded in a different variable, p6h79. "
+p6h86,H86. Ever used illegal drugs in past year?,"H86. In the past 12 months, have you ever used any illegal drugs, such as marijuana, cocaine, heroin, or methamphetamines?","f4j22k: In the past year, how often did you use any of those drugs?
+f3j44k: In past year, how often used those drugs?
+m3j36k: In past year, how often did you use drugs?
+m5g21k: G21K. Frequency you used those drugs in past 12 months
+m4j22k: In the past year, how often did you use any of those drugs?
+f5g21k: G21K. Frequency you used those drugs in past 12 months",Yes,"In previous waves, mother was asked about each type of drug individually. Since these can be combined to answer the same question, I am considering this ""previously measured."""
+p6h94,H94. Used prescription drugs (not prescribed) in past year?,"H94. In the past 12 months, have you ever used any prescription drugs, such as Adderall, OxyContin, Xanax, or Lithium that were not prescribed for you or that you took only for the experience or feeling they caused?",,Yes,"In previous waves, mother was asked about each type of drug individually. "
+p6h102,H102. Spent time in jail since last int?,"H102. ¬† Since {MONTH AND YEAR COHORT CITY FIELDED IN YR 9}, have you spent any time in an adult correctional institution like a county, state or federal jail or prison? *","f3c42: Has mother ever spent any time in jail?
+f3i31: Did you ever spend any time in an adult correctional institution?
+m4c37: Has father spent any time in jail in the past two years?
+f5b24x: B24X. Mother has spent time in jail since last interview or in past 4 years
+m5f28b: F28B. You have ever spent time in a correctional institution
+f3i31a1: INT CHK: HAS RESPONDENT SERVED TIME IN A JUVENILE OR ADULT INSTITUTION?
+m3i31: Did you ever spend any time in an adult correctional institution?
+f2h24: Did you spend any time in adult correctional facilities?
+f5d23: D23. Current partner spent any time in jail or prison
+f2h22: Have you ever spent time in correctional institution?
+m5d23: D23. Current partner has spent time in jail/prison
+m3c42: Has father ever spent any time in jail or prison?
+m3i31a1: INT CHK: HAS RESPONDENT SERVED TIME IN A JUVENILE OR ADULT INSTITUTION?
+f5f28e: F28E. You spent time in an adult correctional institution
+m5f28e: F28E. You spent time in an adult correctional institution
+m3i29: Have you ever spent time in a correctional institution?",Yes ,"Previous waves asked if mother had ever spent time in an adult correctional institution, which is different than asking whether she has done so since the past interview, but I think this is reasable to consider as a lagged measure. "
+p6i1,I1. Number of families on block known well,I1.¬† How many of the families on your block would you say that you know well?¬† Would you say you know‚Ç¨¬¶,"f4i0l: How many of the families on your block would you say that you know well?
+p5m1: M1. Number of families on block know well
+m4i0l: How many of the families on your block would you say that you know well?",Yes,
+p6i2,I2. Neighbors would get involved if children skip school and hang out on street,"If children were skipping school and hanging out on the street. Would you say it is very likely they would do something or get involved, somewhat likely, not very likely, or very unlikely?","p5m2a: M2A. Neighbors get involved if skipping school
+p3k1a: K1a. Neighbors intervene if children were skipping school/hanging out on street?
+m4i0m1: Likely neighbors intervene if children skipping school & hanging on st.?
+f4i0m1: Likely neighbors intervene if children skipping school & hanging on st.?",Yes,
+p6i3,I3. Neighbors would get involved if children spray paint buildings with graffiti,If children were spray painting buildings with graffiti,"p5m2b: M2B. Neighbors get involved if spray painting buildings
+f4i0m2: Likely neighbors intervene if children spray painting buildings w/graffiti?
+p3k1b: K1b. Neighbors intervene if children were spray-painting graffiti on building?
+r3b43_a: b43_a neigborhood likely act on - children spray-painting/graffiti
+d3a36_a: a36_a neighborhood act - spray-painting graffiti
+m4i0m2: Likely neighbors intervene if children spray painting buildings w/graffiti?",Yes,
+p6i4,I4. Neighbors would get involved if children show disrespect to an adult,If children were showing disrespect to an adult.,"p3k1c: K1c. Neighbors intervene if children were showing disrespect to an adult?
+m4i0m3: How likely neighbors intervene if children showing disrespect to an adult?
+f4i0m3: How likely neighbors intervene if children showing disrespect to an adult?
+r3b43_c: b43_c neigborhood likely act on - child showing disrespect
+p5m2c: M2C. Neighbors get involved if disrespect adult
+d3a36_c: a36_c neighborhood act - showing disrespect to an adult",Yes,
+p6i5,I5. Neighbors would get involved if fight broke out in front of house/building,If a fight broke out in front of the house or building.,"r3b43_b: b43_b neigborhood likely act on - fight in front of house
+p3k1d: K1d. Neighbors intervene if a fight broke out in front of their house?
+p5m2d: M2D. Neighbors get involved if fight broke out in front of house
+m4i0m4: How likely neighbors intervene if fight broke out in front of the house?
+d3a36_b: a36_b neighborhood act - being beaten or threatened
+f4i0m4: How likely neighbors intervene if fight broke out in front of the house?",Yes,
+p6i6,I6. Neighbors would get involved if fire station was threatened and budget cut,If the fire station closest to the neighborhood was threatened and its budget was cut.,"p3k1e: K1e. Neighbors intervene if budget cuts on closest fire station?
+r3b43_d: b43_d neigborhood likely act on - budget cuts on local fire station
+m4i0m5: Likely neighbors intervene if neighborhood fire station threatened/budget cut?
+p5m2e: M2E. Neighbors get involved if fire station budget cut
+f4i0m5: Likely neighbors intervene if neighborhood fire station threatened/budget cut?
+d3a36_d: a36_d neighborhood act - budget cuts on closest fire station closest",Yes,
+p6i7,I7. People around here are willing to help their neighbors,People around here are willing to help their neighbors.,"f4i0n1: Agree/disagree: people around here are willing to help their neighbors
+p5m3a: M3A. Amount agree people willing to help their neighbors
+p3k2a: K2a. People around here are willing to help their neighbors
+m4i0n1: Agree/disagree: People around here are willing to help their neighbors",Yes,
+p6i8,I8. This is a close-knit neighborhood,This is a close-knit neighborhood.,"p5m3b: M3B. Amount agree close knit neighborhood
+f4i0n2: Agree/disagree: this is a close-knit neighborhood
+m4i0n2: Agree/disagree: This is a close-knit neighborhood
+p3k2b: K2b. This is a close-knit neighborhood",Yes,
+p6i9,I9. People in this neighborhood generally don't get along with each other,People in this neighborhood generally don't get along with each other,"p5m3c: M3C. Amount agree people in neighborhood do not get along
+m4i0n3: Agree/disagree: People in neighborhood generally don't get along with each other
+f4i0n3: Agree/disagree: people generally don't get along with each other
+p3k2d: K2d. People in this neighborhood generally don't get along with each other",Yes,
+p6i10,I10. People in this neighborhood do not share the same values,People in this neighborhood do not share the same values.,"m4i0n4: Agree/disagree: People in this neighborhood do not share the same values
+p3k2e: K2e. People in this neighborhood do not share the same values
+f4i0n4: Agree/disagree: people in this neighborhood do not share the same values
+p5m3d: M3D. Amount agree people in neighborhood do not share values",Yes,
+p6i11,I11. Gangs are a problem in this neighborhood,Gangs are a problem in this neighborhood,"f4i0n5: Agree/disagree: gangs are a problem in this neighborhood
+p5m3e: M3E. Amount agree gangs are problem in neighborhood
+m4i0n5: Agree/disagree: Gangs are a problem in this neighborhood",Yes,
+p6i12,I12. Afraid to let youth outside because of neighborhood violence?,I12.¬† Have you ever been afraid to let {YOUTH} go outside because of violence in your neighborhood?,p5m4: M4. Afraid to let child go outside because of violence in neighborhood,Yes,
+p6i13,"I13. Frequency saw person get hit, slapped, punched in past year","In the past year, about how many times did you see someone else get hit, slapped, punched, or beaten up by someone?","p3l1: L1. Past year, times saw someone get hit, slapped, punched, or beaten up
+p5m5a: M5A. In past year how often did you see person get hit, slapped, punched
+p4h1: H1. Past year, times saw someone get hit, slapped, punched, or beaten up",Yes,
+p6i14,I14. Frequency saw person attacked with weapon in past year,"[In the past year, about how many times did you] see someone else get attacked by someone with a weapon like a knife or bat?","p5m5b: M5B. In past year how often did you see person attacked with weapon
+p4h3: H3. Past year, times saw someone else get attacked with a weapon
+p3l3: L3. Past year, times saw someone else get attacked with a weapon",Yes,
+p6i15,I15. Frequency saw person shot at in past year,"[In the past year, about how many times did you] see someone else get shot at by someone?","p3l5: L5. Past year, times saw someone get shot at by someone else
+p5m5c: M5C. In past year how often did you see person shot
+p4h5: H5. Past year, times saw someone get shot by someone else",Yes,
+p6i19,I19. Received financial help or money from anyone in past year?,"I19.¬† In the past twelve months, have you received any financial help or money from anyone {other than {BIOFATHER/BIOMOTHER}}?¬† Please include your relatives and friends, {and [his/her] relatives and friends,} but don't include help from any government or private agency.","f2g7: Since birth have you received financial support from anyone other than mother?
+f4h2: In past yr, have you received financial help from anyone other than mother/agenc
+m5e2: E2. Financial help or money from anyone other than father
+f1e6a: During bio mom's preg did you receive any financial supp.?
+f5e2: E2. Received any financial help from anyone in past 12 months
+m4h2: Have you received financial help from anyone other than father?
+m3h2: Have you received financial help from anyone other than father?
+m1e3a: During your preg, did you receive financial supp. from anyone besides bio dad?
+m2g5: Have you received any financial support from other than father since birth?
+f3h2: In past year, have you received financial help from anyone other than mother?",Yes,
+p6i23,I23. Could count on someone to loan $200 during next year?,"I23.¬† Next, I want to ask you about help you could get during this next year if you needed it. If you needed help during the next year, could you count on someone to loan you $200?","m1e4a: Next yr, would someone in family loan you $200?
+m5e3: E3. Mother could count on someone to loan her $200 during the next year
+f1e7a: During next year, would someone in your fam. loan you $200?
+f2g8a: In the next year, could you count on someone to loan you $200?
+m3h3: If you needed help in next year, could you count on someone to loan $200?
+f4h3: If you needed loan for $200 in next yr, could you count on someone for help?
+m4h3: If needed help during next yr, could you count on someone to loan you $200?
+f3h3: If you needed help in next year, could you count on someone to loan you $200?
+m2g6a: Could you count on someone to loan $200 in the next year?
+f5e3: E3. Father could count on someone to loan him $200 during the next year",Yes,
+p6i25,I25. Could count on someone to provide place to live?,I25.¬† Is there someone you could count on to provide you with a place to live?,"f1e7b: During next year, would someone in your fam. provide you a place to live?
+f5e4: E4. Father could count on someone to provide him with a place to live
+f3h4: Is there someone you could count on to provide you with place to live?
+m2g6b: Could you count on someone to provide a place to live in the next year?
+m4h4: Is there someone you could count on to provide you with a place to live?
+m3h4: Is there someone you could count on to provide you with a place to live?
+m5e4: E4. Mother could count on someone to provide her with a place to live
+m1e4b: Next yr, would someone in family give place to live?
+f2g8b: In the next year, could you count on someone to provide you w/a place to live?
+f4h4: Is there someone you could count on to provide you with a place to live?",Yes,
+p6i26,I26. Could count on someone to help with emergency child care?,I26.¬† Is there someone you could count on to help you with emergency child care?,"f2g8c: In the next year, could you count on someone to help w/emergency child care?
+m3h5: Is there someone you could count on to provide you with emergency child care?
+f3h5: Is there someone you could count on to provide you with emergency child care?
+m2g6c: Could you count on someone to help w/emergency child care?",Yes,
+p6i27,I27. Could count on someone to co-sign a bank loan for $1000?,"I27.¬† Is there someone you could count on to co-sign for a bank loan with you for $1,000?","f3h6: Is there someone to co-sign for a bank loan with you for $1,000?
+f5e6: E6. Father could count on someone to co-sign for a bank loan for $1000
+f2g8d: In the next year, could you count on someone to co-sign a $1000 bank loan w/you?
+m2g6d: Could you count on someone to co-sign for a loan for $1000?
+m4h6: Is there someone to co-sign for a bank loan with you for $1,000?
+m5e6: E6. Mother could count on someone to co-sign for a bank loan for $1000
+m3h6: Is there someone to co-sign for a bank loan with you for $1,000?
+f4h6: Is there someone you could count on to co-sign bank loan for $1000?",Yes,
+p6i29,I29. Someone who would pay for youth's activities if unable to afford?,"I29.¬† If {YOUTH} wanted to take lessons, join a sport, or do some other extracurricular activity that you couldn't afford, is there someone who would pay for this?","f5e6b: E6B. Someone would pay for child's extracurricular activities father can't affor
+m5e6b: E6B. Someone would pay for child's extracurricular activities mother can't affor",Yes,
+p6i30,I30. Special person you feel close with and can depend on?,I30.¬† The next question is about emotional support you may get from friends and family {but not including {BIOFATHER/BIOMOTHER}}. Is there any special person you know that you feel very close with ‚Ç¨‚Äú someone you share confidences and feelings with; someone you can depend on?,"m5e7: E7. Any special person mother feels close with and can depend on
+m4i0k: Anyone you know you feel very close with/share confidences/feelings/depend on?
+f4i0k: Anyone you know you feel very close with/share confidences/feelings/depend on?
+f5e7: E7. Any special person father feels close with and can depend on",Yes,
+p6i31,I31. My religious faith is an important guide for my daily life,"I31.¬† Now I'd like to ask you about your religious beliefs and practices. Please tell me if you strongly agree, somewhat agree, somewhat disagree or strongly disagree with the following statement. ¬†My religious faith is an important guide for my daily life.","f5h1: H1. My religious faith is an important guide for my daily life
+f4r1: Agree/disagree? - My religious faith is an important guide for my daily life
+m5h1: H1. My religious faith is an important guide for my daily life
+m4r1: Agree/disagree: My religious faith is an important guide for my daily life",Yes,
+p6i32,I32. How often you attend religious services?,I32.¬† How often do you attend religious services?¬† Do you attend services . . .,"m4r2: How often do you attend religious services?
+m1f6: About how often do you attend religious services?
+m5h2: H2. Frequency you attend religious services
+f1f6: About how often do you attend religious services?
+f5h2: H2. Frequency you attend religious services
+f3r10: How often do you attend religious services?
+m3r10: How often do you attend religious services?",Yes,
+p6i33,I33. Had transforming religious experience since last int?,"I33.¬† Since {MONTH AND YEAR COHORT CITY FIELDED IN YR 9}, have you had any religious experiences that transformed your life? *","m3r11: Since child's birth, had any religious experience that transformed your life?
+f3r11: Since child's birth, have you had any life transforming religious experiences?
+f4r3: In last 2 yrs, you had religious experiences that transformed your life?
+m5h3: H3. You had a religious experience that transformed your life since last intervi
+m4r3: In last 2 yrs, you had religious experiences that transformed your life?
+f5h3: H3. You had a religious experience that transformed your life since last intervi",Yes,
+p6j1,J1. Moved since last int?,J1.¬† Have you moved since {MONTH AND YEAR COHORT CITY FIELDED IN YR 9}? *,"f3i1: Have you moved since your child's first birthday?
+m3i1: Have you moved since your child's first birthday?
+m4i1: Have you moved in the last two years?
+m5f1: F1. Mother has moved in the last four years
+f2h1: Have you moved since child was born?
+m2h1: Have you moved since child was born?
+f4i1: Have you moved in the last two years?
+f5f1: F1. Moved in last 4 yrs/since last interview",Yes,
+p6j16,J16. Others moved in because of financial problems in past year?,"J16.¬† In the past 12 months, have other people moved in with you even for a little while because of financial problems?",,No,"Prior waves ask if they moved in with others, but not if others moved in with them"
+p6j18,J18. Received household income from welfare/TANF in past year?,"J18.¬† In the past twelve months, have you or anyone else in the household received income from Welfare or TANF or General Assistance?",,Yes,See m5f8a1
+p6j21,J21. Received household income from UI/WC in past year?,"J21.¬† In the past twelve months, have you or anyone else in the household received income from Unemployment Insurance or Workers Compensation?",,Yes,"See m5f8a3: ""Other assistance such as Unemployment Insurance, or Worker’s Compensation?"" The wording is slightly different but I think it's close enough to be considered a lagged measure. "
+p6j24,J24. Received household income from food stamps/SNAP in past year?,"J24.¬† In the past twelve months, have you or anyone else in the household received income from SNAP, formerly known as Food Stamps, or EBT (Electronic Benefits Transfer)?","m2h17: Int Chk: Has respondent received food stamps in the past year?
+m3i19: Has respondent received food stamps in past year?
+f2h15: Int Chk: Has respondent received food stamps in the past year?
+f3i8a2: In the past 12 months, have you received help from food stamps?
+m3i8a2: In the past year, received help from Food Stamps?
+m5f8a2: F8A2. Received income from food stamps/EBT in last 12 months
+f5f8a2: F8A2. Received income from food stamps/EBT in last 12 months
+f3i19: HAS RESPONDENT RECEIVED FOOD STAMPS IN PAST 12 MONTHS?
+f4i19: INT CHK: DID FATHER RECEIVE FOOD STAMPS IN past year?
+m2h9a2: In past year, have you received help from food stamps?
+f4i8a2: In the past year, have you received income from food stamps?
+m4i19: Did mother receive food stamps in the past year?
+m4i8a2: In the past year, have you received income from food stamps?
+f2h8a2: In past year, have you received help from food stamps?",Yes,
+p6j27,J27. Received household income from SSI/SSDI in past year?,"J27.¬† In the past twelve months, have you or anyone else in the household received income from Supplemental Security Income, SSI or Social Security Disability Insurance, SSDI?","f2h10: Do you or child receive SSI?
+f4i18d: Have you or child received Supplemental Security Income in the past year?
+m3i14: Do you or child receive Supplemental Security Income (SSI)?
+m2h12: Do you or child receive SSI?
+f3i14: Do you or child receive Supplemental Security Income (SSI)?
+m4i18d: Have you or child received Supplemental Security Income in the past year?
+f5f18d: F18D. You or child received Supplemental Security Income in the past 12 months
+m5f18d: F18D. You or child received Supplemental Security Income in the past 12 months",Yes,
+p6j30,J30. Received household income from other cash aid in past year?,"J30.¬† In the past twelve months, have you or anyone else in the household received income from other cash aid?",,No,"I'm not sure what the most common sources of ""other cash aid"" would be; perhaps veterans benefits. Various common sources of cash aid like TANF, etc. are asked about in this wave and at prior waves, but there is not an ""other"" category like this at past waves. "
+p6j33,J33. Filed a federal tax return for previous tax year?,J33.¬† Did you file a federal tax return for {PREVIOUS TAX YEAR}?,"m5f21: F21. Filled out a federal tax return for 2005 or 2006
+f2h16c: Did you fill out a federal tax return for previous year?
+f3i21: Did you fill out a federal tax return for 1999 or 2000?
+m4i21: Did you fill out a federal tax return for 2002 or 2003?
+m2h18c: Did you fill out a federal tax return for previous full year?
+f5f21: F21. Filled out a federal tax return for 2005 or 2006
+m3i21: Did you fill out a federal tax return for 1999 or 2000?
+f4i21: Did you fill out a federal tax return for 2002 or 2003?",Yes,
+p6j34,J34. Youth gets free/reduced price school breakfast,Breakfast?,p5j4a: J4A. Child receives free or reduced price breakfast,Yes,
+p6j35,J35. Youth gets free/reduced price school lunch,Lunch?,p5j4b: J4B. Child receives free or reduced price lunch,Yes,
+p6j36,J36. Youth gets free/reduced price snacks/dinner in after school program,Snacks or dinner in an after school program?,p5j4c: J4C. Child receives free or reduced priced snacks or dinner,Yes,
+p6j37,J37. Received free food or meals in past year,"In the past twelve months, did you receive free food or meals?","f2h17a: In past year, did you-Receive free food/meals?
+f5f23a: F23A. Received free food or meals in past 12 months
+m2h19a: In past year, did you-Receive free food/meals?
+m4i23a: In past year, receive free food or meals because there wasn't enough money?
+f3i23a: In past year, did you receive free food or meals?
+m5f23a: F23A. Received free food or meals in past 12 months
+f4i23a: In past year, receive free food or meals because there wasn't enough money?
+n5g1a: G1A. Received free food or meals in past twelve months because not enough money
+m3i23a: In past year, did you receive free food or meals?",Yes,
+p6j38,J38. Hungry because could not afford food in past year,"In the past twelve months, were you ever hungry, but didn't eat because you couldn't afford enough food?","n5g1b: G1B. Was hungry but did not eat because not enough money
+p3d6: D6. Last 12M, were you ever hungry because you couldn't afford enough food?
+f4i23c: In past year, you ever hungry, but didn't eat b/c couldn't afford enough food?
+p4d12: D12. Last 12M, child(ren) ever hungry but you couldn't afford more food?
+m4i23b: In past year, child ever hungry, but you just couldn't afford more food?
+m5f23b: F23B. Were hungry but didn't eat because couldn't afford food in past 12 months
+p3d12: D12. Last 12M, child(ren) ever hungry but you couldn't afford more food?
+p4d6: D6. Last 12M, were you ever hungry because you couldn't afford enough food?
+m4i23c: In past year, ever hungry, but didn't eat b/c couldn't afford enough food
+f4i23b: In past year, child ever hungry, but you just couldn't afford more food?
+f5f23b: F23B. Were hungry but didn't eat because couldn't afford food in past 12 months",Yes,
+p6j39,J39. Did not pay rent/mortgage in full in past year,"In the past twelve months, did you ever not pay the full amount of rent or mortgage payments?","f4i23d: In past year, did not pay full amt rent/mortgage payments b/c wasn't enough
+m4i23d: In past year, did not pay full amt rent/mortgage payments b/c wasn't enough
+f3i23b: In past year, did you not pay full rent or mortgage?
+n5g1c: G1C. Rent or mortgage was not paid because not enough money
+m3i23b: In past year, did you not pay full rent or mortgage?
+f5f23c: F23C. Did not pay full amount of rent/mortgage payments in past 12 months
+m2h19d: In past year, did you-Not pay full amount of rent/mortgage?
+m5f23c: F23C. Did not pay full amount of rent/mortgage payments in past 12 months
+f2h17d: In past year, did you-Not pay full amount of rent/mortgage?",Yes,
+p6j40,J40. Evicted for not paying rent/mortgage in past year,"In the past twelve months, were you evicted from your home or apartment for not paying the rent or mortgage?","m5f23d: F23D. Were evicted from home/apartment for not paying rent in past 12 months
+m3i23c: In past year, were you evicted from home?
+f4i23e: In past year, evicted from home or apt for not paying the rent or mortgage?
+m2h19e: In past year, did you-Get evicted for not paying rent/mortgage?
+f5f23d: F23D. Were evicted from home/apartment for not paying rent in past 12 months
+f2h17e: In past year, did you-Get evicted for not paying rent/mortgage?
+f3i23c: In past year, were you evicted from home?
+n5g1d: G1D. Evicted from home or apartment for not paying rent or mortgage
+m4i23e: In past year, evicted from home or apt for not paying the rent or mortgage?",Yes,
+p6j41,J41. Did not pay utility bills in full in past year,"In the past twelve months, did you not pay the full amount of gas, oil, or electricity bill?","m5f23e: F23E. Did not pay full amount of gas/oil/electricity bill in past 12 months
+n5g1e: G1E. Gas, oil, or electricity bill was not paid because not enough money
+m2h19f: In past year, did you-Not pay full gas/oil/electric bill?
+f4i23f: In past year, not pay full amt gas/oil/electric bill b/c wasn't enough money?
+f3i23d: In past year, did you not pay full gas/oil/electricity bill?
+m3i23d: In past year, did you not pay full gas/oil/electricity bill?
+f2h17f: In past year, did you-Not pay full gas/oil/electric bill?
+f5f23e: F23E. Did not pay full amount of gas/oil/electricity bill in past 12 months
+m4i23f: In past year, not pay full amt gas/oil/electric bill b/c  not enough money",Yes,
+p6j42,J42. Utilities turned off because not enough money in past year,"In the past twelve months, was your gas or electric services ever turned off, or the heating oil company did not deliver oil, because there wasn't enough money to pay the bills?","f4i23g: In past year, electricity turned off by utility co b/c wasn't enough money?
+f3i6c: In past year, was your electricity ever turned off?
+m5f23f: F23F. Gas/electric service turned off because not enough money in past 12 months
+n5g1f: G1F. Gas or electric service ever turned off or oil not delivered
+f5f23f: F23F. Gas/electric service turned off because not enough money in past 12 months
+f2h17g: In past year, did your-Gas/electric/oil get shut-off or withheld?
+f3i6f: In past year, was service turned off by the gas/oil company?
+m4i23g: In past year, electricity turned off by utility co b/c wasn't enough money?
+m3i6c: In past year, was your electricity ever turned off?
+m2h19g: In past 12 months, did your-Gas/electric/oil get shut-off or withheld?
+m3i6f: In past year, was service ever turned off by the gas/oil company?",Yes,
+p6j43,J43. Borrowed money from friends/family to help pay bills in past year,"In the past twelve months, did you borrow money from friends or family to help pay bills?","m2h19i: In past year, did you-Borrow money from family/friends to pay bills?
+f4i23h: In past year, borrow money from friends or family to help pay bills?
+f2h17i: In past year, did you-Borrow from family/friends to pay bills?
+m4i23h: In past year, borrow money from friends or family to help pay bills?
+n5g1g: G1G. Borrowed money from friends or family to help pay bills
+m3i23e: In past year, did you borrow money from friends/family?
+f3i23e: In past year, did you borrow money from friends/family?
+f5f23g: F23G. Borrowed money from friends/family to help pay bills in past 12 months
+m5f23g: F23G. Borrowed money from friends/family to help pay bills in past 12 months",Yes,
+p6j44,J44. Moved in with other people because of financial problems in past year,"In the past twelve months, did you move in with other people even for a little while because of financial problems?","m3i23f: In past year, did you move in with other people because of financial problems?
+n5g1h: G1H. Moved in with other people because of financial problems
+m2h19j: In past year, did you-Move in w/people because of financial problems?
+f5f23h: F23H. Moved in with other people because of financial problems in past 12 months
+m5f23h: F23H. Moved in with other people because of financial problems in past 12 months
+f2h17j: In past year, did you-Move in w/people because of financial problems?
+f3i23f: In past year, did you move in with other people because financial problems?
+m4i23i: In past year, you move in w/others (even a little) b/c of financial problem
+f4i23i: In past year, you move in w/others (even a little) b/c of financial problem",Yes,
+p6j45,J45. Stayed at shelter or place not meant for housing in past year,"In the past twelve months, did you stay at a shelter, in an abandoned building, an automobile or any other place not meant for regular housing, even for one night?","m5f23i: F23I. Stayed at shelter/other place not meant for regular housing in past 12 mon
+f2h17k: In past year, did you-Stay in shelter/abandoned bdg/car for even one night?
+f4i23j: In past year, stay at shelter/abandoned bldg/car/etc b/c wasn't enough money?
+m2h19k: In past year did you stay in place not meant for regular housing?
+m4i23j: In past year, stay at shelter/abandoned bldg/car/etc b/c not enough money
+m3i23g: In past year, did you stay in shelter/car/abandoned building?
+n5g1i: G1I. Stayed at shelter, abandoned building, or in automobile
+f5f23i: F23I. Stayed at shelter/other place not meant for regular housing in past 12 mon
+f3i23g: In past year, did you stay in shelter/car/abandoned building?",Yes,
+p6j46,J46. Someone in household did not see doctor/go to hospital because of cost in p,"In the past twelve months, was there anyone in your household who needed to see a doctor or go to the hospital but couldn't go because of the cost?","f4i23k: In past year, anyone in hh needed dr/hospital b/c not enough money?
+f5f23j: F23J. Someone in hh needed to see doctor but couldn't because of cost in past 12
+n5g1j: G1J. Someone in household didn t see a doctor or go to hospital because of cost
+m3i23h: In past year, did someone not see doctor/hospital?
+f3i23h: In past year, did someone not see doctor/go to hospital because cost?
+m5f23j: F23J. Someone in hh needed to see doctor but couldn't because of cost in past 12
+m4i23k: In past year, anyone in househld needed dr/hospital but couldn't b/c cost",Yes,
+p6j47,J47. Telephone disconnected because not enough money in past year,"In the past twelve months, was your telephone service (mobile or land line) cancelled or disconnected by the telephone company because there wasn't enough money to pay the bill?","m3i6a: In past year, was telephone service ever disconnected?
+f4i23n: In past year, phone service disconnected b/c wasn't enough money?
+f5f23k: F23K. Telephone service disconnected because wasn't enough money in past 12 mont
+m5f23k: F23K. Telephone service disconnected because wasn't enough money in past 12 mont
+f2h17h: In past year, did your-Telephone service get disconnected for nonpayment?
+m2h19h: In past year, did your-Telephone service get disconnected for nonpayment?
+m4i23n: In past year, phone service disconnected b/c wasn't enough money?
+f3i6a: In the year, was your telephone service ever disconnected?",Yes,
+p6j59,J59. CPS contacted you with concerns since last int?,"J59.¬† Since {MONTH AND YEAR COHORT CITY FIELDED IN YR 9}, has Child Protective Services contacted you with concerns that any child or children in this household had been abused or neglected by a family member or someone else? *","p5q4: Q4. Has Child Protective Services contacted parent with concerns
+p4j1: J1. Has Child Protective Services contacted you about any child in household?",Yes,
+p6k1,K1. Currently attending school or training programs?,"I'd like to ask you a few questions about your education and employment. Are you currently attending any school or participating in any training programs or taking any classes? Please include regular high school, GED classes, vocational or trade school, job corps, college or other types of school as well as training programs to learn job skills.","m2k1: Are you currently attending any school/training?
+f5i1: I1. You are currently attending any school/trainings program/classes
+m3k1: Are you currently in school/training program/classes?
+m5i1: I1. You are currently attending any school/trainings program/classes
+m4k1: Are you currently attending any school, any training programs or any place?
+f4k1: Are you currently attending any school, any training programs or any classes?
+f2k2: Are you currently attending any school or training programs?
+f3k1: Are you currently in school/training program/classes?",Yes,
+p6k2,K2. Completed any training or schooling since last int?,K2.¬† Have you completed any training programs or any years of schooling since {MONTH AND YEAR COHORT CITY FIELDED IN YR 9}? *,"m4k3: Have you completed any training prog or any yrs schooling in last 2 yrs?
+f5i3: I3. Have completed training programs or years of schooling since last interview
+f2k5: Have you completed any training/schooling since child was born?
+m2k3: Have you completed any training/schooling since child was born?
+f4k3: Have you completed any training program or any yrs schooling in last 2 yrs?
+m3k3: Have you completed training programs/school since child's first birthday?
+m5i3: I3. Have completed training programs or years of schooling since last interview
+f3k3: Have you completed training since child's first birthday?",Yes,
+p6k4,K4. Taken any classes to improve job skills since last int?,"K4.¬† Since {MONTH AND YEAR COHORT CITY FIELDED IN YR 9}, have you taken any classes to improve your job skills, such as computer training or literacy classes? *","f5i3b: I3B. You have taken classes to improve job skills since last interview
+m5i3b: I3B. You have taken classes to improve job skills since last interview
+f4k3b: In the last 2 years, have you taken any classes to improve your job skills?
+m4k3b: In the last 2 years, have you taken any classes to improve your job skills?
+f3k3b: Since child's first birthday, any classes to improve job skills?
+m3k3b: Since child's 1st birthday, any classes to improve job skills?",Yes,
+p6k5,K5. Received employment counseling since last int?,"K5.¬† Since {MONTH AND YEAR COHORT CITY FIELDED IN YR 9}, have you received any kind of employment counseling? *","f3k3c: Since child's first birthday, received employment counseling?
+m3k3c: Since child's 1st birthday, received employment counseling?
+m4k3c: In the last 2 years, have you received any kind of employment counseling?
+m5i3c: I3C. You received any kind of employment counseling since last interview
+f5i3c: I3C. You received any kind of employment counseling since last interview
+f4k3c: In the last 2 years, have you received any kind of employment counseling?",Yes,
+p6k6,K6. Did any regular work for pay in last week?,"K6.¬† Now I'd like to ask you about your current work status.¬† Last week, did you do any regular work for pay?¬† Include any work you might have done in your own business or military service where you got a regular paycheck.","m3k4: Last week, did you do any regular work for pay?
+m2k5: Did you do any regular work for pay last week?
+f4k4: Last week, did you do any regular work for pay?
+m4k4: Last week, did you do any regular work for pay?
+m5i4: I4. You did regular work for pay last week
+f2k8: Did you do any regular work for pay last week?
+f1j1: Last week, did you do any regular work for pay?
+f3k4: Last week, did you do any regular work for pay?
+f5i4: I4. You did regular work for pay last week",Yes,
+p6k36,K36. Worked in own business in past year?,"K36. During the past twelve months, did you work in your own business?","f3k25a: Did you work in your own business in the past year?
+m4k24a: During the past year, did you work in your own business?
+m3k25a: Did you work in your own business in the past year?
+m5i24a: I24A. You worked in your own business during past 12 months
+f5i24a: I24A. You worked in your own business during past 12 months
+m2k18a: In the past year did you work in your own business?
+f2k23a: In the past year did you work in your own business?
+f4k24a: During the past year, did you work in your own business?
+f1j13b: Work in own business?",Yes,
+p6k50,K50. Did anything else to earn money in past year?,"K50. During the past twelve months, did you do anything else to earn money?","m5i26a: I26A. You did something else to earn money during past 12 months
+m3k27a: In past year, did you do anything else to earn money?
+f1j13d: Other activities?
+f5i26a: I26A. You did something else to earn money during past 12 months
+f4k26a: During the past year, did you do anything else to earn money?
+f3k27a: In past year, did you do anything else to earn money?
+m4k26a: During the past year, did you do anything else to earn money?
+f2k25a: In past year, did you do anything else to earn money?
+m2k20a: In past year, did you-Do anything else to earn money?",Yes,"In m5 and p6 surveys, the section starts with ""We are interested in finding out about some ways, other than regular work, in which people make money."" p5 then asks about: owning a business, drugs/prostitution/hustles, or ""anything else."" p6 asks about the same set of activities. Therefore, the ""anything else"" has the same meaning between waves. "
+p6k57,K57. Total household income from all sources in past year (dollars),"K57. In the past twelve months, what was the total income of your household from all sources before taxes and other deductions?¬† Please include your own income and the income of everyone living with you.¬† Please include the money you have told me about from jobs and public assistance programs, as well as any sources we haven't discussed, such as rent, interest, and dividends.","f2l1: What was your total household income for the past year before taxes?
+m2l1: What was your total household income before taxes last year, all sources?
+m4l1: In past year, total household income from all sources before taxes/deduct?
+n5e3: E3. Total income of household
+f3l1: What was total household income (all sources) last year, before taxes? ($)
+f4l1: In past yr, total household income from all sources before taxes/deduct?
+f5j1: J1. Total household income before taxes/deductions in past 12 months
+m3l1: What was total household income (all sources) last year, before taxes? ($)
+m5j1: J1. Total household income before taxes/deductions in past 12 months",Yes,
+p6k59,K59. Experienced large drop in household income since last int?,K59. Have you experienced a large drop in your total household income since {MONTH AND YEAR COHORT CITY FIELDED IN YR 9}?,,No,"I searched for the terms ""income,"" ""drop,"" and ""change"" among our features and did not find a lagged measure."
+p6k60,K60. Given/loaned money to friends/relatives in past year?,"K60. In the past twelve months, have you given or loaned any money to friends or relatives?","m2l2: In past year, have you given any money to friends/relatives?
+f4l2: In past year, have you given/loaned any money to friends or relatives?
+m5j2: J2. You gave/loaned money to friends/relatives in past 12 months
+f5j2: J2. You gave/loaned money to friends/relatives in past 12 months
+m4l2: In past year have you given/loaned any money to friends or relatives?
+f2l2: In past year, have you given any money to friends/relatives?
+m3l2: In past year, have you given/loaned money to friends/relatives?
+f3l2: In past year, given/loaned money to friends/relatives?",Yes,
+p6k63,"K63. Own a vehicle, such as car, truck, or van?","K63. Do you {or your {husband/partner}} own a car, truck or van?","m3l9: Do you own a car, truck, or van?
+f1k6: Do you own a car?
+f2l6: Do you or wife/partner own car/truck/van?
+f3l9: Do you own a car, truck, or van?
+m1j5: Do you own a car?
+m3l6: Do you or husband/partner own a car/truck/van?",Yes,
+p6k67,K67. Have a credit card?,"K67. Do you {or your {husband/partner}} have a credit card? Include major credit cards and department store credit cards, but not gas credit cards","m5j5: J5. You or your husband/partner have a credit card
+f3l8: Do you have a credit card?
+f5j5: J5. You or your wife/partner have a credit card
+m4l8: Do you have a credit card?
+m2l12: Do you have a credit card?
+f5j8: J8. You have a credit card
+m5j8: J8. You have a credit card
+f2l5: Do you or (wife/partner) have a credit card?
+f2l10: Do you have a credit card?
+m3l5: Do you or husband/partner have a credit card?
+m3l8: Do you have a credit card?
+m4l5: Do you or your husband/partner have a credit card?
+f4l8: Do you have a credit card?
+f3l5: Do you or wife/partner have a credit card?
+m2l5: Do you or husband/partner have a credit card?
+f4l5: Do you or your husband/partner have a credit card?",Yes,
+p6k70,"K70. Have other loans (not house, vehicle, credit card)?","K70. Other than money you may owe for mortgage or car, do you {or your {husband/partner}} have any loans including student loans, or money you owe to a bank or other lending institution?","m5j9f: J9F. Any other loans or money you owe to a bank/lending institution
+m5j6f: J6F. You or your husband/partner have other loans
+f5j6f: J6F. You or your wife/partner have other loans
+f5j9f: J9F. Any other loans or money you owe to a bank/lending institution",Yes,
+p6k72,K72. Filed for bankruptcy since last int?,"K72. Since {MONTH AND YEAR COHORT CITY FIELDED IN YR 9}, have you {or your {husband/partner}} filed for personal bankruptcy?",,No,
+p6k73,K73. Have any savings?,K73. Do you {or your {husband/partner}} have any savings?,"m5j9h: J9H. You have savings
+f5j9h: J9H. You have savings
+m5j6h: J6H. You or your husband/partner have savings
+f5j6h: J6H. You or your wife/partner have savings",Yes,
+k6b6,B6. Hours spent doing homework each weekday,B6.¬† Now I am going to ask some questions about you. Think for a moment about a typical weekday during the school year. How many hours would you say you spend doing homework each weekday?,p5i7: I7. Amount of time child spends doing homework on weekday,No,"Homework hours were previously reported by the parent, but not by the child"
+k6b7,B7. Hours spent doing homework each weekend day,"B7.¬† Now think about a typical weekend day, Saturday or Sunday. How many hours would you say you spend doing homework each weekend day during the school year?",p5i8: I8. Amount of time child spends doing homework on weekend day,No,"Homework hours were previously reported by the parent, but not by the child"
+k6b9,B9. How important to you that you graduate from college?,B9.¬† What about college?¬† How important is it to you that you graduate from college? Is it ‚Ç¨¬¶,,No,
+k6b10,B10. How important to PCG that you graduate from college?,B10. How important is it to {your mom/your dad/PRIMARY CAREGIVER} that you graduate from college? Is it ‚Ç¨¬¶,,No,
+k6b11,B11. How likely are you to graduate from college?,B11. How likely are you to graduate from college? Are you ‚Ç¨¬¶,,No,
+k6b12,B12. Have you talked to an adult about applying to college?,B12. Have you talked to an adult about how to apply to college or which courses you would need to take in order to go to college?,,No,
+k6b14,B14. How many friends will likely graduate from high school?,"B14. Of the friends you spend time with, how many will likely graduate from high school?",,No,
+k6b15,B15. How many friends will likely graduate from college?,"B15. Of the friends you spend time with, how many will likely graduate from college?",,No,
+k6b18,B18. Ever taken honors courses in school?,B18. Have you ever taken any honors courses in school?,,No,
+k6b22a,B22a. Spend time on athletic or sports teams,Athletic or sports teams?,,No,"The outcome is: ""{Since school started this year/During the last school year}, how often did you spend time on each of the following? Please tell me if you never spend time on this, spend time on this less than once a month, at least once a month, once a week, or several times a week?""
+
+At wave 5, parent reported ""yes/no"" regarding whether child participated in organized athletic activities in past year (p5i2a), but it was binary rather than a measure of time. More importantly, the child was not the respondent, so it is not a lagged measure according to our criteria."
+k6b22b,B22b. Spend time on group performance activities,"Group performance activities such as orchestra, band, choir, dance, or theater?",,No,See notes for k6b22a; related variable: p5i2b
+k6b22c,B22c. Spend time on scouts or hobby clubs,Scouts or hobby clubs?,,No,See notes for k6b22a; related variable: p5i2c
+k6b22d,B22d. Spend time on school activities,School activities such as clubs or student government?,,No,
+k6b22e,B22e. Spend time on religious services,Religious services?,,No,See notes for k6b22a; related variable: p5i2d
+k6b22f,B22F. Spend time on volunteer service activities,Volunteer service activities?,,No,
+k6b24,B24. Worked for pay in past four weeks?,B24. The next set of questions are about things you do after school.,,No,
+k6b25,B25. Hours per week worked for pay during school year,"B25. How many hours, if any, do you spend working for pay in a typical week during the school year?",,No,
+k6b26,B26. Hours per week worked for pay during summer,"B26. ¬†How many hours, if any, do you spend working for pay in a typical week during the summer?",,No,
+k6b31a,B31a. Friends work hard in school,Work hard in school?,,No,
+k6b31b,B31b. Friends have trouble getting along with their teachers,Have trouble getting along with their teachers?,,No,
+k6b31c,B31c. Friends have trouble getting along with other students,Have trouble getting along with other students?,,No,
+k6b31d,B31d. Friends skip school for a full day without an excuse,Skip school for a full day without an excuse?,,No,"	
+k5f1i reports whether youth skipped school, but not whether friends skipped school"
+k6c3,C3. Days per week you eat with family,"C3.¬† In a typical week, how many days from 0 to 7 do you eat dinner with your family?",p5i29: I29. Number of nights family eats dinner together,No,"This question was not previously asked of the child, but related questions were asked of mother/PCG: 	
+m5k13c: You eat dinner with child in a typical day (binary yes/no)
+p5i29: Number of nights family eats dinner together"
+k6c4a,C4a. You can't hear yourself think in your home,You can't hear yourself think in your home,p5i22a: I22A. You can't hear yourself think in home,No,This question was asked of PCG but not of child 
+k6c4b,C4b. It's a real zoo in your home,It's a real zoo in your home,p5i22b: I22B. Home is a real zoo,No,This question was asked of PCG but not of child 
+k6c4c,C4c. The children have a regular bedtime routine,The children have a regular bedtime routine,p5i22c: I22C. Children have a regular bedtime routine,No,This question was asked of PCG but not of child 
+k6c4d,C4d. You are usually able to stay on top of things,You are usually able to stay on top of things,p5i22d: I22D. You are usually able to stay on top of things,No,This question was asked of PCG but not of child 
+k6c4e,C4e. The atmosphere in your house is calm,The atmosphere in your house is calm,p5i22e: I22E. The atmosphere in your house is calm,No,This question was asked of PCG but not of child 
+k6c5,C5. Firearms kept in or around your home?,"C5.¬† Are any firearms now kept in or around your home? Include those kept in a garage, outdoor storage area, truck or car.",,No,
+k6c6a,C6a. PCG knows what you do during your free time,Know what you do during your free time?,"k5a1a: A1A. How often PCG knows what you do during your free time
+p5i26: I26. Frequency you know what child does during free time",Yes,
+k6c6b,C6b. PCG knows what you spend money on,Know what you spend money on?,"k5a1e: A1E. How often PCG knows what you spend money on
+p5i27: I27. Frequency you know how child spends money",Yes,
+k6c8,C8. How often spend time alone in home without adult present?,C8.¬† How often do you spend time alone in your home without an adult present?,,No,
+k6c9a,C9a. PCG explained to you why something you did was wrong,Explained to you why something you did was wrong?,"k5b2a: B2A. Frequency dad explained why something you did was wrong
+f5k10a: K10A. In past year, you explained to child why something he/she did was wrong
+k5b3a: B3A. Frequency social dad explained why something you did was wrong
+k5b1a: B1A. Frequency mom explained why something you did was wrong",Yes,
+k6c9b,C9b. PCG took away privileges or grounded you,Took away privileges or grounded you?,"k5b3b: B3B. Frequency social dad sent you to your room, took away privileges, or ground
+f5k10l: K10L. In past year, you took away privileges from child
+k5b1b: B1B. Frequency mom sent you to your room, took away privileges, or grounded you
+k5b2b: B2B. Frequency dad sent you to your room, took away privileges, or grounded you",Yes,
+k6c9c,"C9c. PCG shouted, yelled, screamed, swore or cursed at you","Shouted, yelled, screamed, swore or cursed at you?","f5k10h: K10H. In past year, you swore or cursed at child
+p5i33a: I33A. Frequency father shouted/screamed at child in past year
+k5b2c: B2C. Frequency dad shouted, yelled, screamed, swore or cursed at you
+k5b3c: B3C. Frequency social dad shouted, yelled, screamed, swore or cursed at you
+f5k10f: K10F. In past year, you shouted, yelled, or screamed at child
+k5b1c: B1C. Frequency mom shouted, yelled, screamed, swore or cursed at you",Yes,
+k6c9d,C9d. PCG hit or slapped you,Hit or slapped you?,"f5k10k: K10K. In past year, you slapped child on hand/arm/leg",Yes,"k5b1d asks, ""Frequency mom spanked or hit you."" In wave 6, ""spanked"" was changed to ""slapped."" This is a gray area but I think this is reasonable to consider a lagged measure of the same construct."
+k6c9e,C9e. PCG listened to your side of an argument,Listened to your side of an argument?,"k5a2b: A2B. Your mom listens to your side of an argument
+k5a4b: A4B. Social dad listens to your side of an argument
+k5a3b: A3B. Your dad listens to your side of an argument",Yes,
+k6c9f,C9f. PCG missed events or activities that were important to you,Missed events or activities that were important to you?,"k5a3d: A3D. Your dad misses events or activities that are important to you
+k5a2d: A2D. Your mom misses events or activities that are important to you
+k5a4d: A4D. Social dad misses events or activities that are important to you",Yes,
+k6c40,C40. Another adult in life with whom you share ideas/talk?,"C40. Other than your parents or guardians, is there currently an adult in your life who you share ideas with or talk about things that really matter? {Do not include {PARTNER}.}",,No,
+k6c42,C42. Number of full siblings living with youth,C42. How many full siblings do you live with?,,No,
+k6c43,C43. Number of half siblings living with youth,C43. How many half siblings do you live with?,,No,
+k6c44,C44. Number of step siblings living with youth,C44. How many step siblings do you live with?,,No,
+k6d1a,"D1a. I understand others' feelings like when they are happy, sad, or mad","I understand others' feelings like when they are happy, sad, or mad","p4l3: L3. Child understands others' feelings, like when they are happy, sad, or mad
+p3m4: M4. 18 Cities - Child understands others' feelings, like when they are happy
+p5q3dc: Q3DC. Child understands others' feelings, when happy, sad, mad",No,Not previously measured due to our definition that only constructs reported by the same respondent count
+k6d1b,D1b. I try to comfort others when they are upset,I try to comfort others when they are upset,,No,t5b1ad: Child comforts or helps other children
+k6d1c,D1c. I am open and direct about what I want,I am open and direct about what I want,"p5q3de: Q3DE. Child is open and direct about what he or she wants
+p3m12: M12. 18 Cities - Child is open and direct about what he/she wants
+p4l15: L15. Child is open and direct about what he/she wants",No,
+k6d1d,D1d. I join group activities without being told to,I join group activities without being told to,p5q3df: Q3DF. Child joins group activities without being told to,No,
+k6d1e,D1e. I make friends easily,I make friends easily,"p5q3dg: Q3DG. Child makes friends easily
+t5b1h: B1H. Child makes friends easily",No,
+k6d1f,D1f. I am self-confident in social situations,I am self-confident in social situations such as parties or group outings,p5q3dh: Q3DH. Child is self-confident in social situations,No,
+k6d1g,D1g. I easily change from one activity to another,I easily change from one activity to another,"p5q3di: Q3DI. Child easily changes from one activity to another
+p3m28a: M28a. 18 Cities - Child quickly shifts from one activity to another",No,
+k6d1h,D1h. I show interest in a variety of things,I show interest in a variety of things,p5q3dj: Q3DJ. Child shows interest in a variety of things,No,
+k6d1i,D1i. I start conversations rather than waiting for others to talk first,I start conversations rather than waiting for others to talk first,p5q3dk: Q3DK. Child starts conversations rather than waiting for others to talk first,No,
+k6d1j,D1j. I am liked by others,I am liked by others,p5q3dl: Q3DL. Child is liked by others,No,
+k6d1k,D1k. I invite others to my home,I invite others to my home,p5q3dn: Q3DN. Child invites others to your home,No,
+k6d1l,D1l. I report accidents to appropriate persons,I report accidents to appropriate persons,p5q3do: Q3DO. Child reports accidents to appropriate persons,No,
+k6d2a,D2a. I don't spend enough time thinking over a situation before I act,"Often, I don't spend enough time thinking over a situation before I act","f2j22: Do you agree/disagree-Often I don't think enough before I act
+m3j44b: Agree/disagree: Often, I don't think enough before I act",No,
+k6d2b,D2b. I love life,I love life,,No,
+k6d2c,"D2c. I feel I cannot shake off the blues, even with help","I feel I cannot shake off the blues, even with help from my family and my friends",,No,
+k6d2d,D2d. I have spells of terror or panic,I have spells of terror or panic,,No,"See p5q3av: Child is too fearful or anxious. This is related, but I think it's a distinct construct. "
+k6d2e,D2e. I get so involved in activities that I forget about everything else,I get so involved in activities that I forget about everything else,,No,
+k6d2f,D2f. I am a cheerful person,I am a cheerful person,,No,
+k6d2g,D2g. I have friends that I really care about,I have friends that I really care about,,No,
+k6d2h,D2h. I get completely absorbed in what I am doing,I get completely absorbed in what I am doing,,No,
+k6d2i,D2i. I keep at my schoolwork until I am done with it,I keep at my schoolwork until I am done with it,,No,"See k5g2h: It's hard for me to finish my schoolwork. This is closely related, but I don't think it's the same. "
+k6d2j,D2j. I feel tense or keyed up,I feel tense or keyed up,,No,"See p5q3aq: Child is nervous, highstrung, or tense (but that is a different respondent) "
+k6d2k,"D2k. Once I make a plan to get something done, I stick to it","Once I make a plan to get something done, I stick to it",,No,
+k6d2l,D2l. There are people in my life who really care about me,There are people in my life who really care about me,,No,
+k6d2m,D2m. I finish whatever I begin,I finish whatever I begin,,No,"See: 
+p5q3d: Child fails to finish things he or she starts (different respondent)
+k5g2h: It's hard for me to finish my schoolwork (this seems related but not the same)
+t5b4y: Child fails to finish things he or she starts (different respondent)"
+k6d2n,D2n. I feel sad,I feel sad,,No,"Wave 5 says: ""I would also like to ask you some questions about how you get along with other children and how you feel at school. Can you tell me how true the following statements are about yourself?"" ... k5g2g: ""I feel sad a lot of the time""
+
+Wave 6 says: ""Thinking about how you have behaved or felt during the past four weeks, please tell me whether you strongly agree, somewhat agree, somewhat disagree, or strongly disagree with the following statements."" ... ""I feel sad"" 
+
+Wave 5 focused on school, but wave 6 did not. ""A lot of the time"" is also a potentially important modifier which makes these measures different from one another, although this is a gray area."
+k6d2o,D2o. I think good things are going to happen to me,I think good things are going to happen to me,,No,
+k6d2p,D2p. I often say and do things without considering the consequences,I often say and do things without considering the consequences,"m4c40a: Agree/disagree: Father often says/does things w/o considering consequences
+f2j23: Do you agree/disagree-I often say/do things w/o considering the consequences
+m4j25a1: Agree/disagree: I often say and do things without considering the consequences
+f4c40a: Agree/disagree: mother often says/does things without considering consequences
+f4j25a1: Agree/disagree: I often say and do things without considering the consequences
+m3j44c: Agree/disagree: I often say/do things without considering consequences",No,"See: 
+p5q3an: Child is impulsive or acts without thinking
+t5b4aa: Child is excitable, impulsive
+But these are different respondents"
+k6d2r,D2r. The plans I make don't work out because I haven't gone over them,"Many times, the plans I make don't work out because I haven't gone over them carefully enough in advance",,No,
+k6d2s,D2s. I feel happy,I feel happy,,No,"Child previously reported: k5e1c, Frequency you felt happy to be at your school. This feels distinct from ""I feel happy"" 
+
+Mother/father/PCG reported at various times, ""Child is unhappy, sad, or depressed,"" but that is a different respondent "
+k6d2t,D2t. I get suddenly scared for no reason,I get suddenly scared for no reason,,No,
+k6d2u,"D2u. When I do an activity, I enjoy it so much that I lose track of time","When I do an activity, I enjoy it so much that I lose track of time",,No,
+k6d2v,D2v. I am a hard worker,I am a hard worker,,No,"A related variable is t5c16: ""How often did the child work to the best of her/his ability"" "
+k6d2w,"D2w. I believe that things will work out, no matter how difficult","I believe that things will work out, no matter how difficult they seem",,No,
+k6d2x,D2x. I feel life is not worth living,I feel life is not worth living,,No,
+k6d2y,"D2y. When I have a problem, I have someone who will be there for me","When I have a problem, I have someone who will be there for me",,No,
+k6d2z,D2z. I often make up my mind without taking the time to consider,I often make up my mind without taking the time to consider the situation from all angles,"f2j26: Do you agree/disagree-I often make up my mind w/o considering the situation
+m3j44f: Agree/disagree: Make up mind without considering situation from all angles",No,
+k6d2aa,D2aa. I have a lot of fun,I have a lot of fun,,No,
+k6d2ab,D2ab. I often say whatever comes into my head without thinking first,I often say whatever comes into my head without thinking first,"f2j21: Do you agree/disagree-I will often say whatever comes into head w/o thinking
+m3j44a: Agree/disagree: I often say what comes into my head without thinking",No,"Closest lagged variable is from another respondent, p5q3an: ""Child is impulsive or acts without thinking"""
+k6d2ac,D2ac. I feel depressed,I feel depressed,,No,"See k5g2g: ""I feel sad a lot of the time."" However, the wave 5 question was focused on the school context, and being sad is not necessarily the same as being depressed. It's a gray area but I'm ruling that these are distinct. "
+k6d2ad,"D2ad. When I am learning something new, I lose track of time","When I am learning something new, I lose track of how much time has passed",,No,
+k6d2ae,"D2ae. In uncertain times, I expect the best","In uncertain times, I expect the best",,No,
+k6d2af,"D2af. When something good happens to me, I have people to share news with","When something good happens to me, I have people in my life that I like to share the good news with",,No,"Related variables: k5a2f, k5a3f, k5a4f: ""How well you and your [mom/dad/social dad] share ideas or talk about things that matter"""
+k6d2ag,D2ag. I feel nervous or shaky inside,I feel nervous or shaky inside,,No,"p5q3aq: ""Child is nervous, highstrung, or tense"" 
+p5q3ar: ""Child has nervous movements or twitches"""
+k6d2ah,D2ah. I am optimistic about my future,I am optimistic about my future,,No,
+k6d2ai,D2ai. I feel fearful,I feel fearful,,No,"p5q3av: ""Child is too fearful or anxious"" "
+k6d2aj,D2aj. I often get into trouble because I don't think before I act,I often get into trouble because I don't think before I act,"m4j25a2: Agree/disagree: I often get into trouble because I don't think before I act
+m4c40b: Agree/disagree: Father often gets into trouble b/c doesn't think before acts
+m3j44d: Agree/disagree: I often get in trouble because I don't think before I act
+f4c40b: Agree/disagree: mother  often gets into trouble because doesn't think before act
+f2j24: Do you agree/disagree-I get into trouble because I don't think before I act
+f4j25a2: Agree/disagree: I often get into trouble because I don't think before I act",No,
+k6d2ak,D2ak. I feel so restless I can't sit still,I feel so restless I can't sit still,,No,"p5q3i: ""Child can't sit still, is restless, or hyperactive"" "
+k6d3,D3. Youth's description of own health,"D3.¬† In general, how is your health? Would you say it is ‚Ç¨¬¶","m3b2: How is your child's health?
+m3b27: In general, how is child's health?
+m2b2: How is the child's health?
+p4a1: A1. In general, how would you describe child's health?
+f3b26: In general, how is child's health?
+m4b21: In general, how would you rate child's health?
+f4b21: In general, how is child's health?
+k5h1: H1. Condition of health in general
+m4b2: In general, how would you describe child's health?
+f2b2: How is the child's health?
+p3a1: A1. In general, how would you describe child's health?
+f4b2: In general, how is child's health?
+f3b2: How is child's health in general?
+m2b37: In general, how is your child's health?
+f2b32: In general, how is your child's health?
+p5h1: H1. Description of child's health",Yes,
+k6d4,D4. Days absent from school due to health in past year,"D4.¬† In the last year, how many days have you been absent from school because of a health problem?",,No,"p5l11: Number of times child was absent from school during school year
+t5c9: Child fell 2 or more weeks behind because of health problem 
+But these are different respondents"
+k6d8,D8. Physical development earlier or later than most?,D8.¬† Do you think your physical development is any earlier or later than most {boys/girls} your age?,p5h23: H23. Child's physical development compared to other boys or girls,No,
+k6d21,D21. How often snore during sleep?,"D21. According to what others have told you, how often, if ever, do you snore in your sleep?",,No,
+k6d22,D22. Nights during week has problems falling asleep,D22. How many nights out of seven in a typical week do you have problems falling asleep?,,No,"p5q3cs: Child has trouble sleeping
+m4b4b8: True/not true: child has trouble getting to sleep?
+Several similar questions at different waves from adult respondents with reference to child"
+k6d23,D23. Nights during week has problems staying asleep,D23. How many nights out of seven in a typical week do you have problems staying asleep throughout the night?,,No,"p5q3cs: Child has trouble sleeping
+Several similar questions at different waves from adult respondents with reference to child"
+k6d25,D25. Time looking at screen two hours before bed (minutes),"D25. In the two hours before you went to bed last night, how many minutes were you looking at a screen? For example, a television or computer screen, smartphone, iPad, or video game?",,No,"k5d1d: Amount of time on a weekday you do school work on the computer
+k5d1e: Amount of time on a weekday you chat with friends on the computer
+k5d1f: Amount of time on a weekday you play computer games on the computer or TV
+k5d1g: Amount of time on a weekday you watch TV and movies
+
+Presumably these are related to screentime within two hours of bedtime, but I think the focus specifically on the 2 hours before bedtime makes the wave 6 question distinct"
+k6d27,D27. Share a bed or bedroom with someone else?,"D27. On a regular basis, do you share a bed or bedroom with someone else? For example, with a family member, sister, or brother?",,No,"p4b22: Does child sleep alone or share a bed with another child or adult?
+There are a couple of other questions about shared sleep rooms at wave 4 (none at wave 5). "
+k6d28,D28. Spent night away from home without permission in past year,"D28. During the past 12 months, have you ever spent the night away from home without permission?",,No,"k5f1h: Ran away from home 
+These seem related, but distinct enough that they are not ""the same."" A kid could spend a night away from home with a friend or significant other without permission, but without considering it ""running away."" On the other hand, they could ""run away"" but be found and brought home by nighttime. "
+k6d29,D29. Days during school week youth eats breakfast,D29. How many days in a typical school week do you eat breakfast? Do not count the weekend.,p5i28: I28. Number of mornings child eats breakfast in week,No,
+k6d31,D31. Days in typical week youth eats vegetables or fruit,"D31. In a typical week, how many days do you eat at least some green vegetables or fruit?",,No,"p5j2f: Number of servings of fresh fruit or vegetables child has on typical day
+p5j2h:  Number of servings of frozen or canned vegetables child has on typical day"
+k6d32,D32. Days in typical week youth eats fast food,"D32. How many days in a typical week do you eat food from a fast food restaurant, such as McDonald's, Burger King, Wendy's, Arby's, Pizza Hut, Taco Bell, or Kentucky Fried Chicken or a local fast food restaurant?","p5j3: J3. Times per week child eats a meal from a 'fast food' restaurant
+p4d16: D16. About how many times/week does child fast food?",No,
+k6d33,D33. Number of non-diet sweetened drinks in typical day,"D33. In a typical day, how many regular, non-diet sweetened drinks do you have? Include regular soda, juice drinks, sweetened tea or coffee, energy drinks, flavored water, or other sweetened drinks.",,No,"p4d15d: ""Typical day, servings of soda child drinks"" 
+p4d15c: Typical day, servings of fruit juice child drinks
+p5j2d: Number of servings of diet soda child has on typical day
+p5j2e: Number of servings of regular soda child has on typical day
+p5j2c: Number of servings child has of fruit juice on typical day "
+k6d34,D34. Number of low-calorie drinks in typical day,"D34. In a typical day, how many diet or low-calorie drinks do you have? Include diet sodas, unsweetened tea or coffee, or other drinks sweetened with artificial sweeteners.",,No,"p4d15d: ""Typical day, servings of soda child drinks"" 
+p4d15c: Typical day, servings of fruit juice child drinks
+p5j2d: Number of servings of diet soda child has on typical day
+p5j2e: Number of servings of regular soda child has on typical day
+p5j2c: Number of servings child has of fruit juice on typical day "
+k6d35a,D35a. Friends/family encourage youth to be physically active,Encourage you to be physically active?,,No,
+k6d35b,D35b. Friends/family engage in physical activities with youth,Engage in physical activities with you?,,No,"p5i1b: Frequency you played sports or outdoor activities with child in past month
+p5i31b: Frequency father played sports or outdoor activities with child in past month
+p5i40b: Frequency partner played sports or outdoor activities with child in past month
+f5k14b:  In past month, you played sports or did outdoor activities with child
+m5k14b: In past month, you played sports or did outdoor activities with child"
+k6d35c,D35c. Friends/family encourage exercise to lose/control weight,Encourage you to exercise to lose or keep from gaining weight?,,No,
+k6d35d,D35d. Friends/family talk about eating more health foods,Talk with you about eating more health foods?,,No,
+k6d35e,D35e. Friends/family encourage not eating high-fat food,Encourage you not to eat high-fat food?,,No,
+k6d35f,D35f. Friends/family encourage diet to lose/control weight,Encourage you to diet to lose or keep from gaining weight?,,No,
+k6d36a,D36a. Hours per day hangs out with friends on weekdays,Hanging out with friends?,k5d1a: D1A. Amount of time on a weekday you hang out with friends,Yes,
+k6d36b,D36b. Hours per day hangs out with family members on weekdays,Hanging out with family members?,k5d1b: D1B. Amount of time on a weekday you hang out with family members,Yes,
+k6d36c,D36c. Hours per day does chores or helps out at home on weekdays,Doing chores or helping at home?,k5d1c: D1C. Amount of time on a weekday you do household chores or help at home,Yes,
+k6d36d,D36d. Hours per day electronically communicates with friends on weekdays,"Communicating with friends by email, instant messaging, texting on your phone, or through social media sites, such as Facebook or Twitter?",,No,"k5d1e: Amount of time on a weekday you chat with friends on the computer
+
+This is a gray area because the questions are very similar, but I think the addition of ""texting on your phone"" to the question in wave 6 makes the items distinct. Time on phone seems distinct from time on computer."
+k6d36e,D36e. Hours per day plays games on computer/TV/device on weekdays,"Playing games on the computer, TV, or a handheld device?","k5d1f: D1F. Amount of time on a weekday you play computer games on the computer or TV
+p4b3: B3. On weekdays, hours/day child spends playing video/computer games?",Yes,
+k6d36f,D36f. Hours per day visits websites/shop on internet on weekdays,Visiting websites or shopping on the internet?,,No,"p5i18a_4: Child goes on internet on computer
+p5i18b: Number of hours per day child uses computer
+t5e22a: Frequency children use computer for access to internet"
+k6d36g,D36g. Hours per day watches TV/videos/movies on weekdays,"Watching TV, videos, and movies?","p4b1: B1. On weekdays, hours/day child spends watching TV/videos?
+p3b1: B1. On weekdays, hours/day child spends watching TV/videos?
+p5i3: I3. Amount of time child watches TV or videos on a weekday
+k5d1g: D1G. Amount of time on a weekday you watch TV and movies",Yes,
+k6d36h,D36h. Hours per day reads a book or magazine for fun on weekdays,Reading a book or magazine for fun?,,No,p5i21a: Child read book for fun in the last three months
+k6d37,D37. Days physically active for 60+ minutes in past week,"D37. During the past seven days, on how many days were you physically active for a total of at least 60 minutes per day? By ""physical activity"" we mean activity that increased your heart rate and made you breathe hard some of the time.",,No,"t5c12: During unstructured play time, how does this child compare with other children in the class in terms of physical activity? (5 response options, ""a lot less active than most"" to ""a lot more active than most"") 
+t5c11: During structured play time, how does this child compare with other children in the class in terms of physical activity?
+Same questions asked of teacher at wave 4"
+k6d38,D38. Days engage in physical activity for 30+ minutes in typical week,"D38. In a typical week, how many days do you engage in physical activity that lasts 30 minutes or more?",,No,"t5c12: During unstructured play time, how does this child compare with other children in the class in terms of physical activity? (5 response options, ""a lot less active than most"" to ""a lot more active than most"") 
+t5c11: During structured play time, how does this child compare with other children in the class in terms of physical activity?
+Same questions asked of teacher at wave 4"
+k6d39,D39. Days participate in vigorous physical activity in typical week,"D39. In a typical week, how many days per week do you participate in vigorous physical activity, that is activity that is strenuous enough to make you sweat, your heart beat fast, or to make you out of breath?",,No,"t5c12: During unstructured play time, how does this child compare with other children in the class in terms of physical activity? (5 response options, ""a lot less active than most"" to ""a lot more active than most"") 
+t5c11: During structured play time, how does this child compare with other children in the class in terms of physical activity?
+Same questions asked of teacher at wave 4"
+k6d40,D40. Ever smoked an entire cigarette?,D40. Have you ever smoked an entire cigarette?,,Yes,"k5f1l: ""Smoked  a cigarette or used tobacco?"" (this is technically different than ""smoked an ENTIRE cigarette,"" but I think it is close enough to be considered the same)
+p5q3cr: Child smokes, chews, or sniffs tobacco "
+k6d44,D44. Cigarettes easily available to you in home?,D44. Are cigarettes easily available to you in your home?,,No,"There are questions about parents and other household members smoking, which likely relates to whether cigarettes are easily available, but the presence of a smoker does not always mean cigarettes are easily available to child"
+k6d46,D46. How often PCG smokes?,"D46. How often, if ever, does {your mother/your father/PRIMARY CAREGIVER} smoke?",,No,"P5h15: PCG/Bio Parent smokes
+M5g18: Number of packs per day you usually smoke
+Child's answer for outcome is in number of days per week. There is a ""never"" option, which would correspond to the yes/no for whether the bio parent smokes. "
+k6d48,D48. Ever drank alcohol more than two times without parents?,"D48. Have you had a drink of beer, wine, or liquor  -- not just a sip or a taste of someone else's drink -- more than two or three times in your life when you were not with your parents?",,No,"k5f1j: Have you ever… Secretly taken a sip of wine, beer, or liquor? 
+P5q3b: Child drinks alcohol without parents' approval
+
+The outcome variable specifically says NOT just a sip. However, the child's report of secretly consuming sips might reasonably be considered a lagged variable for this outcome. This is a gray area but I'm going to call these distinct."
+k6d57,D57. How often PCG drinks alcohol?,"D57. How often, if ever, does {your mother/your father/PRIMARY CAREGIVER} drink alcohol?",,No,"m1g2: During the preg, how often did you drink alcohol?
+M3j28a / m4j20a: In past year, how often had 4 or more drinks in one day?"
+k6d59,D59. Alcohol easily available to you in home?,D59. Is alcohol easily available to you in your home?,,No,"This question was never previously asked, but the answer may relate to whether the parent(s) drink alcohol "
+k6d60,D60. Parents ever given you alcohol to drink?,"D60. Have your parents ever given you alcohol to drink, more than one or two sips?",,No,"p5q3cx: Child uses alcohol or drugs for nonmedical purposes
+p5q3b: Child drinks alcohol without parents' approval
+These two questions could be combined to guess whether the parent gives the child alcohol, but that would be very imprecise. Also, these questions are the parent's report, not child's report. "
+k6d61a,D61a. Painted graffiti or signs on private property/public spaces,Paint graffiti or signs on someone else's property or in a public place?,k5f1n: F1N. Written things or sprayed paint on walls or sidewalks or cars,Yes,
+k6d61b,D61b. Deliberately damaged property that didn't belong to you,Deliberately damage property that didn't belong to you?,k5f1a: F1A. Purposely damaged or destroyed property,Yes,
+k6d61c,D61c. Taken something from a store without paying for it,Take something from a store without paying for it?,,Yes,"k5f1b: Taken  or stolen something that didn't belong to you from another person or from a store?
+
+The wave 5 question included ""from another person,"" which makes it a gray area whether these are similar enough to be considered ""previously measured."" I think they are close enough to be ""the same."" However, some of the other theft-related questions from the same series feel distinct to me."
+k6d61d,D61d. Gotten into a serious physical fight,Get into a serious physical fight?,k5f1e: F1E. Had a fist fight with another person,Yes,"There are types of ""serious physical fights"" that are not ""fist fights"" but I think these are similar enough. "
+k6d61e,D61e. Hurt someone badly enough to need bandages or medical care,Hurt someone badly enough to need bandages or care from a doctor or nurse?,,No,
+k6d61f,D61f. Driven a car without its owner's permission,Drive a car without its owner's permission?,,No,
+k6d61g,D61g. Stolen something worth more than $50,Steal something worth more than $50?,,No,"k5f1b: Taken  or stolen something that didn't belong to you from another person or from a  store?
+
+I think the specification of ""greater than $50"" makes these questions distinct."
+k6d61h,D61h. Gone into a house or building to steal something,Go into a house or building to steal something?,,No,k5f1b: Taken  or stolen something that didn't belong to you from another person or from a store?
+k6d61i,D61i. Used or threaten to use a weapon to get something,Use or threaten to use a weapon to get something from someone?,,No,"t5b3c: Child threatens or bullies others 
+p5q3cq: Child threatens people"
+k6d61j,D61j. Sold marijuana or other drugs,Sell marijuana or other drugs?,,No,
+k6d61k,D61k. Stolen something worth less than $50,Steal something worth less than $50?,,No,k5f1b: Taken  or stolen something that didn't belong to you from another person or from a  store?
+k6d61l,D61l. Taken part in a group fight,Take part in a fight where a group of your friends was against another group?,,No,
+k6d61m,"D61m. Were you loud, rowdy, or unruly in a public place","Were you loud, rowdy, or unruly in a public place?",,No,p5q3cw: Child is unusually loud
+k6d62a,D62a. Friends smoked an entire cigarette,Smoked an entire cigarette?,,No,
+k6d62b,D62b. Friends drank alcohol more than two times without their parents,"Had a drink of beer, wine, or liquor ‚Ç¨‚Äú not just a sip of someone else's drink more than two or three times when they weren't with their parents?",,No,
+k6d62c,D62c. Friends tried marijuana,Tried marijuana?,,No,
+k6d62d,D62d. Friends tried other drugs to get high,Tried other types of illegal or prescription drugs or other substances to get high?,,No,
+k6d62e,D62e. Friends asked to go drinking with them,Asked you to go drinking with them?,,No,
+k6d62f,D62f. Friends given or sold marijuana to you,Given or sold marijuana to you?,,No,
+k6d62g,D62g. Friends deliberately damaged property that did not belong to them,Deliberately damaged property that didn't belong to them?,,No,
+k6d62h,D62h. Friends stole something worth more than $50,Stolen something worth more than $50?,,No,
+k6d62i,D62i. Friends used or threatened to use a weapon to get something,Used or threatened to use a weapon to get something from someone?,,No,
+k6d62j,D62j. Friends sold marijuana or other drugs,Sold marijuana or other drugs?,,No,
+k6d62k,D62k. Friends stole something worth less than $50,Sold marijuana or other drugs?,,No,
+k6d63,D63. How many of your friends do you think have had sex?,"D63.¬† Of the friends you spend time with, how many do you think have had sex?",,No,
+k6e1,E1. How many families on block you know well?,E1.¬† How many of the families on your block would you say that you know well? Would you say‚Ç¨¬¶,"f4i0l: How many of the families on your block would you say that you know well?
+p5m1: M1. Number of families on block know well
+m4i0l: How many of the families on your block would you say that you know well?",No,
+k6e2a,E2a. People around here are willing to help their neighbors,People around here are willing to help their neighbors,"f4i0n1: Agree/disagree: people around here are willing to help their neighbors
+p5m3a: M3A. Amount agree people willing to help their neighbors
+p3k2a: K2a. People around here are willing to help their neighbors
+m4i0n1: Agree/disagree: People around here are willing to help their neighbors",No,
+k6e2b,E2b. This is a close-knit neighborhood,This is a close-knit neighborhood,"p5m3b: M3B. Amount agree close knit neighborhood
+f4i0n2: Agree/disagree: this is a close-knit neighborhood
+m4i0n2: Agree/disagree: This is a close-knit neighborhood
+p3k2b: K2b. This is a close-knit neighborhood",No,
+k6e2c,E2c. People in this neighborhood generally don't get along with each other,People in this neighborhood generally don't get along with each other,"p5m3c: M3C. Amount agree people in neighborhood do not get along
+m4i0n3: Agree/disagree: People in neighborhood generally don't get along with each other
+f4i0n3: Agree/disagree: people generally don't get along with each other
+p3k2d: K2d. People in this neighborhood generally don't get along with each other",No,
+k6e2d,E2d. People in this neighborhood do not share the same values,People in this neighborhood do not share the same values,"m4i0n4: Agree/disagree: People in this neighborhood do not share the same values
+p3k2e: K2e. People in this neighborhood do not share the same values
+f4i0n4: Agree/disagree: people in this neighborhood do not share the same values
+p5m3d: M3D. Amount agree people in neighborhood do not share values",No,
+k6e2e,E2e. Gangs are a problem in this neighborhood,Gangs are a problem in this neighborhood,"f4i0n5: Agree/disagree: gangs are a problem in this neighborhood
+p5m3e: M3E. Amount agree gangs are problem in neighborhood
+m4i0n5: Agree/disagree: Gangs are a problem in this neighborhood",No,
+k6e3a,E3a. Neighbors would get involved if children skip school,If children were skipping school and hanging out on the street.,"p5m2a: M2A. Neighbors get involved if skipping school
+p3k1a: K1a. Neighbors intervene if children were skipping school/hanging out on street?
+m4i0m1: Likely neighbors intervene if children skipping school & hanging on st.?
+f4i0m1: Likely neighbors intervene if children skipping school & hanging on st.?",No,
+k6e3b,E3b. Neighbors would get involved if children spray paint buildings,If children were spray painting buildings with graffiti,"p5m2b: M2B. Neighbors get involved if spray painting buildings
+f4i0m2: Likely neighbors intervene if children spray painting buildings w/graffiti?
+p3k1b: K1b. Neighbors intervene if children were spray-painting graffiti on building?
+r3b43_a: b43_a neigborhood likely act on - children spray-painting/graffiti
+d3a36_a: a36_a neighborhood act - spray-painting graffiti
+m4i0m2: Likely neighbors intervene if children spray painting buildings w/graffiti?",No,
+k6e3c,E3c. Neighbors would get involved if children show disrespect to adults,If children were showing disrespect to an adult,"p3k1c: K1c. Neighbors intervene if children were showing disrespect to an adult?
+m4i0m3: How likely neighbors intervene if children showing disrespect to an adult?
+f4i0m3: How likely neighbors intervene if children showing disrespect to an adult?
+r3b43_c: b43_c neigborhood likely act on - child showing disrespect
+p5m2c: M2C. Neighbors get involved if disrespect adult
+d3a36_c: a36_c neighborhood act - showing disrespect to an adult",No,
+k6e3d,E3d. Neighbors would get involved if fight broke out in front of the house,If a fight broke out in front of the house or building,"r3b43_b: b43_b neigborhood likely act on - fight in front of house
+p3k1d: K1d. Neighbors intervene if a fight broke out in front of their house?
+p5m2d: M2D. Neighbors get involved if fight broke out in front of house
+m4i0m4: How likely neighbors intervene if fight broke out in front of the house?
+d3a36_b: a36_b neighborhood act - being beaten or threatened
+f4i0m4: How likely neighbors intervene if fight broke out in front of the house?",No,
+k6e4a,E4a. There is so much traffic on streets that walking is difficult,There is so much traffic on the streets that it makes it difficult or unpleasant to walk in my neighborhood,,No,
+k6e4b,E4b. I feel unsafe walking around my neighborhood during the day,I feel unsafe walking around my neighborhood during the day,,No,
+k6e4c,E4c. I feel unsafe walking around my neighborhood at night,I feel unsafe walking around my neighborhood at night,,No,m1f5 / f1f5: How safe are the streets around your home at night?
+k6e5,E5. Ever witnessed a crime or known about a crime?,E5.¬† Have you ever witnessed a crime or known about a crime that took place?,,No,
+k6e7a,E7a. I have a great deal of respect for the police,I have a great deal of respect for the police.,,No,
+k6e7b,E7b. It's okay to do anything you want,It's okay to do anything you want,,No,
+k6e7c,E7c. There are no right or wrong ways to make money,There are no right or wrong ways to make money,,No,
+k6e7d,E7d. Laws are made to be broken,Laws are made to be broken,,No,
+k6e7e,"E7e. If I fight with someone, it's nobody else's business","If I fight with someone, it's nobody else's business",,No,
+k6e7f,E7f. The police create more problems than they solve,The police create more problems than they solve,,No,
+k6e8,E8. Ever been victim of a crime?,E8.¬† Have you ever been a victim of a crime?,,No,
+k6e10,E10. Ever been stopped by the police?,"E10. Have you ever been stopped by the police while on the street, at school, in a car, or some other place?",,No,
+k6e14,E14. Ever seen someone stopped by police in your neighborhood?,E14. Have you ever seen someone stopped by the police in your neighborhood?,,No,m5f24 / f5f24: You were stopped by police but not picked up/arrested since last interview
+k6e15,E15. Ever seen someone stopped by police in your school?,E15. Have you ever seen someone stopped by the police in your school?,,No,
+k6e16,E16. Know anyone who has been stopped by police?,E16. Do you know anyone who has been stopped by the police?,,No,m5f24 / f5f24: You were stopped by police but not picked up/arrested since last interview
+k6e17_1,E17_1. Parent was stopped by police,PARENT,,No,m5f24 / f5f24: You were stopped by police but not picked up/arrested since last interview
+k6e17_2,E17_2. Sibling was stopped by police,SIBLING,,No,
+k6e17_3,E17_3. Friend was stopped by police,FRIEND,,No,
+k6e17_4,E17_4. Neighbor was stopped by police,NEIGHBOR,,No,
+k6e17_5,E17_5. Other person was stopped by police,OTHER,,No,
+k6f1a,F1a. How parents would feel about you dating or going out?,"You dating or going out at this time in your life? By dating we mean when you like someone as more than just a friend and she/he likes you back. It doesn't have to mean going on a ""formal"" date",,No,
+k6f1b,F1b. How parents would feel about you having sex?,You having sex at this time in your life?,,No,
+k6f4,F4. Ever dated someone?,"F4.¬† Have you ever dated someone? Remember, by dating we mean when you like someone and she or he likes you back. It doesn't have to mean going on a ""formal"" date.",,No,
+k6f63,F63. Ever tried marijuana?,F63. Have you ever tried marijuana?,,Yes,"K5F1K. Smoked marijuana, grass, pot, weed"
+k6f68,F68. Ever tried other illegal drugs besides marijuana?,"F68. Besides marijuana, have you ever tried any other type of illicit drug? This may include heroin, hallucinogens, cocaine, cough or cold medicine used to get high, inhalants, or something else.",,No,
+k6f74,F74. Ever used prescription drugs (not prescribed)?,F74. Have you ever taken prescription drugs that were not prescribed for you or that you took only for the experience or feeling they caused?,,No,
+k6f80,F80. PCG uses drugs?,F80. Does {your mother/your father/PRIMARY CAREGIVER} use drugs (illegal or prescription) that are not prescribed by a doctor?,,No,
+k6f82,F82. Drugs easily available to you in home?,F82. Are drugs easily available to you in your home?,,No,
+k6f83,F83. Parents ever given you drugs?,F83. Have your parents ever given you illegal drugs or prescription drugs that were not prescribed for you by a doctor?,,No,
+ck6cwtlb,Constructed - Youth's self-reported weight (lbs),NA,"ch5cwtlb: child weight(lbs.)-from mult. measures
+ch3cwtlb: Constructed - Child weight (pounds)
+ch4cwtlb: Constructed - Child weight (pounds)",Yes,h5w9b: child self-reported weight
+ck6chtcm,Constructed - Youth's self-reported height (cm),NA,"ch5chtcm: child height(cm.)-from mult. measures
+ch3chtcm: Constructed - Child height (centimeters)
+ch4chtcm: Constructed - Child height (centimeters)",Yes,h5w11b: child height self-reported
+ck6cbmi,Constructed - Youth's Body Mass Index (BMI),NA,"ch4mombmi: Constructed - PCG Body Mass Index
+ch4cbmi: Constructed - Child Body Mass Index
+ch3cbmi: Constructed - Child Body Mass Index - derived
+ch3mombmi: Constructed - PCG Body Mass Index
+ch5mbmi: BioMom's BMI
+ch5cbmi: Child's body mass index (BMI)",Yes,
+ck6bmip,Constructed - Youth's BMI percentile,NA,"ch4cbmi_p: Constructed - Child Body Mass Index percentile
+ch5bmip: Child's Body Mass Index percentile
+ch3bmip: Constructed - PCG Body Mass Index",Yes,
+ck6wap,Constructed - Youth's weight-for-age percentile,NA,"ch5wap: Child's weight-for-age percentile
+ch4wap: Constructed - Child weight for height percentile
+ch3wap: Constructed - PCG weight for age percentile",Yes,
+ck6hap,Constructed - Youth's height-for-age percentile,NA,"ch5hap: Child's height-for-age percentile
+ch4hap: Constructed - Child height for age percentile
+ch3hap: Constructed - Child height for age percentile",Yes,
+ch6cwtlb,Constructed - Youth's weight (lbs) from multiple measures,NA,"ch5cwtlb: child weight(lbs.)-from mult. measures
+ch3cwtlb: Constructed - Child weight (pounds)
+ch4cwtlb: Constructed - Child weight (pounds)",Yes,
+ch6chtcm,Constructed - Youth's height (cm) from multiple measures,NA,"ch5chtcm: child height(cm.)-from mult. measures
+ch3chtcm: Constructed - Child height (centimeters)
+ch4chtcm: Constructed - Child height (centimeters)",Yes,
+ch6cbmi,Constructed - Youth's Body Mass Index (BMI),NA,"ch4mombmi: Constructed - PCG Body Mass Index
+ch4cbmi: Constructed - Child Body Mass Index
+ch3cbmi: Constructed - Child Body Mass Index - derived
+ch3mombmi: Constructed - PCG Body Mass Index
+ch5mbmi: BioMom's BMI
+ch5cbmi: Child's body mass index (BMI)",Yes,
+ch6bmip,Constructed - Youth's BMI percentile,NA,"ch4cbmi_p: Constructed - Child Body Mass Index percentile
+ch5bmip: Child's Body Mass Index percentile
+ch3bmip: Constructed - PCG Body Mass Index",Yes,
+ch6wap,Constructed - Youth's weight-for-age percentile,NA,"ch5wap: Child's weight-for-age percentile
+ch4wap: Constructed - Child weight for height percentile
+ch3wap: Constructed - PCG weight for age percentile",Yes,
+ch6hap,Constructed - Youth's height-for-age percentile,NA,"ch5hap: Child's height-for-age percentile
+ch4hap: Constructed - Child height for age percentile
+ch3hap: Constructed - Child height for age percentile",Yes,
+ch6waist,Constructed - Teen waist from multiple measures (cm),NA,,No,"There are some waist-related measures at wave 5 but they are from the ""saliva"" data source, which we are not using"
+h6a8,AA8. Youth skin color darkness,NA,,No,"Parents reported their race, but skin color darkness was not previously measured for either parents or youth"
+o6a1,"A1. Garbage, litter, broken glass in street","A1. IS THERE GARBAGE, LITTER, OR BROKEN GLASS IN THE STREET OR ROAD, ON THE SIDEWALKS, OR IN YARDS?","o5a1: A1. Garbage, litter, or broken glass in the street or road
+u3a1: is there garbage, litter, broken glass in streets or road, sidewalks or in yards
+o4p1: P1. Garbage, litter, or broken glass in st., road, sidewalks, or in yards
+o3p1: P1. Garbage, litter, or broken glass in street, sidewalk, or in yards",Yes,"I am considering the interviewer observations to be the ""same respondent"" across waves even though it's likely a different interviewer each time, since interviewers were likely trained for inter-rater reliability."
+o6a2,A2. General condition of buildings on block,A2. HOW WOULD YOU RATE THE GENERAL CONDITION OF MOST OF THE BUILDINGS ON THE BLOCK OR WITHIN 100 YARDS OF THE RESPONDENT'S HOUSE?,"o3p2: P2. General condition of most of the buildings on the block
+o5a2: A2. General condition of most of the buildings on the block
+o4p2: P2. General condition of most of the buildings on the block
+u3a2: general condition of most of the buildings on block or within100 yards",Yes,
+o6a3,A3. Graffiti on buildings,A3. IS THERE GRAFFITI ON THE BUILDINGS OR WALLS OF THE BUILDINGS ON THE BLOCK OR WITHIN 100 YARDS OF THE RESPONDENT'S HOME?,"o5a3: A3. Graffiti on the buildings or walls of buildings on the block
+o4p3: P3. Graffiti on buildings/walls of buildings on block
+o3p3: P3. Graffiti on buildings/walls of buildings on block
+u3a3: graffiti on buildings/walls of the buildings on the block or within 100 yards",Yes,
+o6a4,"A4. Vacant, abandoned, boarded up buildings","A4. ARE THERE VACANT, ABANDONED, OR BOARDED-UP BUILDINGS, ON THE BLOCK OR WITHIN 100 YARDS OF THE RESPONDENT'S HOME?","o3p4: P4. Vacant, abandoned, or boarded-up buildings on block
+u3a4: vacant, abandoned, or boarded-up buildings on the block or within 100 yards
+o4p4: P4. Vacant, abandoned, or boarded-up buildings on block
+o5a4: A4. Vacant, abandoned, or boarded-up buildings on the block",Yes,
+o6a5,A5. Abandoned vehicles on the block,A5. ARE THERE ABANDONED VEHICLES ON THE BLOCK OR WITHIN 100 YARDS OF THE RESPONDENT'S HOME?,"o4p5: P5. Abandoned vehicles on block
+o3p5: P5. Abandoned vehicles on block
+u3a5: abandoned vehicles on the block or within 100 yards
+o5a5: A5. Abandoned vehicles on the block",Yes,
+o6a6a,A6a. Unlit entrance or stairway,A6A. UNLIT ENTRANCE OR STAIRWAY,"u3a7a: environment immediately outside provider - unlit entrance or stairway
+o5a6a: A6A. Unlit entrance or stairway
+o3p6_a: P6_a. Exterior - Unlit entrance or stairway
+o4p6a: P6a. Exterior - Unlit entrance or stairway",Yes,
+o6a6b,A6b. Broken steps outside house,A6B.¬†   BROKEN STEPS,"u3a7b: environment immediately outside provider - broken steps
+o3p6_b: P6_b. Exterior - Broken steps
+o4p6b: P6b. Exterior - Broken steps
+o5a6b: A6B. Broken steps",Yes,
+o6a6c,A6c. Broken glass/toys outside home,A6C. BROKEN GLASS OR BROKEN TOYS,"o3p6_c: P6_c. Exterior - Broken glass or broken toys
+o4p6c: P6c. Exterior - Broken glass or broken toys
+u3a7c: environment immediately outside provider - broken glass/toys
+o5a6c: A6C. Broken glass or broken toys",Yes,
+o6a6d,A6d. Large ditches outside home,A6D. LARGE DITCHES,"o4p6d: P6d. Exterior - Large ditches
+u3a7d: environment immediately outside provider - large ditches
+o3p6_d: P6_d. Exterior - Large ditches
+o5a6d: A6D. Large ditches",Yes,
+o6a6f,A6f. Garbage/litter outside home,A6F. STREWN GARBAGE/LITTER,"o4p6f: P6f. Exterior - Strewn garbage/litter
+o3p6_f: P6_f. Exterior - Strewn garbage/litter
+u3a7f: environment immediately outside provider - strewn garbage/litter
+o5a6f: A6F. Strewn garbage/litter",Yes,
+o6a7a,A7a. Exterior - Peeling paint,"A7A. PEELING PAINT, NEEDS PAINT JOB","o4p7a: P7a. Exterior - Peeling paint, needs paint job
+u3a8a: exterior of the building - peeling paint, needs paint job
+o3p7_a: P7_a. Exterior - Peeling paint, needs paint job
+o5a7a: A7A. Peeling paint, needs paint job",Yes,
+o6a7b,A7b. Exterior - Crumbling or damaged walls,A7B. CRUMBLING OR DAMAGED WALLS,"o4p7b: P7b. Exterior - Crumbling or damaged walls
+o5a7b: A7B. Crumbling or damaged walls
+o3p7_b: P7_b. Exterior - Crumbling or damaged walls
+u3a8b: exterior of the building - crumbling or damaged walls",Yes,
+o6a7c,A7c. Exterior - Broken or cracked windows,A7C. BROKEN OR CRACKED WINDOWS,"o5a7c: A7C. Broken or cracked windows
+o4p7c: P7c. Exterior - Broken or cracked windows
+u3a8c: exterior of the building - broken or cracked windows
+o3p7_c: P7_c. Exterior - Broken or cracked windows",Yes,
+o6a9,A9. Rate condition of street in front of home,A9. HOW WOULD YOU RATE THE CONDITION OF THE STREET IN FRONT OF THE RESPONDENT'S HOME?,"o5a9: A9. Condition of the street in front of the respondent's home
+o3p9: P9. How would you rate the condition of the street?
+u3a6: condition of the street in front of provider
+o4p9: P9. How would you rate the condition of the street?",Yes,
+o6c1,C1. Interior - Broken/cracked windows,C1. WERE THERE ANY BROKEN WINDOWS OR CRACKED WINDOWPANES?,"o3r1: R1. Are there any broken windows or cracked windowpanes?
+u3c1: are there any broken windows or cracked windowpanes
+o4r1: R1. Are there any broken windows or cracked windowpanes?
+o5c1: C1. Interior of home has broken windows or cracked windowpanes",Yes,
+o6c3,C3. Interior - Cracks/holes in walls/ceiling,C3. DID THE HOUSING UNIT CONTAIN OPEN CRACKS OR HOLES IN THE WALLS OR CEILING?,"o4r3: R3. Does the housing unit contain open cracks or holes in walls or ceiling?
+u3c3: does the housing unit/center contain open cracks or holes in walls or ceiling
+o5c3: C3. Interior of home contains open cracks or holes in walls/ceiling",Yes,
+o6c5,C5. Interior - Broken plaster/peeling paint,C5. DID THE HOUSING UNIT CONTAIN BROKEN PLASTER OR PEELING PAINT OVER 1 SQUARE FOOT OR MORE?,"o5c5: C5. Interior of home contains broken plaster or peeling paint
+u3c5: does the housing unit/center contain broken plaster or peeling paint > 1sq ft
+o4r5: R5. Does the housing unit contain broken plaster or peeling paint?
+o3r5: R5. Does the housing unit contain broken plaster or peeling paint?",Yes,
+o6c6,C6. Interior - Dark inside home,C6. WAS THE INSIDE OF THE HOME DARK?¬† (EXAMPLES:¬† CLOSED DRAPES IN DAYTIME; POOR LIGHTING),"o3r6: R6. Is inside of home dark?
+o5c6: C6. Interior of home is dark
+o4r6: R6. Is inside of home dark?
+u3c6: is inside of home/center dark",Yes,
+o6c7,C7. Interior - Crowded inside home,"C7. WAS THE INSIDE OF THE HOME CROWDED?¬† (EXAMPLES:¬† MANY PEOPLE LIVING IN A VERY SMALL HOUSE OR APARTMENT, DIFFICULT TO FIND A PRIVATE PLACE TO INTERVIEW RESPONDENT, FREQUENT INTERRUPTIONS AND PEOPLE BUMPING INTO EACH OTHER)","o3r7: R7. Is inside of home crowded?
+o4r7: R7. Is inside of home crowded?
+u3c7: is inside of home/center overcrowded
+o5c7: C7. Interior of home is crowded",Yes,
+o6c8,C8. Interior - Visible rooms noticeably cluttered,"C8. WERE ALL VISIBLE ROOMS OF THE HOUSE/APARTMENT NOTICEABLY CLUTTERED?¬† (EXAMPLES:¬† VISIBLE ROOMS ARE MESSY OR ARE CLUTTERED WITH CLOTHES, VACUUM CLEANER, CHILDREN'S SCHOOLWORK, SHOES AND SOCKS, OTHER OBJECTS)","o5c8: C8. Amount of clutter in home
+o4r10a_101: R10a_101. Trip hazards or excessive clutter
+o3r8: R8. Are all visible rooms of house/apt noticeably cluttered?
+u3c8: are all visible rooms noticeably cluttered
+o4r8: R8. Are all visible rooms of house/apt noticeably cluttered?",Yes,
+o6c9,C9. Interior - All visible rooms dirty,C9.¬† WERE ALL VISIBLE ROOMS OF THE HOUSE/APARTMENT DIRTY OR NOT REASONABLY CLEANED?,"u3c9: are all visible rooms dirty or not reasonably cleaned
+o4r9: R9. Are all visible rooms of the house/apt dirty or not reasonably cleaned?
+o5c9: C9. Visible rooms are dirty or not reasonably clean
+o3r9: R9. Are all visible rooms of the house/apt dirty or not reasonably cleaned?",Yes,
+o6c10,C10. Interior - Hazardous conditions,C10.¬† WAS THE ENVIRONMENT INSIDE THE HOME UNSAFE FOR YOUNG CHILDREN?,"o4r10: R10. Is environment inside home unsafe for young children?
+u3c10: is inside environment unsafe for young children
+o3r10: R10. Is environment inside home unsafe for young children?
+o5c10: C10. The environment inside the home is unsafe for young children",Yes,
+o6c11,C11. Interior - Youth's artwork or photograhs displayed,C11.¬† DID YOU OBSERVE ANY YOUTH'S ARTWORK OR PHOTOGRAPHS OF HOUSEHOLD CHILDREN ON DISPLAY IN THE HOME (EXAMPLES:¬† ARTWORK OR¬†PHOTOS ON REFRIGERATOR OR ON WALLS),"o3r11: R11. Child's artwork or photographs of child on display in home
+u3c11: did you observe any child's artwork or photos of household children
+o4r11: R11. Child's artwork or photographs of child on display in home
+o5c11: C11. Child's artwork or photographs displayed",Yes,
+o6c12,C12. Interior - Home noisy from inside noise,"C12.¬† WAS THE HOUSE OR APARTMENT OVERLY NOISY ‚Ç¨‚Äù FROM NOISE IN THE HOUSE? (EXAMPLES:¬† TELEVISION, SHOUTS OF CHILDREN, RADIO)","o3r12: R12. House or apartment overly noisy from noise in the house
+u3c14: how noisy is the house or apartment
+o5c12: C12. Home overly noisy - from noise inside the home
+o4r12: R12. House or apartment overly noisy from noise in the house",Yes,
+o6c13,C13. Interior - Home noisy from outside noise,"C13.¬† WAS THE HOUSE OR APARTMENT OVERLY NOISY‚Ç¨‚ÄùFROM NOISE OUTSIDE THE HOUSE? (EXAMPLES:¬† TRAIN, CARS, PEOPLE, MUSIC)","o4r13: R13. House or apartment overly noisy from noise outside the house
+u3c15: how much street noise comes into the house or apartment from the outside
+o5c13: C13. Home overly noisy - from noise outside the home
+o3r13: R13. House or apartment overly noisy from noise outside the house",Yes,
+o6d1_3,"D1_3. Youth's clothing - Worn, but mended or not ripped or torn","CLOTHING WAS WORN, BUT MENDED OR NOT RIPPED OR TORN","o4s1_3: S1_3. Clothing is worn, but mended or not ripped or torn
+o3s1_5: S1_5. Clothing is worn, but mended or not ripped or torn
+o5d1_3: D1_3. Child's clothing was worn, but mended or not ripped or torn",Yes,
+o6d1_10,D1_10. Youth's clothing - None of the above apply,NONE OF THE ABOVE APPLY,"o5d1_10: D1_10. None of the above apply
+o3s1_12: S1_12. None of the above conditions apply to child's clothing
+o4s1_10: S1_10. None of the above conditions apply to child's clothing",Yes,
+o6d2,D2. Youth had washed or bathed,D2. YOUTH HAD WASHED/BATHED.,"o3s2: S2. Overall hygiene of child - washed/bathed?
+o4s2: S2. Overall hygiene of child - washed/bathed?
+o5d2: D2. Child had washed or bathed",Yes,
+o6d3,D3. Cleanliness of youth's hair,D3. YOUTH'S HAIR.,"o4s3: S3. Overall hygiene of child - Hair?
+o3s3: S3. Overall hygiene of child - Hair?
+o5d3: D3. Condition of child's hair",Yes,
+o6d4,D4. Youth's odor,D4. YOUTH'S ODOR.,"o3s4: S4. Overall hygiene of child - Odor?
+o4s4: S4. Overall hygiene of child - Odor?
+o5d4: D4. Child's odor",Yes,
+o6e13,"E13. Youth's speech was distinct, clear and audible","E13..... (YOUTH)'S speech WAs distinct, clear, and audible to interviewer.","o3t4: T4. Parent's speech was distinct and audible
+o5e13: E13. Parent/PCG's speech was distinct, clear, and audible
+o4t14: T14. Parent's speech was distinct, clear, and audible to interviewer",No,
+o6e14,E14. Youth initiated verbal exchanges,"E14..... (YOUTH) initiateD verbal exchanges with visitor, askED questions, maDE spontaneous comments.","o3t5: T5. Parent initiated verbal exchanges with visitor
+u3d5: provider initiated verbal exchanges with visitor
+o5e14: E14. Parent/PCG initiated verbal exchanges with visitor
+o4t15: T15. Parent initiated verbal exchanges with visitor",No,
+o6e15,E15. Youth expressed ideas freely and easily,E15..... (YOUTH) expresseD ideas freely and easily and useD statements of appropriate length.,"o3t6: T6. Parent conversed freely and easily
+o4t16: T16. Parent expressed ideas freely and uses statements of appropriate length
+o5e15: E15. Parent/PCG expressed ideas freely and easily",No,
+o6e16,E16. Youth appeared to understand questions,E16.¬† (YOUTH) appearED to readily understand the interviewer's questions.,"o4t17: T17. Parent appeared to readily understand the interviewer's questions
+o5e16: E16. Parent/PCG appeared to understand interviewer's questions",No,
+o6e17,E17. At least 10 books in household,E17.¬† AT LEAST 10 BOOKS WERE PRESENT AND VISIBLE IN THE HOUSEHOLD.,"p5i20a: I20A. Child has access to 10 books at home
+o5e17: E17. At least ten books were present and visible in household
+o4t18: T18. At least 10 books were present and visible in the household",Yes,
+o6f1,F1. Did the youth display positive emotions during the visit?,"F1. DID THE YOUTH DISPLAY POSITIVE EMOTIONS DURING THE VISIT?¬† (POSITIVE EMOTION IS WHEN THE YOUTH SEEMS HAPPY, SMILES OR LAUGHS.)","o3u1: U1. Did the child display positive emotions?
+o4u1: U1. Did the child display positive emotions?
+o5f1: F1. Child displayed positive emotions during visit",Yes,
+o6f2,F2. Did the youth display negative emotions during the visit?,"F2. DID THE YOUTH DISPLAY NEGATIVE EMOTIONS DURING THE VISIT?¬† (NEGATIVE EMOTION IS WHEN THE YOUTH SEEMS UNHAPPY, CRIES, OR GETS ANGRY WITH THE PARENT OR INTERVIEWER.)","o3u2: U2. Did the child display negative emotions?
+o5f2: F2. Child displayed negative emotions during visit
+o4u2: U2. Did the child display negative emotions?",Yes,
+o6f3,F3. How attentive was the youth when completing the interview?,F3. HOW ATTENTIVE WAS THE YOUTH WHEN COMPLETING THE INTERVIEW?¬† (ATTENTION MEANS THAT THE YOUTH DID NOT LOSE INTEREST PARTWAY THROUGH THE TASK.),o5f9: F9. Child's attention when completing child interview,Yes,
+o6f4,F4. How cooperative was the youth during the interview?,F4. HOW COOPERATIVE WAS THE YOUTH DURING THE INTERVIEW?,o5f10: F10. Child's cooperation during child interview,Yes,
+o6f5,F5. How cooperative was the youth while being measured?,F5.¬† HOW COOPERATIVE WAS THE YOUTH WHILE BEING MEASURED?,"o3u7: U7. How cooperative was the child while being weighed and measured?
+o4u7: U7. How cooperative was the child while being weighed and measured?
+o5f11: F11. Child's cooperation while being weighed and measured",Yes,
+o6g1,G1. Youth's attention to interviewer,G1.¬† YOUTH'S ATTENTION TO INTERVIEWER WAS:,"o5g2: G2. Parent/PCG's attention to interviewer
+o3v2: V2. Respondent's attention to interviewer
+o4v2: V2. Respondent's attention to interviewer",Yes,o5f9: Child's attention when completing child interview
+o6g2,G2. Youth's understanding of the questions,G2.¬† YOUTH'S UNDERSTANDING OF THE QUESTIONS WAS:,,No,
+o6g3,G3. Youth's ability to articulate answers,G3.¬† YOUTH'S ABILITY TO ARTICULATE ANSWERS WAS:,,No,
+o6g4,G4. Youth's cooperation throughout most of the interview,G4.¬† YOUTH'S COOPERATION THROUGHOUT MOST OF THE INTERVIEW WAS:,,Yes,"o5f10: Child's cooperation during child interview 
+The wave 5 variable has different response options, but should still be considered a lagged measure by the definition we developed "
+o6g5a,G5a. Did youth appear suspicious?,SUSPICIOUS?,"o4v6a: V6a. Did respondent appear suspicious?
+o5g6a: G6A. Parent/PCG appeared suspicious
+o3v6a: V6a. Did respondent appear suspicious?",No,There is a prior report by PCG but not by interviewer: p4l53 / p5q3ci: Child is suspicious
+o6g5b,G5b. Did youth appear uncommunicative?,UNCOMMUNICATIVE?,"o4v6b: V6b. Did respondent appear uncommunicative?
+o5g6b: G6B. Parent/PCG appeared uncommunicative
+o3v6b: V6b. Did respondent appear uncommunicative?",No,
+o6g5c,G5c. Did youth appear anxious/nervous?,ANXIOUS/NERVOUS?,"o3v6c: V6c. Did respondent appear anxious/nervous?
+o5g6c: G6C. Parent/PCG appeared anxious/nervous
+o4v6c: V6c. Did respondent appear anxious/nervous?",No,"There are various reports about child's anxiety from parents at prior waves, but not from interviewer"
+o6g5d,G5d. Did youth appear hostile?,HOSTILE?,"o4v6d: V6d. Did respondent appear hostile?
+o5g6d: G6D. Parent/PCG appeared hostile
+o3v6d: V6d. Did respondent appear hostile?",No,
+cp6gad,Constructed - PCG meets anxious criteria in last year (CIDI),NA,"cm3gad_case: Constructed - Mother meets anxious criteria at three-year (CIDI)
+cf2gad_case: Constructed - Father meets anxious criteria at one-year (CIDI)
+cf3gad_case: Constructed - Father meets anxious criteria at three-year (CIDI)
+cm2gad_case: Constructed - Mother meets anxious criteria at one-year (CIDI)",Yes,
+cp6md_case_lib,Constructed - PCG meets liberal depression criteria in past year,NA,"cn5md_case_lib: Constructed - NPCG meets depression criteria (liberal) at nine-year (CIDI)
+cm3md_case_lib: Constructed - Mother meets depression criteria (liberal) at three-year (CIDI)
+cf2md_case_lib: Constructed - Father meets depression criteria (liberal) at one-year (CIDI)
+cm4md_case_lib: Constructed - Mother meets depression criteria (liberal) at five-year (CIDI)
+cf3md_case_lib: Constructed - Father meets depression criteria (liberal) at three-year (CIDI)
+cm5md_case_lib: Constructed - Mother meets depression criteria (liberal) at nine-year (CIDI)
+cf4md_case_lib: Constructed - Father meets depression criteria (liberal) at 5-yr (CIDI)
+cf5md_case_lib: Constructed - Father meets depression criteria (liberal) at nine-year (CIDI)
+cm2md_case_lib: Constructed - Mother meets depression criteria (liberal) at one-year (CIDI)",Yes,
+cp6md_case_con,Constructed - PCG meets conservative depression criteria in past year,NA,"cf4md_case_con: Constructed - Father meets depression criteria (conservative) at 5-yr (CIDI)
+cm4md_case_con: Constructed - Mother meets depression criteria (conservative) at five-year (CIDI
+cn5md_case_con: Constructed - NPCG meets depression criteria (conservative) at nine-year (CIDI)
+cf5md_case_con: Constructed - Father meets depression criteria (conservative) at nine-year (CIDI
+cm5md_case_con: Constructed - Mother meets depression criteria (conservative) at nine-year (CIDI
+cf2md_case_con: Constructed - Father meets depression criteria (conservative) at one-year (CIDI)
+cm3md_case_con: Constructed - Mother meets depression criteria (conservative) at three-year (CID
+cf3md_case_con: Constructed - Father meets depression criteria (conservative) at three-year (CID
+cm2md_case_con: Constructed - Mother meets depression criteria (conservative) at one-year (CIDI)",Yes,
+k6_scale_socialSkills,"Theme - ""Adolescent Social Skills"" and ""Adaptive Social Behavior Inventory""",NA,,No,"These PCG and teacher previously reported this scale with reference to the child, but the child did not previously make their own report, so by our definition, there is not a lagged measure. 
+Note: In previously waves, ASBI and SSRS were separate scales. Here they are combined."
+p6_scale_CBCL,Theme - Child Behavior Problems (CBCL),NA,,Yes,
+p6_scale_CBCL_aggressive,Theme - Child Behavior Problems (CBCL): Scale - Aggressive Behavior,NA,,Yes,
+p6_scale_CBCL_anxiousDepressed,Theme - Child Behavior Problems (CBCL): Scale - Anxious/Depressed Behavior,NA,,Yes,
+p6_scale_CBCL_attention,Theme - Child Behavior Problems (CBCL): Scale - Attention Problems,NA,,Yes,
+p6_scale_CBCL_ruleBreaking,Theme - Child Behavior Problems (CBCL): Scale - Rule-Breaking Behavior,NA,,Yes,
+p6_scale_CBCL_withdrawn,Theme - Child Behavior Problems (CBCL): Scale - Withdrawn,NA,,Yes,"The earlier wave CBCL ""withdrawn"" scales contain a lot more consituent variables, but I think they are still a lagged measure by our definition. "
+p6_scale_CBCL_internalizing,Theme - Child Behavior Problems (CBCL): Scale - Internalizing Behaviors,NA,,Yes,
+p6_scale_CBCL_externalizing,Theme - Child Behavior Problems (CBCL): Scale - Externalizing Behaviors,NA,,Yes,
+k6_scale_delinquentBehavior_self,Theme - Delinquent Behavior: Scale - Self,NA,,Yes,
+k6_scale_delinquentBehavior_peers,Theme - Delinquent Behavior: Scale - Peer,NA,,No,
+k6_scale_impulsivity,Theme - Impulsivity,NA,,No,"Impulsivity questions were previously asked of parents with reference to parents, but never of/about child"
+k6_scale_EPOCH,Theme - Positive Adolescent Functioning (EPOCH),NA,,No,
+k6_scale_EPOCH_engagement,Theme - Positive Adolescent Functioning (EPOCH): Scale - Engagement,NA,,No,
+k6_scale_EPOCH_perseverance,Theme - Positive Adolescent Functioning (EPOCH): Scale - Perseverance,NA,,No,
+k6_scale_EPOCH_optimism,Theme - Positive Adolescent Functioning (EPOCH): Scale - Optimism,NA,,No,
+k6_scale_EPOCH_connectedness,Theme - Positive Adolescent Functioning (EPOCH): Scale - Connectedness,NA,,No,
+k6_scale_EPOCH_happiness,Theme - Positive Adolescent Functioning (EPOCH): Scale - Happiness,NA,,No,
+k6_scale_BSI18Anxiety,Theme - BSI 18 for Anxiety,NA,,No,"This particular scale was not previously measured, but there are other variables about anxiety, e.g., the scale p5_scale_CBCL_anxiousDepressed"
+k6_scale_CESD,Theme - CES-D for Depression,NA,,No,"CES-D was used for parents in baseline wave, but never for child "
+p6_scale_CIDISFDepression_liberalPastYear,"Theme - Mental Health Depression (CIDI-SF): Scale - Liberal, Past Year",NA,,Yes,
+p6_scale_CIDISFDepression_liberalSincePastWave,"Theme - Mental Health Depression (CIDI-SF): Scale - Liberal, Since Past Wave",NA,,Yes,"The length of time referenced differs (""past year"" at earlier waves vs. ""since past wave"" for this outcome), but I think these are close enough to be considered ""previously measured""  "
+p6_scale_CIDISFDepression_liberalSincePastWaveBinary,"Theme - Mental Health Depression (CIDI-SF): Scale - Liberal, Since Past Wave, Binary",NA,,Yes,"The length of time referenced differs (""past year"" at earlier waves vs. ""since past wave"" for this outcome), but I think these are close enough to be considered ""previously measured""  "
+p6_scale_CIDISFGAD_sincePastWave,Theme - Mental Health for Generalized Anxiety Disorder (CIDI-SF): Scale - Since Past Wave,NA,,Yes,"FFCWS already provided this scale at earlier waves, so we did not have to calculate the scale ourselves.
+
+For wave 6, we calculated our own scale for ""since past wave"" rather than using cp6gad_9y; see ""Scales_Inputs_That_Should_Not_Be_Used_Raw"" in VariablesToRemove.json."
+p6_scale_parentingAggravation,Theme - Aggravation in Parenting,NA,,Yes,
+p6_scale_conflictTactics_nonviolentDisciplinePCGPerception,"Theme - Conflict Tactics: Scale - Non-violent Discipline, PCG Perception",NA,,Yes,
+k6_scale_conflictTactics_nonviolentDisciplineKidPerception,"Theme - Conflict Tactics: Scale - Non-violent Discipline, Child Perception",NA,,Yes,
+k6_scale_parentalMonitoring_kid,Theme - Parental Monitoring: Scale - Child-perceived parental monitoring,NA,,No,
+p6_scale_parentalMonitoring_PCG,Theme - Parental Monitoring: Scale - PCG-perceived parental monitoring,NA,,No,
+p6_scale_materialHardship_pastYear,Theme - Material Hardship: Scale - Past Year,NA,,Yes,
+p6_scale_materialHardship_sincePastWave,Theme - Material Hardship: Scale - Since Past Wave,NA,,Yes,"I'm counting this as ""previously measured"" even though the length of time referenced for the material hardship scale was different in prior waves"
+k6_scale_extracurricularInvolvement,Theme - Adolescent Extracurricular and Community Involvement,NA,,No,
+k6_scale_CHAOS_kid,Theme - Environmental Confusion (CHAOS): Scale - Child Perception,NA,,No,"We have p5_scale_CHAOS, but not a child report of CHAOS at prior waves"
+p6_scale_CHAOS_PCG,Theme - Environmental Confusion (CHAOS): Scale - PCG Perception,NA,,Yes,
+k6_scale_neighborhoodCollectiveEfficacy_kid,Theme - Neighborhood Collective Efficacy: Scale - Child Perception,NA,,No,"We have neighborhood collective efficacy scale for PCG at earlier waves, but not for child "
+k6_scale_neighborhoodCollectiveEfficacy_cohesionAndTrustKid,"Theme - Neighborhood Collective Efficacy: Scale - Cohesion and Trust, Child Perception",NA,,No,
+k6_scale_neighborhoodCollectiveEfficacy_socCtrlKid,"Theme - Neighborhood Collective Efficacy: Scale - Social Control, Child Perception",NA,,No,
+p6_scale_neighborhoodCollectiveEfficacy_PCG,Theme - Neighborhood Collective Efficacy: Scale - PCG perception,NA,,Yes,
+p6_scale_neighborhoodCollectiveEfficacy_socCtrlPCG,"Theme - Neighborhood Collective Efficacy: Scale - Social Control, PCG Perception",NA,,Yes,
+p6_scale_neighborhoodCollectiveEfficacy_cohesionAndTrustPCG,"Theme - Neighborhood Collective Efficacy: Scale - Cohesion and Trust, PCG Perception",NA,,Yes,
+k6_scale_legalCynicism,Theme - Legal Cynicism,NA,,No,
+k6_scale_GPA,Theme - GPA,NA,,No,
+p6_scale_eviction,Theme - Eviction,NA,,Yes,"m5f23d: Were evicted from home/apartment for not paying rent in past 12 months
+
+I am counting this as ""previously measured"" even though the length of time reference in prior questions about eviction was shorter (past year vs. since past wave)"

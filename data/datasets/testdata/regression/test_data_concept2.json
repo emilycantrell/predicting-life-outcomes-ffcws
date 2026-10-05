@@ -1,0 +1,12 @@
+[
+    {
+        "concept": "test_data_concept",
+        "varnames": ["dep_a", "dep_c"],
+        "notes":  "This concept file is used in e2e testing"
+    },
+    {
+        "concept": "test_data_concept 2",
+        "varnames": ["dep_a", "dep_b"],
+        "notes":  "This is another concept. The varname dep_a belongs to two concepts. This is an invalid concept file. It's only used for testing."
+    }
+]

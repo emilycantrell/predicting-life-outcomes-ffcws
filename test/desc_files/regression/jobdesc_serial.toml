@@ -1,0 +1,71 @@
+[summary]
+  name = "E2E test"
+  description = "Goal of this experiment is to test pipelines on a test dataset"
+[execution]
+  parallel = false
+  [results]
+  database_name = "e2etest"
+  database_type = "inmemory" # possible options are mongo (production) and inmemory (testing)
+
+[data.participants]
+  participant_id_column = "ChallengeID"
+  remove_participants_collected_in_nonresponse_followup_Columbia = true
+
+[data.files]
+  predictors = ["./datasets/testdata/regression/features.csv", "89cf7dfd8d2d721b246ca1c9408bbd11"]
+  outcomes = ["./datasets/testdata/regression/outcomesv3.csv", "00dd2d77fc70635785c5178942a9a551"]
+  training_participant_ids = "all"
+  metadata = ["./datasets/testdata/regression/metadata.csv", "9084561f76dd6e7acdfa94caba8f875b"]
+  million_monkeys_concepts_metadata = ["./datasets/testdata/regression/test_data_concept.json", "2f1529d69902906bd30497acd282d950"]
+
+[data.preprocessing.common]
+    # key(s) : convert_standard_ff_missing_values_to_na  | value_type : boolean | required = yes | standard missing codes are integers in [-9, -1]
+    convert_standard_ff_missing_values_to_na = false
+
+[data.outcomes]
+    regression_outcomes = { topics = ["all"] , outcome_names = ["dep_b"]}
+[data.preprocessing.predictors]
+  vartypes_to_use = ["Continuous", "Binary", "Ordered Categorical"] # use variables of these types
+  waves_to_use = ["Baseline"]
+  min_cities_predictors = 18 # question must be asked in >= these number of cities
+  remove_predictors_of_concept = ["test_data_concept"]
+  remove_predictors_below_variance_threshold = 0.0 # if 0 remove constant columns
+
+[data.preprocessing.outcomes]
+    vartypes_to_use = ["Continuous", "Binary", "Ordered Categorical"] # use variables of these types
+    waves_to_use = ["Baseline"]
+    recode2to0 = false # If set, recodes to binary values
+    remove_outcomes_of_concept = ["test_data_concept"]
+    min_valid_outcomes = 25
+    min_cities_outcomes = 18 # question must be asked in >= these number of cities
+
+[pipeline]
+
+  [pipeline.models]
+    "Continuous" = {methods = ["linear regressor"]}
+
+  [pipeline.scaling]
+          # key(s): scaler_method | value_type : all or list of scaling methods | required = yes | Acceptable values are all or [""]
+          scaler_method = ["identity"]
+  [pipeline.feature_selection]
+    mode = ["kbest"]
+    param = { "kbest" = {"arg" = [5], "metric" = ["f_regression", "spearmanr"] }}
+
+  [pipeline.cv]
+    [pipeline.cv.pipeline_performance_estimate]
+      nfolds = 5
+      continuous_to_categorical_bin_method = "quantile" # quantile, sturges, freedman-diaconis
+    [pipeline.cv.model_hyperparameter_tuning]
+      mode = "randomized_grid_search" # To turn on tuning, use grid search here and set mode to "hyperparameter_tuning" in [pipeline.evaluation].
+      param = {"randomized_grid_search" = {"iterations"= 1, "nfolds" = 5, "continuous_to_categorical_bin_method" = "quantile"} }
+
+  [pipeline.imputation]
+    "Binary" = "mean"
+    "Ordered Categorical" = "mode"
+    "Continuous" = "mean"
+
+  [pipeline.evaluation]
+    mode = "hyperparameter_tuning"
+
+  [pipeline.postprocessing]
+    truncate_predictions = false
