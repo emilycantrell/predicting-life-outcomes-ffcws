@@ -2,7 +2,7 @@
 
 # Overview
 
-This repository contains code to reproduce the results in [COMING SOON: CITATION TO WORKING PAPER HERE]. For setup and usage instructions, see the `docs/` directory.
+This repository contains code to reproduce the results in [*Machine Learning Models Trained on a Longitudinal Survey Dataset Poorly Predict Hundreds of Life Outcomes*](https://arxiv.org/abs/2610.17115). For setup and usage instructions, see the `docs/` directory.
 
 **Table of Contents**
 
